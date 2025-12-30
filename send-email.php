@@ -2,86 +2,57 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Include PHPMailer files
-require 'PHPMailer/Exception.php';
-require 'PHPMailer/PHPMailer.php';
-require 'PHPMailer/SMTP.php';
+// Load PHPMailer
+require __DIR__ . '/PHPMailer/Exception.php';
+require __DIR__ . '/PHPMailer/PHPMailer.php';
+require __DIR__ . '/PHPMailer/SMTP.php';
 
-if(isset($_POST['submit'])) {
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    // Sanitize form input
+    // Sanitize input
     $name    = strip_tags(trim($_POST['name']));
     $email   = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
     $message = nl2br(htmlspecialchars(trim($_POST['message'])));
 
-    // Validate input
-    if(empty($name) || empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL) || empty($message)) {
-        echo "<script>alert('Please fill in all fields correctly.'); window.history.back();</script>";
+    // Validate
+    if (empty($name) || empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL) || empty($message)) {
+        echo "<script>alert('Please fill all fields correctly'); window.history.back();</script>";
         exit;
     }
 
-    // Email recipients
-        // $recipients = [
-        //     'vivek_m@fyndsol.com',
-        //     'sainath_g@fyndsol.com'
-        // ];
-
-
-    $recipients = [
-        'mohan1973cm@gmail.com'
-    ];
-
-    // Email subject
-    $subject = "New Inquiry from {$name} [FyndSol Contact Form]";
-
-    // Email body (HTML)
-    $body = "
-    <html>
-    <head>
-        <style>
-            body { font-family: Arial, sans-serif; line-height: 1.6; }
-            .header { background: #002A61; color: #fff; padding: 15px; text-align: center; }
-            .content { padding: 15px; border: 1px solid #eee; }
-            .label { font-weight: bold; color: #002A61; }
-        </style>
-    </head>
-    <body>
-        <div class='header'><h2>New Contact Form Inquiry</h2></div>
-        <div class='content'>
-            <p><span class='label'>Name:</span> {$name}</p>
-            <p><span class='label'>Email:</span> {$email}</p>
-            <p><span class='label'>Message:</span><br>{$message}</p>
-        </div>
-    </body>
-    </html>";
-
-    // PHPMailer setup
     $mail = new PHPMailer(true);
 
     try {
-        // Server settings
+        // SMTP SETTINGS (GMAIL)
         $mail->isSMTP();
-        $mail->Host       = 'smtp.yourdomain.com'; // Replace with your SMTP host
+        $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'reshmamcse2021@jerusalemengg.ac.in'; // SMTP email
-        $mail->Password   = 'MReshmadeepika';   // SMTP password
+
+        // 🔴 REPLACE THESE
+        $mail->Username   = 'reshma@fyndsol.com';
+        $mail->Password   = 'zrxa ymgm xkmf lhat';
+
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
-        // Recipients
-        $mail->setFrom('webmaster@fyndsol.com', 'FyndSol Webmaster');
-        foreach($recipients as $recipient) {
-            $mail->addAddress($recipient);
-        }
-        $mail->addReplyTo($email, $name);
+        // Email headers
+        $mail->setFrom('YOUR_GMAIL@gmail.com', 'FyndSol Contact Form');
+        $mail->addAddress('YOUR_GMAIL@gmail.com'); // YOU receive mail
+        $mail->addReplyTo($email, $name);          // Client reply
 
-        // Content
+        // Email content
         $mail->isHTML(true);
-        $mail->Subject = $subject;
-        $mail->Body    = $body;
+        $mail->Subject = "New Contact Form Message from $name";
+        $mail->Body = "
+            <h3>New Contact Message</h3>
+            <p><b>Name:</b> $name</p>
+            <p><b>Email:</b> $email</p>
+            <p><b>Message:</b><br>$message</p>
+        ";
 
         $mail->send();
-        echo "<script>alert('Thank you! Your message has been sent successfully.'); window.location.href='contact.html';</script>";
+
+        echo "<script>alert('Message sent successfully!'); window.location.href='contact.html';</script>";
 
     } catch (Exception $e) {
         echo "<script>alert('Mailer Error: {$mail->ErrorInfo}'); window.history.back();</script>";
@@ -91,4 +62,3 @@ if(isset($_POST['submit'])) {
     header("Location: contact.html");
     exit;
 }
-?>
