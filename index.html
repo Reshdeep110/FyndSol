@@ -92,6 +92,15 @@
             padding-right: 1rem;
         }
 
+         .container-custom1 {
+            /* 1280 */
+            max-width: 1270px;  
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
         .nav-link {
             cursor: pointer;
         }
@@ -179,17 +188,23 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-<header class="bg-white sticky top-0 z-50 shadow-sm w-full">
+<header class="bg-white sticky top-0 z-50 shadow-lg w-full">
     <div class="border-b border-gray-100">
-        <nav class="container-custom flex justify-between items-center py-4 px-4 md:px-6">
-            <a href="index.html" class="flex items-center gap-2 flex-shrink-0 ">
-                <img src="./logo1.png" alt="Fyndsol Logo" class="h-10 sm:h-20 md:h-10 transition-all duration-300 object-contain">
-                <span class="hidden md:block text-xs text-black-500 font-semibold border-l pl-2 ml-2 border-gray-300">
+        <nav class="container-custom1 flex justify-between items-center py-4 px-4 md:px-6">
+           
+
+  <a href="index.html" class="flex items-center gap-2">
+                <img src="/logo1.png" alt="Fyndsol Logo" class="h-10 sm:h-12 md:h-14 w-auto object-contain transition-all duration-300">
+                <span class="hidden md:block text-sm text-gray-400 font-semibold border-l pl-2 ml-2 border-gray-300">
                     We Build Trust!
                 </span>
             </a>
 
-            <div class="hidden lg:flex items-center gap-8 text-sm font-normal text-black-500">
+
+
+
+
+            <div class="hidden lg:flex items-center gap-8 text-lg font-normal text-black-500">
                 <a href="about.html" class="nav-link relative py-1 transition-colors duration-300">About Us</a>
 
                 <div class="relative group py-4">
@@ -202,16 +217,16 @@
                         <div class="bg-white shadow-xl border border-gray-100 rounded-lg overflow-hidden">
                             <div class="py-2">
                                 <a href="./project-management.html" class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                    <span class="block text-sm font-medium text-gray-900 group-hover/item:text-[#002A61]">Project Management</span>
+                                    <span class="block text-lg font-medium text-gray-900 group-hover/item:text-[#002A61]">Project Management</span>
                                 </a>
                                 <a href="./finance-transformation.html" class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                    <span class="block text-sm font-medium text-gray-900 group-hover/item:text-[#002A61]">Finance Transformation</span>
+                                    <span class="block text-lg font-medium text-gray-900 group-hover/item:text-[#002A61]">Finance Transformation</span>
                                 </a>
                                 <a href="./tech-transformation.html" class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                    <span class="block text-sm font-medium text-gray-900 group-hover/item:text-[#002A61]">Technology Transformation</span>
+                                    <span class="block text-lg font-medium text-gray-900 group-hover/item:text-[#002A61]">Technology Transformation</span>
                                 </a>
                                 <a href="./process-transformation.html" class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                    <span class="block text-sm font-medium text-gray-900 group-hover/item:text-[#002A61]">Process Transformation</span>
+                                    <span class="block text-lg font-medium text-gray-900 group-hover/item:text-[#002A61]">Process Transformation</span>
                                 </a>
                             </div>
                         </div>
@@ -254,7 +269,7 @@
 
                 <a href="ai-adoption.html" class="mobile-link hover:text-[#002A61] transition">AI Adoption</a>
                 <!-- <a href="industries.html" class="mobile-link hover:text-[#002A61] transition">Industries</a> -->
-            </div>
+            
 
             <div class="mt-8">
                 <a href="contact.html" class="block w-full text-center py-4 bg-[#002A61] text-white rounded-xl font-bold shadow-lg active:scale-95 transition-transform">
@@ -262,12 +277,15 @@
                 </a>
             </div>
             
-            <div class="mt-auto pt-10 text-center border-t border-gray-100">
-                <img src="./images/fyndsol_logo2.png" alt="Fyndsol" class="h-6 mx-auto mb-4 opacity-50 grayscale">
-                <p class="text-lg text-gray-400 font-medium">© 2025 Fyndsol. All Rights Reserved.</p>
-            </div>
+            <div class="pt-20 text-center border-t border-gray-100">
+    <img src="./images/fyndsol_logo2.png" alt="Fyndsol" class="h-16 mx-auto opacity-50 grayscale mb-15">
+    <p class="text-xs text-gray-400 font-medium">© 2025 Fyndsol. All Rights Reserved.</p>
+</div>
+
         </div>
     </div>
+    </div>
+    
 
     <style>
         .is-active .line-1 { transform: translateY(7px) rotate(45deg); }

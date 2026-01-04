@@ -77,6 +77,14 @@
       padding-right: 1rem;
     }
 
+    .container-custom1 {
+      max-width: 1270px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
     .hero-inner {
       background-size: cover;
       background-position: center;
@@ -128,20 +136,19 @@
 
 <body class="bg-gray-50">
 
-  <!-- HEADER -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- HEADER -->  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 <header class="bg-white sticky top-0 z-50 shadow-sm w-full">
     <div class="border-b border-gray-100">
-        <nav class="container-custom flex justify-between items-center py-4 px-4 md:px-6">
+        <nav class="container-custom1 flex justify-between items-center py-4 px-4 md:px-6">
             <a href="index.html" class="flex items-center gap-2">
-                <img src="logo1.png" alt="Fyndsol Logo" class="h-10">
-                <span class="hidden md:block text-xs text-gray-400 font-semibold border-l pl-2 ml-2 border-gray-300">
+                <img src="logo1.png" alt="Fyndsol Logo" class="h-10 sm:h-12 md:h-14 w-auto object-contain transition-all duration-300">
+                <span class="hidden md:block text-sm text-gray-400 font-semibold border-l pl-2 ml-2 border-gray-300">
                     We Build Trust!
                 </span>
             </a>
 
-            <div class="hidden lg:flex items-center gap-8 text-sm font-normal text-black-500">
+            <div class="hidden lg:flex items-center gap-8 text-lg font-normal text-black-500">
                 <a href="./about.html" class="nav-link relative py-2 transition-colors duration-300 hover:text-[#002A61]">About Us</a>
 
                 <div class="relative group py-4">
@@ -150,27 +157,27 @@
                         <i class="fas fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
                     </div>
 
-                    <div class="absolute top-full left-1/2 -translate-x-1/2 w-72 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 w-96 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
                         <div class="bg-white shadow-xl border border-gray-100 rounded-lg overflow-hidden">
                             <div class="py-1">
                                 <a href="./project-management.html" class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
                                     <div class="flex-1">
-                                        <span class="block text-sm font-medium text-gray-900 group-hover/item:text-[#002A61]">Project Management</span>
+                                        <span class="block text-lg font-medium text-gray-900 group-hover/item:text-[#002A61]">Project Management</span>
                                     </div>
                                 </a>
                                 <a href="./finance-transformation.html" class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
                                     <div class="flex-1">
-                                        <span class="block text-sm font-medium text-gray-900 group-hover/item:text-[#002A61]">Finance Transformation</span>
+                                        <span class="block text-lg font-medium text-gray-900 group-hover/item:text-[#002A61]">Finance Transformation</span>
                                     </div>
                                 </a>
                                 <a href="./tech-transformation.html" class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
                                     <div class="flex-1">
-                                        <span class="block text-sm font-medium text-gray-900 group-hover/item:text-[#002A61]">Technology Transformation</span>
+                                        <span class="block text-lg font-medium text-gray-900 group-hover/item:text-[#002A61]">Technology Transformation</span>
                                     </div>
                                 </a>
                                 <a href="./process-transformation.html" class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
                                     <div class="flex-1">
-                                        <span class="block text-sm font-medium text-gray-900 group-hover/item:text-[#002A61]">Process Transformation</span>
+                                        <span class="block text-lg font-medium text-gray-900 group-hover/item:text-[#002A61]">Process Transformation</span>
                                     </div>
                                 </a>
                             </div>
@@ -193,7 +200,7 @@
 
     <div id="mobile-overlay" class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[55]"></div>
     
-    <div id="mobile-drawer" class="fixed top-0 right-0 h-full w-[80%] max-sm:w-[280px] bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-[58] lg:hidden">
+    <div id="mobile-drawer" class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-[58] lg:hidden">
         <div class="flex flex-col h-full p-8 pt-20">
             <div class="flex flex-col gap-6 text-lg font-semibold text-gray-800">
                 <a href="index.html" class="hover:text-[#002A61] transition">Home</a>
@@ -220,12 +227,12 @@
                         Get Started
                     </a>
                 </div>
-            </div>
             
-            <div class="mt-auto pt-10 text-center border-t border-gray-100">
-                <img src="logo1.png" alt="Fyndsol" class="h-6 mx-auto mb-4 opacity-50 grayscale">
-                <p class="text-xs text-gray-400 font-medium">© 2025 Fyndsol. All Rights Reserved.</p>
-            </div>
+             <div class="pt-20 text-center border-t border-gray-100">
+    <img src="./images/fyndsol_logo2.png" alt="Fyndsol" class="h-16 mx-auto opacity-50 grayscale mb-15">
+    <p class="text-xs text-gray-400 font-medium">© 2025 Fyndsol. All Rights Reserved.</p>
+</div>
+</div>
         </div>
     </div>
 
