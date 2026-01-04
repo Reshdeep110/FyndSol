@@ -78,10 +78,14 @@
             background-color: #fff;
             overflow-x: hidden;
             line-height: 1.6;
+
+          
+
         }
 
         .container-custom {
-            max-width: 1087px;
+            /* 1280 */
+            max-width: 1087px;  
             margin-left: auto;
             margin-right: auto;
             padding-left: 1rem;
@@ -178,8 +182,8 @@
 <header class="bg-white sticky top-0 z-50 shadow-sm w-full">
     <div class="border-b border-gray-100">
         <nav class="container-custom flex justify-between items-center py-4 px-4 md:px-6">
-            <a href="index.html" class="flex items-center gap-2 flex-shrink-0">
-                <img src="./logo1.png" alt="Fyndsol Logo" class="h-14 sm:h-16 md:h-10 transition-all duration-300 object-contain">
+            <a href="index.html" class="flex items-center gap-2 flex-shrink-0 ">
+                <img src="./logo1.png" alt="Fyndsol Logo" class="h-10 sm:h-20 md:h-10 transition-all duration-300 object-contain">
                 <span class="hidden md:block text-xs text-black-500 font-semibold border-l pl-2 ml-2 border-gray-300">
                     We Build Trust!
                 </span>
@@ -194,9 +198,9 @@
                         <i class="fas fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
                     </div>
 
-                    <div class="absolute top-full left-1/2 -translate-x-1/2 w-72 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 w-96 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
                         <div class="bg-white shadow-xl border border-gray-100 rounded-lg overflow-hidden">
-                            <div class="py-1">
+                            <div class="py-2">
                                 <a href="./project-management.html" class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
                                     <span class="block text-sm font-medium text-gray-900 group-hover/item:text-[#002A61]">Project Management</span>
                                 </a>
@@ -229,7 +233,7 @@
 
     <div id="mobile-overlay" class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[55]"></div>
 
-    <div id="mobile-drawer" class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-[58] lg:hidden">
+    <div id="mobile-drawer" class="fixed top-0 right-0 h-full w-[80%] max-w-lg bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-[58] lg:hidden">
         <div class="flex flex-col h-full p-8 pt-20">
             <div id="mobile-nav-links" class="flex flex-col gap-6 text-lg font-semibold text-gray-800">
                 <a href="index.html" class="mobile-link hover:text-[#002A61] transition">Home</a>
@@ -238,7 +242,7 @@
                 <div>
                     <button id="mobile-services-toggle" class="flex items-center justify-between w-full hover:text-[#002A61] transition focus:outline-none text-lg font-semibold text-gray-800">
                         <span>Services</span>
-                        <i id="mobile-chevron" class="fas fa-chevron-right text-sm transition-transform duration-300"></i>
+                        <i id="mobile-chevron" class="fas fa-chevron-right text-lg transition-transform duration-300"></i>
                     </button>
                     <div id="mobile-services-menu" class="hidden flex-col mt-4 pl-4 gap-4 border-l-2 border-gray-100">
                         <a href="./project-management.html" class="text-base font-normal text-gray-600">Project Management</a>
@@ -260,7 +264,7 @@
             
             <div class="mt-auto pt-10 text-center border-t border-gray-100">
                 <img src="./images/fyndsol_logo2.png" alt="Fyndsol" class="h-6 mx-auto mb-4 opacity-50 grayscale">
-                <p class="text-xs text-gray-400 font-medium">© 2025 Fyndsol. All Rights Reserved.</p>
+                <p class="text-lg text-gray-400 font-medium">© 2025 Fyndsol. All Rights Reserved.</p>
             </div>
         </div>
     </div>
@@ -378,7 +382,7 @@
                 <h1 class="text-3xl md:text-4xl font-bold leading-snug drop-shadow-lg">
                     We Transform and scale for impact
                 </h1>
-                <p class="mt-4 text-sm md:text-base font-medium drop-shadow-lg leading-relaxed">
+                <p class="mt-4 text-lg md:text-base font-medium drop-shadow-lg leading-relaxed">
                     Turning complexity into clarity and clarity into growth.
                 </p>
                 <a href="./about.html" class="mt-8 inline-block bg-black/70 px-6 py-3 rounded-md text-white font-semibold hover:bg-black transition shadow-lg">
@@ -452,7 +456,7 @@
             <div class="container-custom ">
                 <div class="relative grid grid-cols-1 md:grid-cols-2 gap-0 items-end">
                     <div
-                        class="relative bg-white p-6 sm:p-10 rounded-lg shadow-md border-t-8 border-[--primary-color] w-full max-w-xl min-h-[440px]  lg:max-w-none transform md:translate-y-12 z-30">
+                        class="relative bg-white p-6 lg:p-10 rounded-lg shadow-md border-t-8 border-[--primary-color] w-full max-w-xl min-h-[440px]  lg:max-w-none transform md:translate-y-12 z-30">
                         <div class="mb-6 pb-2 relative">
                             <h2 class="text-2xl md:text-3xl font-bold text-fyndsol-blue relative z-10">FyndSol
                                 Consulting</h2>
@@ -461,24 +465,24 @@
                             </div>
                         </div>
 
-                        <p class="text-gray-600 text-xs md:text-sm leading-relaxed mb-4">
+                        <p class="text-gray-600 text-lg md:text-lg leading-relaxed mb-4">
                             We are a forward-thinking business and technology consulting firm, empowering organizations
                             to transform, scale, and thrive in the digital era. At FyndSol, we don't just advise — we
                             execute for impact.
                         </p>
-                        <p class="text-gray-600 text-xs md:text-sm leading-relaxed mb-8">
+                        <p class="text-gray-600 text-lg md:text-lg leading-relaxed mb-8">
                             Our team delivers practical, results-driven solutions to complex business challenges by
                             combining industry expertise, data-led insights, and innovative digital strategies. We work
                             alongside our clients to drive measurable outcomes sustainable growth.
                         </p>
 
-                        <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex flex-col lg:flex-row gap-4">
                             <a href="./about.html"
-                                class="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded font-bold hover:bg-gray-50 transition text-center text-sm">
+                                class="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded font-bold hover:bg-gray-50 transition text-center text-lg">
                                 Learn More
                             </a>
                             <a href="./contact.html"
-                                class="bg-black text-white px-6 py-3 rounded font-bold hover:bg-blue-900 transition text-center text-sm">
+                                class="bg-black text-white px-6 py-3 rounded font-bold hover:bg-blue-900 transition text-center text-lg">
                                 Get Started
                             </a>
                         </div>
@@ -541,7 +545,7 @@
                 <div class="mb-16 reveal-up text-center">
                     <h2 class="text-xl mt-6 md:text-2xl font-bold mb-2">Our Guiding Principles</h2>
                     <div class="w-16 h-1 bg-gradient-to-r from-blue-900 to-blue-600 rounded-full mx-auto"></div>
-                    <p class="text-gray-500 max-w-2xl mt-4 mx-auto text-sm md:text-lg leading-relaxed">
+                    <p class="text-gray-500 max-w-2xl mt-4 mx-auto text-lg md:text-lg leading-relaxed">
                         We transform businesses through principles that ensure clarity, consistency, and long-term
                         capital growth.
                     </p>
@@ -558,7 +562,7 @@
                             <i class="fas fa-terminal text-xl text-[#007BFF] group-hover:text-white"></i>
                         </div>
                         <h3 class="font-bold text-xl text-[#002A61] mb-3">Execution</h3>
-                        <p class="text-gray-500 text-sm md:text-base leading-relaxed">
+                        <p class="text-gray-500 text-lg md:text-base leading-relaxed">
                             The bridge between vision and reality. We prioritize disciplined planning and hands-on
                             leadership to turn strategy into measurable results.
                         </p>
@@ -574,7 +578,7 @@
                             <i class="fas fa-chart-line text-xl text-[#007BFF] group-hover:text-white"></i>
                         </div>
                         <h3 class="font-bold text-xl text-[#002A61] mb-3">Progress</h3>
-                        <p class="text-gray-500 text-sm md:text-base leading-relaxed">
+                        <p class="text-gray-500 text-lg md:text-base leading-relaxed">
                             Forward momentum is non-negotiable. We ensure continuous growth through data-driven insights
                             and iterative optimization.
                         </p>
@@ -590,7 +594,7 @@
                             <i class="fas fa-shield-alt text-xl text-[#007BFF] group-hover:text-white"></i>
                         </div>
                         <h3 class="font-bold text-xl text-[#002A61] mb-3">Patience</h3>
-                        <p class="text-gray-500 text-sm md:text-base leading-relaxed">
+                        <p class="text-gray-500 text-lg md:text-base leading-relaxed">
                             Sustainable value takes time. We build long-term meaningful partnerships founded on
                             strategic stability and trust.
                         </p>
@@ -604,7 +608,7 @@
                 <header class="text-center mb-12 reveal-up">
                     <h2 class="text-xl md:text-2xl font-bold mb-2">About Us</h2>
                     <div class="w-16 h-1 bg-gradient-to-r from-blue-900 to-blue-600 rounded-full mx-auto"></div>
-                    <p class="text-gray-500 max-w-2xl mt-4 mx-auto text-sm md:text-lg leading-relaxed">
+                    <p class="text-gray-500 max-w-2xl mt-4 mx-auto text-lg md:text-lg leading-relaxed">
                         We help businesses transform ideas into measurable impact through clarity, innovation, and
                         strategic execution.
                     </p>
@@ -656,7 +660,7 @@
                 <header class="text-center mb-12 reveal-up">
                     <h2 class="text-xl md:text-2xl font-bold mb-2">Impact</h2>
                     <div class="w-16 h-1 bg-gradient-to-r from-blue-900 to-blue-600 rounded-full mx-auto"></div>
-                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed">
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg md:text-lg leading-relaxed">
                         Driving measurable growth by aligning strategy, people, and technology to deliver meaningful
                         outcomes.
                     </p>
@@ -665,7 +669,7 @@
                 <div class="reveal-up bg-gray-50 rounded-xl p-6 md:p-12 transition-all hover:shadow-lg">
                     <img src="./images/pipeline.png" alt="Impact Pipeline"
                         class="w-full h-auto object-contain rounded-lg">
-                    <p class="text-center mt-6 text-gray-400 text-xs md:text-sm">
+                    <p class="text-center mt-6 text-gray-400 text-lg md:text-lg">
                         Visual model showcasing how FyndSol Consulting transforms insights into scalable business
                         results.
                     </p>
@@ -678,7 +682,7 @@
                 <header class="text-center mb-12 reveal-up">
                     <h2 class="text-xl md:text-2xl font-bold mb-2">Services</h2>
                     <div class="w-16 h-1 bg-gradient-to-r from-blue-900 to-blue-600 rounded-full mx-auto"></div>
-                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed">
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg md:text-lg leading-relaxed">
                         Tailored consulting solutions designed to strengthen your business and accelerate growth.
                     </p>
                 </header>
@@ -692,9 +696,9 @@
                         </div>
                         <div class="p-5">
                             <h3 class="text-md font-semibold text-gray-900 mb-2">New Initiatives</h3>
-                            <p class="text-xs text-gray-500 mb-4">Strategic guidance for early-stage ventures focused on
+                            <p class="text-lg text-gray-500 mb-4">Strategic guidance for early-stage ventures focused on
                                 scalable growth.</p>
-                            <a href="./New-Initiatives.html" class="text-xs font-bold text-blue-600 hover:underline">READ MORE →</a>
+                            <a href="./New-Initiatives.html" class="text-lg font-bold text-blue-600 hover:underline">READ MORE →</a>
                         </div>
                     </div>
 
@@ -706,9 +710,9 @@
                         </div>
                         <div class="p-5">
                             <h3 class="text-md font-semibold text-gray-900 mb-2">Tech Consulting</h3>
-                            <p class="text-xs text-gray-500 mb-4">Modernizing infrastructure and accelerating digital
+                            <p class="text-lg text-gray-500 mb-4">Modernizing infrastructure and accelerating digital
                                 transformation.</p>
-                            <a href="./tech-consulting.html" class="text-xs font-bold text-blue-600 hover:underline">READ MORE →</a>
+                            <a href="./tech-consulting.html" class="text-lg font-bold text-blue-600 hover:underline">READ MORE →</a>
                         </div>
                     </div>
 
@@ -720,9 +724,9 @@
                         </div>
                         <div class="p-5">
                             <h3 class="text-md font-semibold text-gray-900 mb-2">Process Improvement</h3>
-                            <p class="text-xs text-gray-500 mb-4">Streamlining operations to reduce inefficiencies and
+                            <p class="text-lg text-gray-500 mb-4">Streamlining operations to reduce inefficiencies and
                                 remove bottlenecks.</p>
-                            <a href="./process-improvement.html" class="text-xs font-bold text-blue-600 hover:underline">READ MORE →</a>
+                            <a href="./process-improvement.html" class="text-lg font-bold text-blue-600 hover:underline">READ MORE →</a>
                         </div>
                     </div>
 
@@ -734,9 +738,9 @@
                         </div>
                         <div class="p-5">
                             <h3 class="text-md font-semibold text-gray-900 mb-2">Turnaround</h3>
-                            <p class="text-xs text-gray-500 mb-4">Elevating finance from support function to strategic
+                            <p class="text-lg text-gray-500 mb-4">Elevating finance from support function to strategic
                                 decision engine.</p>
-                            <a href="./turnaround.html" class="text-xs font-bold text-blue-600 hover:underline">READ MORE →</a>
+                            <a href="./turnaround.html" class="text-lg font-bold text-blue-600 hover:underline">READ MORE →</a>
                         </div>
                     </div>
                 </div>
@@ -1294,7 +1298,7 @@
             <div class="container mx-auto px-4 relative z-20">
                 <div class="fyndsol-badge items-center gap-2">
                     <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                    <span class="text-xs md:text-sm tracking-widest font-bold">LET'S BUILD TOGETHER</span>
+                    <span class="text-lg md:text-lg tracking-widest font-bold">LET'S BUILD TOGETHER</span>
                 </div>
 
                 <h2 class="text-3xl md:text-5xl lg:text-7xl mb-6 leading-tight">
@@ -1361,7 +1365,7 @@
 
                     <div class="lg:col-span-2">
                         <h3 class="text-xl font-bold mb-6">Empowering Businesses with FyndSol</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-8 max-w-md">
+                        <p class="text-gray-400 text-lg leading-relaxed mb-8 max-w-md">
                             At FyndSol Consultancy, we blend strategy, execution, and technology to help organizations
                             transform, scale, and achieve measurable growth.
                         </p>
@@ -1375,7 +1379,7 @@
 
                     <div>
                         <h4 class="text-lg font-bold mb-6">Quick Links</h4>
-                        <ul class="space-y-3 text-sm text-gray-400">
+                        <ul class="space-y-3 text-lg text-gray-400">
                             <li><a href="about.html" class="hover:text-blue-400 transition-colors">About Us</a></li>
                             <li><a href="project-management.html"
                                     class="hover:text-blue-400 transition-colors">Services</a></li>
@@ -1390,11 +1394,11 @@
 
                     <div>
                         <h4 class="text-lg font-bold mb-6">Get In Touch</h4>
-                        <p class="text-sm text-gray-400 mb-6">
+                        <p class="text-lg text-gray-400 mb-6">
                             Ready to transform and scale your business with FyndSol Consultancy?
                         </p>
                         <a href="contact.html"
-                            class="inline-flex items-center bg-white text-black text-xs font-bold px-6 py-3 rounded hover:bg-blue-600 hover:text-white transition-all">
+                            class="inline-flex items-center bg-white text-black text-lg font-bold px-6 py-3 rounded hover:bg-blue-600 hover:text-white transition-all">
                             Let's Connect <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                         <div class="flex gap-5 mt-8 items-center">
