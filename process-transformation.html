@@ -51,15 +51,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
  
 
-
-  <style>
-    :root {
-
+<style>
+  :root {
       --fyndsol-primary: #002A61;
       --fyndsol-accent: #ff4500;
     }
-
-
 
     body {
       font-family: 'Montserrat', sans-serif;
@@ -131,7 +127,152 @@
     .text-fyndsol-primary {
       color: var(--fyndsol-primary);
     }
+
+    .is-active .line-1 { transform: translateY(7px) rotate(45deg); }
+    .is-active .line-2 { opacity: 0; transform: translateX(-10px); }
+    .is-active .line-3 { transform: translateY(-7px) rotate(-45deg); }
+
+    .overlay-active { opacity: 1 !important; pointer-events: auto !important; }
+    .drawer-active { transform: translateX(0) !important; }
+    .chevron-rotate { transform: rotate(90deg); }
+    body.no-scroll { overflow: hidden; }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-on-scroll {
+      opacity: 0;
+      animation: fadeInUp 0.8s ease-out forwards;
+      animation-play-state: paused;
+    }
+
+    .animate-on-scroll[style*="animation-delay"] {
+      animation-delay: var(--delay, 0.3s);
+    }
+
+    .bg-white .flex.items-center.gap-4 {
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .bg-white .flex.items-center.gap-4:hover {
+      background: #1e88e5;
+      color: white;
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(30, 136, 229, 0.3);
+    }
+
+    .bg-white .flex.items-center.gap-4:hover p,
+    .bg-white .flex.items-center.gap-4:hover i {
+      color: white;
+    }
+
+    .bg-white .flex.items-center.gap-4 div {
+      transition: background 0.3s ease-in-out;
+    }
+
+    .bg-white .flex.items-center.gap-4:hover div {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .bg-white .flex.items-center.gap-4.active-sidebar {
+      background: #002A61;
+      color: white;
+      box-shadow: 0 8px 20px rgba(0, 42, 97, 0.3);
+    }
+
+    .bg-white .flex.items-center.gap-4.active-sidebar p,
+    .bg-white .flex.items-center.gap-4.active-sidebar i {
+      color: white;
+    }
+
+    .bg-white .flex.items-center.gap-4.active-sidebar div {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .reveal-fade-up,
+    .reveal-from-left,
+    .reveal-from-right {
+      opacity: 0;
+      transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: transform, opacity;
+    }
+
+    .reveal-fade-up { transform: translateY(40px); }
+    .reveal-from-left { transform: translateX(-60px); }
+    .reveal-from-right { transform: translateX(60px); }
+
+    .is-visible {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+
+    .expertise-item {
+      padding: 24px 0;
+      border-bottom: 1px solid #F1F4F9;
+      cursor: pointer;
+    }
+
+    .expertise-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #002A61;
+      margin: 0;
+    }
+
+    .expertise-body {
+      max-height: 0;
+      overflow: hidden;
+      font-size: 0.9rem;
+      color: #64748b;
+      line-height: 1.6;
+      transition: all 0.5s ease;
+    }
+
+    .expertise-item.active .expertise-title {
+      color: #007BFF;
+    }
+
+    .expertise-item.active .expertise-body {
+      max-height: 100px;
+      margin-top: 10px;
+    }
+
+    .expert-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transform: scale(1.08);
+      transition: opacity 0.8s ease, transform 1s ease;
+    }
+
+    .expert-img.active {
+      opacity: 1;
+      transform: scale(1);
+      z-index: 10;
+    }
+
+    @media (max-width: 1024px) {
+      .bg-white .flex.items-center.gap-4 { transform: none !important; }
+      .reveal-from-left,
+      .reveal-from-right { transform: translateY(30px); }
+      .expertise-body { max-height: 250px !important; }
+    }
+
+    @media (max-width: 768px) {
+      .sticky { position: relative !important; top: auto !important; }
+      .bg-white.p-6 { padding: 1.25rem; }
+      .tab-item { padding: 0.9rem !important; }
+      .tab-item:hover { transform: none !important; }
+      .tab-item p { font-size: 0.95rem; line-height: 1.3; }
+    }
   </style>
+
 </head>
 
 <body class="bg-gray-50">
@@ -225,7 +366,7 @@
                                     <a href="./process-transformation.html"
                                         class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
                                         <span
-                                            class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Process
+                                            class="  block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Process
                                             Transformation</span>
                                     </a>
                                 </div>
@@ -295,7 +436,6 @@
                         </div>
                     </div>
 
-                <!-- <a href="./industries.html" class="hover:text-[#002A61] transition">Industries</a> -->
                 <a href="./ai-adoption.html" class="hover:text-[#002A61] transition">AI Adoption</a>
                 
                 <div class="mt-4">
@@ -304,7 +444,7 @@
                     </a>
                 </div>
             
-             <div class="pt-20 text-center border-t border-gray-100">
+             <div class="pt-10 text-center border-t border-gray-100">
     <img src="./images/fyndsol_logo2.png" alt="Fyndsol" class="h-16 mx-auto opacity-50 grayscale mb-15">
     <p class="text-xs text-gray-400 font-medium">© 2025 Fyndsol. All Rights Reserved.</p>
 </div>
@@ -312,18 +452,7 @@
         </div>
     </div>
 
-    <style>
-        /* Hamburger Morphing Animation */
-        .is-active .line-1 { transform: translateY(7px) rotate(45deg); }
-        .is-active .line-2 { opacity: 0; transform: translateX(-10px); }
-        .is-active .line-3 { transform: translateY(-7px) rotate(-45deg); }
-
-        /* Animation Helpers */
-        .overlay-active { opacity: 1 !important; pointer-events: auto !important; }
-        .drawer-active { transform: translateX(0) !important; }
-        .chevron-rotate { transform: rotate(90deg); }
-        body.no-scroll { overflow: hidden; }
-    </style>
+    
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -362,7 +491,6 @@
             });
         
         
-            // 3. Dynamic Active Highlighting (Only highlights the link for the current page)
             const allLinks = document.querySelectorAll('.nav-link, .mobile-link');
             allLinks.forEach(link => {
                 const href = link.getAttribute('href');
@@ -372,6 +500,7 @@
                     link.classList.add(link.classList.contains('nav-link') ? 'nav-active' : 'mobile-active');
                 }
             });
+            
         });
     </script>
 </header>
@@ -380,14 +509,7 @@
 
   <!-- MAIN CONTENT -->
   <main>
-    <!-- <section class="relative bg-cover bg-center pt-16 pb-12 md:pt-20 md:pb-16"
-            style="background-image: linear-gradient(rgba(0, 42, 97, 0.92), rgba(0, 42, 97, 0.88)), url('./images/financial\ trans.png');">
-             <div class="absolute inset-0 bg-black/40"></div>
-          
-        </section> -->
-
-    <!-- ================= HERO SECTION ================= -->
-    <section class="relative bg-cover bg-center pt-16 pb-16"
+     <section class="relative bg-cover bg-center pt-16 pb-16"
       style="background-image: linear-gradient(rgba(0, 42, 97, 0.92), rgba(0, 42, 97, 0.88)), url('./images/process-trans.png');">
       <div class="container mx-auto px-4 md:px-6 text-center text-white h-full flex items-center">
         <div class="w-full max-w-5xl mx-auto">
@@ -406,53 +528,24 @@
       </div>
     </section>
 
-    <!-- ================= ANIMATION STYLES ================= -->
-    <style>
-      /* Fade Up Animation */
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
+    
 
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .animate-on-scroll {
-        opacity: 0;
-        animation: fadeInUp 0.8s ease-out forwards;
-        animation-play-state: paused;
-        /* start paused, triggered by JS */
-      }
-
-      /* Allow animation delay from inline styles */
-      .animate-on-scroll[style*="animation-delay"] {
-        animation-delay: var(--delay, 0.3s);
-      }
-    </style>
-
-    <!-- ================= SCROLL TRIGGER SCRIPT ================= -->
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
-              // preserve inline animation-delay
               const delay = entry.target.style.animationDelay;
               if (delay) {
                 entry.target.style.setProperty('--delay', delay);
               }
-              // trigger animation
+
               entry.target.style.animationPlayState = 'running';
               observer.unobserve(entry.target);
             }
           });
         }, { threshold: 0.1 });
 
-        // Observe all animate-on-scroll elements
         document.querySelectorAll('.animate-on-scroll').forEach(el => {
           observer.observe(el);
         });
@@ -472,10 +565,7 @@
     <!--  -->
 
 
-    <!-- <div class="container-custom py-16">
-            <div class="grid lg:grid-cols-4 gap-8">
-                Sidebar -->
-
+   
     
                 <section class="py-16 bg-gray-50">
       <div class="max-w-[1087px] mx-auto px-4">
@@ -520,35 +610,11 @@
   </div>
 </div>
 
-<style>
-@media (max-width: 768px) {
-  .sticky {
-    position: relative !important;
-    top: auto !important;
-  }
 
-  .bg-white.p-6 {
-    padding: 1.25rem;
-  }
-
-  .tab-item {
-    padding: 0.9rem !important;
-  }
-
-  .tab-item:hover {
-    transform: none !important;
-  }
-
-  .tab-item p {
-    font-size: 0.95rem;
-    line-height: 1.3;
-  }
-}
-</style>
 
           <!-- RIGHT SIDE CONTENT -->
          <div class="bg-white border rounded-2xl p-6 shadow-lg animate-on-scroll">
-  <!-- Tab Contents -->
+ 
   <h2 class="text-2xl font-bold text-fyndsol-primary mb-4 px-2 mt-2 animate-on-scroll"
     style="animation-delay: 0.1s;">
     Process Transformation
@@ -585,86 +651,10 @@
       </div>
     </section>
 
-    <!-- ================= STYLES ================= -->
-    <style>
-      /* ANIMATION */
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
+   
 
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .animate-on-scroll {
-        opacity: 0;
-        animation: fadeInUp 0.8s ease-out forwards;
-        animation-play-state: paused;
-      }
-
-      .animate-on-scroll[style*="animation-delay"] {
-        animation-delay: var(--delay, 0.3s);
-      }
-
-      /* SIDEBAR HOVER & ACTIVE */
-      .bg-white .flex.items-center.gap-4 {
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-      }
-
-      .bg-white .flex.items-center.gap-4:hover {
-        background: #1e88e5;
-        /* hover color */
-        color: white;
-        transform: scale(1.05);
-        box-shadow: 0 8px 20px rgba(30, 136, 229, 0.3);
-      }
-
-      .bg-white .flex.items-center.gap-4:hover p,
-      .bg-white .flex.items-center.gap-4:hover i {
-        color: white;
-      }
-
-      .bg-white .flex.items-center.gap-4 div {
-        transition: background 0.3s ease-in-out;
-      }
-
-      .bg-white .flex.items-center.gap-4:hover div {
-        background: rgba(255, 255, 255, 0.2);
-      }
-
-      /* ACTIVE TAB COLOR */
-      .bg-white .flex.items-center.gap-4.active-sidebar {
-        background: #002A61;
-        /* active color */
-        color: white;
-        box-shadow: 0 8px 20px rgba(0, 42, 97, 0.3);
-      }
-
-      .bg-white .flex.items-center.gap-4.active-sidebar p,
-      .bg-white .flex.items-center.gap-4.active-sidebar i {
-        color: white;
-      }
-
-      .bg-white .flex.items-center.gap-4.active-sidebar div {
-        background: rgba(255, 255, 255, 0.2);
-      }
-
-      /* RESPONSIVE */
-      @media (max-width:1024px) {
-        .bg-white .flex.items-center.gap-4 {
-          transform: none !important;
-        }
-      }
-    </style>
-
-    <!-- ================= SCRIPT ================= -->
     <script>
-      // SCROLL REVEAL
+   
       document.addEventListener('DOMContentLoaded', function () {
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
@@ -678,20 +668,20 @@
         }, { threshold: 0.1 });
         document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
 
-        // TAB FUNCTIONALITY
+      
         const tabs = document.querySelectorAll('.tab-item');
         const contents = document.querySelectorAll('.tab-content');
 
         tabs.forEach(tab => {
           tab.addEventListener('click', () => {
-            // remove active
+         
             tabs.forEach(t => t.classList.remove('active-sidebar'));
             tab.classList.add('active-sidebar');
 
-            // hide all
+           
             contents.forEach(c => c.style.display = 'none');
 
-            // show target
+          
             const target = tab.dataset.target;
             const el = document.getElementById(target);
             if (el) {
@@ -702,125 +692,7 @@
         });
       });
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <style>
-     
-      /* FONT */
-      .font-sans {
-        font-family: 'montserrat', sans-serif;
-      }
-
-      /* --- SCROLL REVEAL ANIMATIONS --- */
-      .reveal-fade-up,
-      .reveal-from-left,
-      .reveal-from-right {
-        opacity: 0;
-        transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
-        will-change: transform, opacity;
-      }
-
-      .reveal-fade-up {
-        transform: translateY(40px);
-      }
-
-      .reveal-from-left {
-        transform: translateX(-60px);
-      }
-
-      .reveal-from-right {
-        transform: translateX(60px);
-      }
-
-      .is-visible {
-        opacity: 1;
-        transform: translate(0, 0);
-      }
-
-      /* --- ACCORDION --- */
-      .expertise-item {
-        padding: 24px 0;
-        border-bottom: 1px solid #F1F4F9;
-        cursor: pointer;
-      }
-
-      .expertise-title {
-        font-size: 1.05rem;
-        font-weight: 700;
-        color: #002A61;
-        margin: 0;
-      }
-
-      .expertise-body {
-        max-height: 0;
-        overflow: hidden;
-        font-size: 0.9rem;
-        color: #64748b;
-        line-height: 1.6;
-        transition: all 0.5s ease;
-      }
-
-      .expertise-item.active .expertise-title {
-        color: #007BFF;
-      }
-
-      .expertise-item.active .expertise-body {
-        max-height: 100px;
-        margin-top: 10px;
-      }
-
-      /* --- IMAGE SYSTEM --- */
-      .expert-img {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0;
-        transform: scale(1.08);
-        transition: opacity 0.8s ease, transform 1s ease;
-      }
-
-      .expert-img.active {
-        opacity: 1;
-        transform: scale(1);
-        z-index: 10;
-      }
-
-      /* --- RESPONSIVE --- */
-      @media (max-width: 1024px) {
-
-        .reveal-from-left,
-        .reveal-from-right {
-          transform: translateY(30px);
-        }
-
-        .expertise-body {
-          max-height: 250px !important;
-        }
-      }
-    </style>
+   
 
 
     <section class="py-24 bg-white font-sans overflow-x-hidden">
@@ -851,7 +723,6 @@
   <!-- LEFT -->
   <div class="flex flex-col reveal-from-left" id="leftColumn">
 
-    <!-- Item 1 -->
     <div class="expertise-item active" onclick="switchTab(this,'img1')">
       <h3 class="expertise-title">Process Design</h3>
       <div class="expertise-body">
@@ -861,7 +732,6 @@
       </div>
     </div>
 
-    <!-- Item 2 -->
     <div class="expertise-item" onclick="switchTab(this,'img2')">
       <h3 class="expertise-title">Process Re-engineering</h3>
       <div class="expertise-body">
@@ -870,7 +740,6 @@
       </div>
     </div>
 
-    <!-- Item 3 -->
     <div class="expertise-item" onclick="switchTab(this,'img3')">
       <h3 class="expertise-title">Process Transformation</h3>
       <div class="expertise-body">
@@ -899,7 +768,6 @@
     </section>
 
     <script>
-      // TAB SWITCH
       function switchTab(element, imgId) {
         document.querySelectorAll('.expertise-item').forEach(item => item.classList.remove('active'));
         element.classList.add('active');
@@ -910,7 +778,6 @@
         syncHeights();
       }
 
-      // SCROLL REVEAL
       document.addEventListener('DOMContentLoaded', () => {
         const els = document.querySelectorAll('.reveal-fade-up, .reveal-from-left, .reveal-from-right');
 
@@ -928,8 +795,7 @@
         syncHeights();
       });
 
-      // HEIGHT SYNC (ONLY ADDITION)
-      function syncHeights() {
+       function syncHeights() {
         const left = document.getElementById('leftColumn');
         const right = document.getElementById('imageBox');
 
@@ -958,6 +824,8 @@
                         <div class="text-[11px] text-gray-500 space-y-1">
                             <p>FyndSol Consulting LLP.</p>
                             <p>Registered Office City: Mumbai</p>
+                             <p>GST No: 27AAKFF5176A1ZI</p>
+              
                         </div>
                     </div>
 
@@ -967,12 +835,10 @@
                             <li><a href="about.html" class="hover:text-blue-400 transition-colors">About Us</a></li>
                             <li><a href="project-management.html"
                                     class="hover:text-blue-400 transition-colors">Services</a></li>
-                            <!-- <li><a href="#" class="hover:text-blue-400 transition-colors">Industries</a></li> -->
-                            <li><a href="ai-adoption.html" class="hover:text-blue-400 transition-colors">AI Adoption</a>
+                           <li><a href="ai-adoption.html" class="hover:text-blue-400 transition-colors">AI Adoption</a>
                             </li>
                             <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact Us</a></li>
-                            <!-- <li><a href="privacy-policy.html" class="hover:text-blue-400 transition-colors">Privacy -->
-                                    <!-- Policy</a></li> -->
+                            
                         </ul>
                     </div>
 
@@ -985,28 +851,25 @@
                             class="inline-flex items-center bg-white text-black text-xs font-bold px-6 py-3 rounded hover:bg-blue-600 hover:text-white transition-all">
                             Let's Connect <i class="fas fa-arrow-right ml-2"></i>
                         </a>
-                        <div class="flex gap-5 mt-8 items-center">
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fab fa-linkedin text-xl"></i></a>
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fab fa-twitter text-xl"></i></a>
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fab fa-facebook text-xl"></i></a>
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fas fa-envelope text-xl"></i></a>
-                        </div>
+                       <div class="flex gap-5 mt-8 items-center">
+                        <a href="https://www.linkedin.com/company/fyndsol" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                                class="fab fa-linkedin text-xl"></i></a>
+                        <a href="https://x.com/" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                                class="fab fa-twitter text-xl"></i></a>
+                        <a href="https://www.facebook.com/" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                                class="fab fa-facebook text-xl"></i></a>
+                      <a href="mailto:vivek_m@fyndsol.com?cc=sainath_g@fyndsol.com&subject=Inquiry%20from%20FyndSol%20Website" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1">
+    <i class="fas fa-envelope text-xl"></i>
+</a>
                     </div>
                 </div>
-
-                <div class="pt-8 text-center text-[10px] md:text-xs text-gray-600 uppercase tracking-widest">
-                    &copy; 2025 FyndSol Consulting LLP. All rights reserved.
-                </div>
             </div>
-        </footer>
+
+            <div class="pt-8 text-center text-[10px] md:text-xs text-gray-600 uppercase tracking-widest">
+                &copy; 2025 FyndSol Consulting LLP. All rights reserved. Developed by FyndSol Consulting LLP.
+            </div>
+        </div>
+    </footer>
 
 
     <script>

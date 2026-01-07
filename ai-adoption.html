@@ -1,351 +1,535 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Adoption Services | FyndSol Consulting LLP</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Adoption Services | FyndSol Consulting LLP</title>
 
-    <meta name="description"
-        content="FyndSol Consulting helps businesses adopt AI to optimize processes, automate workflows, and leverage intelligent insights for scalable growth and innovation.">
+  <meta name="description"
+    content="FyndSol Consulting helps businesses adopt AI to optimize processes, automate workflows, and leverage intelligent insights for scalable growth and innovation.">
 
-    <meta name="keywords"
-        content="AI adoption, AI consulting services, AI integration, business process automation, intelligent automation, AI-driven decision making, FyndSol Consulting">
+  <meta name="keywords"
+    content="AI adoption, AI consulting services, AI integration, business process automation, intelligent automation, AI-driven decision making, FyndSol Consulting">
 
-    <meta name="author" content="FyndSol Consulting LLP">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#002A61">
+  <meta name="author" content="FyndSol Consulting LLP">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#002A61">
 
-    <link rel="canonical" href="https://www.fyndsol.com/ai-adoption.html">
+  <link rel="canonical" href="https://www.fyndsol.com/ai-adoption.html">
 
-    <meta property="og:title" content="AI Adoption Services | FyndSol Consulting">
-    <meta property="og:description"
-        content="Embrace AI to transform business processes, automate workflows, and make smarter decisions with FyndSol Consulting.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.fyndsol.com/ai-adoption.html">
-    <meta property="og:image" content="https://www.fyndsol.com/images/ai-adoption-og.png">
+  <meta property="og:title" content="AI Adoption Services | FyndSol Consulting">
+  <meta property="og:description"
+    content="Embrace AI to transform business processes, automate workflows, and make smarter decisions with FyndSol Consulting.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.fyndsol.com/ai-adoption.html">
+  <meta property="og:image" content="https://www.fyndsol.com/images/ai-adoption-og.png">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="AI Adoption Services | FyndSol Consulting">
-    <meta name="twitter:description"
-        content="Leverage AI to optimize operations, automate workflows, and drive business growth with FyndSol Consulting.">
-    <meta name="twitter:image" content="https://www.fyndsol.com/images/ai-adoption-og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Adoption Services | FyndSol Consulting">
+  <meta name="twitter:description"
+    content="Leverage AI to optimize operations, automate workflows, and drive business growth with FyndSol Consulting.">
+  <meta name="twitter:image" content="https://www.fyndsol.com/images/ai-adoption-og.png">
 
-    <link rel="icon" href="./images/fyndsol_logo2.png" type="image/png" sizes="32x32">
-    <link rel="icon" href="./images/fyndsol_logo2.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="./images/fyndsol_logo2.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="./images/fyndsol_logo2.png" type="image/png" sizes="16x16">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-<style>
-        :root {
-          --primary-color: #002A61;
-            --secondary-color: #0949a9;
-            --light-color: #F5F7FA;
-            --dark-color: #1A1A1A;
-            --fyndsol-gray: #f4f6f8;
-            --fyndsol-accent: #ff4500;
-            --fyndsol-pink: #cd3c85;
-        }
+  <style>
+    :root {
+      --primary-color: #002A61;
+      --secondary-color: #0949a9;
+      --light-color: #F5F7FA;
+      --dark-color: #1A1A1A;
+      --fyndsol-gray: #f4f6f8;
+      --fyndsol-accent: #ff4500;
+      --fyndsol-pink: #cd3c85
+    }
 
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: #333;
-            background-color: #fff;
-            overflow-x: hidden;
-            line-height: 1.6;
-        }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+      background: #fff;
+      overflow-x: hidden;
+      line-height: 1.6
+    }
 
-        .container-custom {
-            max-width: 1080px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
+    .container-custom {
+      max-width: 1080px;
+      margin: auto;
+      padding: 0 1rem
+    }
 
-         .container-custom1 {
-            max-width: 1270px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
+    .container-custom1 {
+      max-width: 1270px;
+      margin: auto;
+      padding: 0 1rem
+    }
 
-        .hero-inner {
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
+    .hero-inner {
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative
+    }
 
-    .text-fyndsol-primary { color: var(--primary-color); }
-    .text-fyndsol-secondary { color: var(--secondary-color); }
+    .text-fyndsol-primary {
+      color: var(--primary-color)
+    }
 
+    .text-fyndsol-secondary {
+      color: var(--secondary-color)
+    }
 
-        /* .search-box { border-radius: 4px; } */
-    </style>
+    .is-active .line-1 {
+      transform: translateY(7px) rotate(45deg)
+    }
+
+    .is-active .line-2 {
+      opacity: 0;
+      transform: translateX(-10px)
+    }
+
+    .is-active .line-3 {
+      transform: translateY(-7px) rotate(-45deg)
+    }
+
+    .overlay-active {
+      opacity: 1 !important;
+      pointer-events: auto !important
+    }
+
+    .drawer-active {
+      transform: translateX(0) !important
+    }
+
+    .chevron-rotate {
+      transform: rotate(90deg)
+    }
+
+    body.overflow-hidden {
+      overflow: hidden
+    }
+
+    .nav-link {
+      position: relative;
+      transition: color .3s ease
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      height: 2px;
+      background: #002A61
+    }
+
+    .nav-link:hover {
+      color: #002A61
+    }
+
+    .nav-active {
+      color: #002A61 !important;
+      font-weight: 600 !important
+    }
+
+    .nav-active::after {
+      display: none !important
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    .animate-on-scroll {
+      opacity: 0;
+      animation: fadeInUp .8s ease-out forwards;
+      animation-play-state: paused
+    }
+
+    .animate-on-scroll[style*="animation-delay"] {
+      animation-delay: var(--delay, .3s)
+    }
+
+    .bg-white .flex.items-center.gap-4 {
+      transition: .3s;
+      cursor: pointer
+    }
+
+    .bg-white .flex.items-center.gap-4:hover {
+      background: #1e88e5;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(30, 136, 229, .3)
+    }
+
+    .bg-white .flex.items-center.gap-4:hover p,
+    .bg-white .flex.items-center.gap-4:hover i {
+      color: #fff
+    }
+
+    .bg-white .flex.items-center.gap-4 div {
+      transition: background .3s
+    }
+
+    .bg-white .flex.items-center.gap-4:hover div {
+      background: rgba(255, 255, 255, .2)
+    }
+
+    .bg-white .flex.items-center.gap-4.active-sidebar {
+      background: #002A61;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(0, 42, 97, .3)
+    }
+
+    .bg-white .flex.items-center.gap-4.active-sidebar p,
+    .bg-white .flex.items-center.gap-4.active-sidebar i {
+      color: #fff
+    }
+
+    .bg-white .flex.items-center.gap-4.active-sidebar div {
+      background: rgba(255, 255, 255, .2)
+    }
+
+    @media (max-width:1024px) {
+      .bg-white .flex.items-center.gap-4 {
+        transform: none !important
+      }
+    }
+
+    .font-sans {
+      font-family: 'Montserrat', sans-serif
+    }
+
+    .reveal-fade-up,
+    .reveal-from-left,
+    .reveal-from-right {
+      opacity: 0;
+      transition: all 1.2s cubic-bezier(.22, 1, .36, 1);
+      will-change: transform, opacity
+    }
+
+    .reveal-fade-up {
+      transform: translateY(40px)
+    }
+
+    .reveal-from-left {
+      transform: translateX(-60px)
+    }
+
+    .reveal-from-right {
+      transform: translateX(60px)
+    }
+
+    .is-visible {
+      opacity: 1;
+      transform: translate(0)
+    }
+
+    .expertise-item {
+      padding: 24px 0;
+      border-bottom: 1px solid #F1F4F9;
+      cursor: pointer
+    }
+
+    .expertise-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #002A61
+    }
+
+    .expertise-body {
+      max-height: 0;
+      overflow: hidden;
+      font-size: .9rem;
+      color: #64748b;
+      line-height: 1.6;
+      transition: all .5s ease
+    }
+
+    .expertise-item.active .expertise-title {
+      color: #007BFF
+    }
+
+    .expertise-item.active .expertise-body {
+      max-height: 100px;
+      margin-top: 10px
+    }
+
+    .expert-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transform: scale(1.08);
+      transition: opacity .8s ease, transform 1s ease
+    }
+
+    .expert-img.active {
+      opacity: 1;
+      transform: scale(1);
+      z-index: 10
+    }
+
+    @media (max-width:1024px) {
+
+      .reveal-from-left,
+      .reveal-from-right {
+        transform: translateY(30px)
+      }
+
+      .expertise-body {
+        max-height: 250px !important
+      }
+    }
+  </style>
 </head>
+
 <body class="bg-gray-50">
 
-    <!-- HEADER -->
+  <!-- HEADER -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-<header class="bg-white sticky top-0 z-50 shadow-sm w-full">
+  <header class="bg-white sticky top-0 z-50 shadow-sm w-full">
     <div class="border-b border-gray-100">
-        <nav class="container-custom1 flex justify-between items-center py-4 px-4 md:px-6 m-w-[1080px]">
-           <a href="index.html" class="flex items-center gap-2">
-        <img src="./logo1.png" alt="Fyndsol Logo" class="h-10 sm:h-12 md:h-14 w-auto object-contain transition-all duration-300">
-        <span class="hidden md:block text-sm text-gray-400 font-semibold border-l pl-2 ml-2 border-gray-300">
-          We Build Trust!
-        </span>
-      </a>
+      <nav class="container-custom1 flex justify-between items-center py-4 px-4 md:px-6 m-w-[1080px]">
+        <a href="index.html" class="flex items-center gap-2">
+          <img src="./logo1.png" alt="Fyndsol Logo"
+            class="h-10 sm:h-12 md:h-14 w-auto object-contain transition-all duration-300">
+          <span class="hidden md:block text-sm text-gray-400 font-semibold border-l pl-2 ml-2 border-gray-300">
+            We Build Trust!
+          </span>
+        </a>
 
-            <div class="hidden lg:flex items-center gap-8 text-base font-normal text-black-500">
-                <a href="about.html" class="nav-link relative py-1 transition-colors duration-300">About Us</a>
+        <div class="hidden lg:flex items-center gap-8 text-base font-normal text-black-500">
+          <a href="about.html" class="nav-link relative py-1 transition-colors duration-300">About Us</a>
 
-                 <div class="relative group py-4">
-                        <div
-                            class="services-trigger flex items-center gap-1.5 cursor-pointer hover:text-[#002A61] transition-colors duration-300">
-                            <span>Focus Areas</span>
-                            <i
-                                class="fas fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
-                        </div>
-
-                        <div
-                            class="absolute top-full left-1/2 -translate-x-1/2 w-72 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
-                            <div class="bg-white shadow-xl border border-gray-100 rounded-lg overflow-hidden">
-                                <div class="py-1">
-                                    <a href="New-Initiatives.html"
-                                        class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                        <span
-                                            class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">New
-                                            Initiatives</span>
-                                    </a>
-                                    <a href="tech-consulting.html"
-                                        class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                        <span
-                                            class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Technology
-                                            Consulting</span>
-                                    </a>
-                                    <a href="process-improvement.html"
-                                        class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                        <span
-                                            class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Process
-                                            Improvement</span>
-                                    </a>
-                                    <a href="turnaround.html"
-                                        class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                        <span
-                                            class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Turnaround</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- services -->
-                    <div class="relative group py-4">
-                    <div id="services-parent" class="services-trigger flex items-center gap-1.5 cursor-pointer hover:text-[#002A61] transition-colors duration-300">
-                        <span>Services</span>
-                        <i class="fas fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
-                    </div>
-
-                    <div class="absolute top-full left-1/2 -translate-x-1/2 w-72 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
-                        <div class="bg-white shadow-xl border border-gray-100 rounded-lg overflow-hidden">
-                            <div class="py-1">
-                                <a href="project-management.html" class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                    <span class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Project Management</span>
-                                </a>
-                                <a href="finance-transformation.html" class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                    <span class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Finance Transformation</span>
-                                </a>
-                                <a href="tech-transformation.html" class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                    <span class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Technology Transformation</span>
-                                </a>
-                                <a href="process-transformation.html" class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                    <span class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Process Transformation</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <a href="industries.html" class="nav-link relative py-2 transition-colors duration-300">Industries</a> -->
-                <a href="ai-adoption.html" class="nav-link relative py-2 transition-colors duration-300">AI Adoption</a>
-                <a href="contact.html" class="nav-link relative py-2 transition-colors duration-300">Contact Us</a>
+          <div class="relative group py-4">
+            <div
+              class="services-trigger flex items-center gap-1.5 cursor-pointer hover:text-[#002A61] transition-colors duration-300">
+              <span>Focus Areas</span>
+              <i class="fas fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
             </div>
 
-            <button id="menu-toggle" class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-[60]" aria-label="Toggle Menu">
-                <span class="line-1 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
-                <span class="line-2 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
-                <span class="line-3 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
-            </button>
-        </nav>
+            <div
+              class="absolute top-full left-1/2 -translate-x-1/2 w-72 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
+              <div class="bg-white shadow-xl border border-gray-100 rounded-lg overflow-hidden">
+                <div class="py-1">
+                  <a href="New-Initiatives.html"
+                    class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
+                    <span class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">New
+                      Initiatives</span>
+                  </a>
+                  <a href="tech-consulting.html"
+                    class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
+                    <span class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Technology
+                      Consulting</span>
+                  </a>
+                  <a href="process-improvement.html"
+                    class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
+                    <span class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Process
+                      Improvement</span>
+                  </a>
+                  <a href="turnaround.html"
+                    class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
+                    <span
+                      class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Turnaround</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- services -->
+          <div class="relative group py-4">
+            <div id="services-parent"
+              class="services-trigger flex items-center gap-1.5 cursor-pointer hover:text-[#002A61] transition-colors duration-300">
+              <span>Services</span>
+              <i class="fas fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
+            </div>
+
+            <div
+              class="absolute top-full left-1/2 -translate-x-1/2 w-72 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
+              <div class="bg-white shadow-xl border border-gray-100 rounded-lg overflow-hidden">
+                <div class="py-1">
+                  <a href="project-management.html"
+                    class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
+                    <span class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Project
+                      Management</span>
+                  </a>
+                  <a href="finance-transformation.html"
+                    class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
+                    <span class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Finance
+                      Transformation</span>
+                  </a>
+                  <a href="tech-transformation.html"
+                    class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
+                    <span class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Technology
+                      Transformation</span>
+                  </a>
+                  <a href="process-transformation.html"
+                    class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
+                    <span class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Process
+                      Transformation</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <a href="industries.html" class="nav-link relative py-2 transition-colors duration-300">Industries</a> -->
+          <a href="ai-adoption.html" class="nav-link nav-active relative py-2 transition-colors duration-300">AI Adoption</a>
+          <a href="contact.html" class="nav-link relative py-2 transition-colors duration-300">Contact Us</a>
+        </div>
+
+        <button id="menu-toggle"
+          class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-[60]"
+          aria-label="Toggle Menu">
+          <span class="line-1 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
+          <span class="line-2 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
+          <span class="line-3 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
+        </button>
+      </nav>
     </div>
 
-    <div id="mobile-overlay" class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[55]"></div>
+    <div id="mobile-overlay"
+      class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[55]"></div>
 
-    <div id="mobile-drawer" class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-[58] lg:hidden">
-        <div class="flex flex-col h-full p-8 pt-20">
-            <div class="flex flex-col gap-6 text-lg font-semibold text-gray-800">
-                <a href="index.html" class="hover:text-[#002A61] transition">Home</a>
-                <a href="about.html" class="hover:text-[#002A61] transition">About Us</a>
-                
-                  <!-- key focus -->
-                    <div>
-                        <button id="mobile-focus-toggle"
-                            class="flex items-center justify-between w-full hover:text-[#002A61] transition focus:outline-none">
-                            <span>Focus Areas</span>
-                            <i id="mobile-focus-chevron"
-                                class="fas fa-chevron-right text-sm transition-transform duration-300"></i>
-                        </button>
+    <div id="mobile-drawer"
+      class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-[58] lg:hidden">
+      <div class="flex flex-col h-full p-8 pt-20">
+        <div class="flex flex-col gap-6 text-lg font-semibold text-gray-800">
+          <a href="index.html" class="hover:text-[#002A61] transition">Home</a>
+          <a href="about.html" class="hover:text-[#002A61] transition">About Us</a>
 
-                        <div id="mobile-focus-menu"
-                            class="hidden flex-col mt-4 pl-4 gap-4 border-l-2 border-gray-100 transition-all">
-                            <a href="New-Initiatives.html" class="text-base font-normal text-gray-600">New
-                                Initiatives</a>
-                            <a href="tech-consulting.html" class="text-base font-normal text-gray-600">Technology
-                                Consulting</a>
-                            <a href="process-improvement.html" class="text-base font-normal text-gray-600">Process
-                                Improvement</a>
-                            <a href="turnaround.html" class="text-base font-normal text-gray-600">Turnaround</a>
-                        </div>
-                    </div>
-                
-                <div>
-                    <button id="mobile-services-toggle" class="flex items-center justify-between w-full hover:text-[#002A61] transition focus:outline-none">
-                        <span>Services</span>
-                        <i id="mobile-chevron" class="fas fa-chevron-right text-sm transition-transform duration-300"></i>
-                    </button>
-                    <div id="mobile-services-menu" class="hidden flex-col mt-4 pl-4 gap-4 border-l-2 border-gray-100">
-                        <a href="project-management.html" class="text-base font-normal text-gray-600">Project Management</a>
-                        <a href="finance-transformation.html" class="text-base font-normal text-gray-600">Finance Transformation</a>
-                        <a href="tech-transformation.html" class="text-base font-normal text-gray-600">Tech Transformation</a>
-                        <a href="process-transformation.html" class="text-base font-normal text-gray-600">Process Transformation</a>
-                    </div>
-                </div>
+          <!-- key focus -->
+          <div>
+            <button id="mobile-focus-toggle"
+              class=" flex items-center justify-between w-full hover:text-[#002A61] transition focus:outline-none">
+              <span>Focus Areas</span>
+              <i id="mobile-focus-chevron" class="fas fa-chevron-right text-sm transition-transform duration-300"></i>
+            </button>
 
-                <!-- <a href="industries.html" class="hover:text-[#002A61] transition">Industries</a> -->
-                <a href="ai-adoption.html" class="text-[#002A61] font-bold">AI Adoption</a>
-                
-                <div class="mt-4">
-                    <a href="contact.html" class="block w-full text-center py-4 bg-[#002A61] text-white rounded-xl font-bold shadow-lg active:scale-95 transition-transform">
-                        Get Started
-                    </a>
-                </div>
-            
+            <div id="mobile-focus-menu"
+              class="hidden flex-col mt-4 pl-4 gap-4 border-l-2 border-gray-100 transition-all">
+              <a href="New-Initiatives.html" class="text-base font-normal text-gray-600">New
+                Initiatives</a>
+              <a href="tech-consulting.html" class="text-base font-normal text-gray-600">Technology
+                Consulting</a>
+              <a href="process-improvement.html" class="text-base font-normal text-gray-600">Process
+                Improvement</a>
+              <a href="turnaround.html" class="text-base font-normal text-gray-600">Turnaround</a>
+            </div>
+          </div>
 
-          <div class="pt-20 text-center border-t border-gray-100">
-    <img src="./images/fyndsol_logo2.png" alt="Fyndsol" class="h-16 mx-auto opacity-50 grayscale mb-15">
-    <p class="text-xs text-gray-400 font-medium">© 2025 Fyndsol. All Rights Reserved.</p>
-</div>
+          <div>
+            <button id="mobile-services-toggle"
+              class="flex items-center justify-between w-full hover:text-[#002A61] transition focus:outline-none">
+              <span>Services</span>
+              <i id="mobile-chevron" class="fas fa-chevron-right text-sm transition-transform duration-300"></i>
+            </button>
+            <div id="mobile-services-menu" class="hidden flex-col mt-4 pl-4 gap-4 border-l-2 border-gray-100">
+              <a href="project-management.html" class="text-base font-normal text-gray-600">Project Management</a>
+              <a href="finance-transformation.html" class="text-base font-normal text-gray-600">Finance
+                Transformation</a>
+              <a href="tech-transformation.html" class="text-base font-normal text-gray-600">Tech Transformation</a>
+              <a href="process-transformation.html" class="text-base font-normal text-gray-600">Process
+                Transformation</a>
+            </div>
+          </div>
+
+          <!-- <a href="industries.html" class="hover:text-[#002A61] transition">Industries</a> -->
+          <a href="ai-adoption.html" class="text-[#002A61] font-bold">AI Adoption</a>
+
+          <div class="mt-4">
+            <a href="contact.html"
+              class="block w-full text-center py-4 bg-[#002A61] text-white rounded-xl font-bold shadow-lg active:scale-95 transition-transform">
+              Get Started
+            </a>
+          </div>
+
+
+          <div class="pt-10 text-center border-t border-gray-100">
+            <img src="./images/fyndsol_logo2.png" alt="Fyndsol" class="h-16 mx-auto opacity-50 grayscale mb-15">
+            <p class="text-xs text-gray-400 font-medium">© 2025 Fyndsol. All Rights Reserved.</p>
+          </div>
 
         </div>
+      </div>
     </div>
-    </div>
 
-    <style>
-        /* Hamburger Morph Animation */
-        .is-active .line-1 { transform: translateY(7px) rotate(45deg); }
-        .is-active .line-2 { opacity: 0; transform: translateX(-10px); }
-        .is-active .line-3 { transform: translateY(-7px) rotate(-45deg); }
 
-        /* State Classes */
-        .overlay-active { opacity: 1 !important; pointer-events: auto !important; }
-        .drawer-active { transform: translateX(0) !important; }
-        .chevron-rotate { transform: rotate(90deg); }
-        body.overflow-hidden { overflow: hidden; }
-
-        /* ACTIVE PAGE STYLE: Bold, Primary Color, No Underline */
-      .nav-link {
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-/* Underline exists but never expands */
-.nav-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0;
-  height: 2px;
-  background-color: #002A61;
-}
-
-/* Hover: color change ONLY (no underline) */
-.nav-link:hover {
-  color: #002A61;
-}
-
-/* Active page style */
-.nav-active {
-  color: #002A61 !important;
-  font-weight: 600 !important;
-}
-
-/* Ensure no underline for active */
-.nav-active::after {
-  display: none !important;
-}
-
-    </style>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-               const menuBtn = document.getElementById('menu-toggle');
-            const drawer = document.getElementById('mobile-drawer');
-            const overlay = document.getElementById('mobile-overlay');
+      document.addEventListener('DOMContentLoaded', () => {
+        const menuBtn = document.getElementById('menu-toggle');
+        const drawer = document.getElementById('mobile-drawer');
+        const overlay = document.getElementById('mobile-overlay');
 
-            const focusToggle = document.getElementById('mobile-focus-toggle');
-            const focusMenu = document.getElementById('mobile-focus-menu');
-            const focusChevron = document.getElementById('mobile-focus-chevron');
+        const focusToggle = document.getElementById('mobile-focus-toggle');
+        const focusMenu = document.getElementById('mobile-focus-menu');
+        const focusChevron = document.getElementById('mobile-focus-chevron');
 
-            const servicesToggle = document.getElementById('mobile-services-toggle');
-            const servicesMenu = document.getElementById('mobile-services-menu');
-            const servicesChevron = document.getElementById('mobile-services-chevron');
+        const servicesToggle = document.getElementById('mobile-services-toggle');
+        const servicesMenu = document.getElementById('mobile-services-menu');
+        const servicesChevron = document.getElementById('mobile-services-chevron');
 
-            function toggleMenu() {
-                menuBtn.classList.toggle('is-active');
-                drawer.classList.toggle('drawer-active');
-                overlay.classList.toggle('overlay-active');
-                document.body.classList.toggle('overflow-hidden');
-            }
+        function toggleMenu() {
+          menuBtn.classList.toggle('is-active');
+          drawer.classList.toggle('drawer-active');
+          overlay.classList.toggle('overlay-active');
+          document.body.classList.toggle('overflow-hidden');
+        }
 
-            menuBtn.addEventListener('click', toggleMenu);
-            overlay.addEventListener('click', toggleMenu);
+        menuBtn.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
 
-            focusToggle.addEventListener('click', () => {
-                focusMenu.classList.toggle('hidden');
-                focusMenu.classList.toggle('flex');
-                focusChevron.classList.toggle('chevron-rotate');
-            });
-
-            servicesToggle.addEventListener('click', () => {
-                servicesMenu.classList.toggle('hidden');
-                servicesMenu.classList.toggle('flex');
-                servicesChevron.classList.toggle('chevron-rotate');
-            });
-            const allLinks = document.querySelectorAll('.nav-link, .mobile-link');
-            allLinks.forEach(link => {
-                const href = link.getAttribute('href');
-                if (href && currentPath.includes(href) && href !== "index.html") {
-                    link.classList.add(link.classList.contains('nav-link') ? 'nav-active' : 'mobile-active');
-                } else if (href === "index.html" && (currentPath === "/" || currentPath.endsWith("index.html"))) {
-                    link.classList.add(link.classList.contains('nav-link') ? 'nav-active' : 'mobile-active');
-                }
-            });
+        focusToggle.addEventListener('click', () => {
+          focusMenu.classList.toggle('hidden');
+          focusMenu.classList.toggle('flex');
+          focusChevron.classList.toggle('chevron-rotate');
         });
-    </script>
-</header>
 
-    <!-- MAIN CONTENT -->
-    <main>
-       <section class="relative bg-cover bg-center pt-16 pb-16"
+        servicesToggle.addEventListener('click', () => {
+          servicesMenu.classList.toggle('hidden');
+          servicesMenu.classList.toggle('flex');
+          servicesChevron.classList.toggle('chevron-rotate');
+        });
+        const allLinks = document.querySelectorAll('.nav-link, .mobile-link');
+        allLinks.forEach(link => {
+          const href = link.getAttribute('href');
+          if (href && currentPath.includes(href) && href !== "index.html") {
+            link.classList.add(link.classList.contains('nav-link') ? 'nav-active' : 'mobile-active');
+          } else if (href === "index.html" && (currentPath === "/" || currentPath.endsWith("index.html"))) {
+            link.classList.add(link.classList.contains('nav-link') ? 'nav-active' : 'mobile-active');
+          }
+        });
+      });
+    </script>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="relative bg-cover bg-center pt-16 pb-16"
       style="background-image: linear-gradient(rgba(0, 42, 97, 0.92), rgba(0, 42, 97, 0.88)), url('./images/ai-adoption.png');">
       <div class="container mx-auto px-4 md:px-6 text-center text-white h-full flex items-center">
         <div class="w-full max-w-5xl mx-auto">
@@ -364,53 +548,22 @@
       </div>
     </section>
 
-    <!-- ================= ANIMATION STYLES ================= -->
-    <style>
-      /* Fade Up Animation */
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
 
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .animate-on-scroll {
-        opacity: 0;
-        animation: fadeInUp 0.8s ease-out forwards;
-        animation-play-state: paused;
-        /* start paused, triggered by JS */
-      }
-
-      /* Allow animation delay from inline styles */
-      .animate-on-scroll[style*="animation-delay"] {
-        animation-delay: var(--delay, 0.3s);
-      }
-    </style>
-
-    <!-- ================= SCROLL TRIGGER SCRIPT ================= -->
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
-              // preserve inline animation-delay
               const delay = entry.target.style.animationDelay;
               if (delay) {
                 entry.target.style.setProperty('--delay', delay);
               }
-              // trigger animation
               entry.target.style.animationPlayState = 'running';
               observer.unobserve(entry.target);
             }
           });
         }, { threshold: 0.1 });
 
-        // Observe all animate-on-scroll elements
         document.querySelectorAll('.animate-on-scroll').forEach(el => {
           observer.observe(el);
         });
@@ -434,15 +587,15 @@
             <div class="grid lg:grid-cols-4 gap-8">
                 Sidebar -->
 
-    
-                <section class="py-16 bg-gray-50">
+
+    <section class="py-16 bg-gray-50">
       <div class="max-w-[1087px] mx-auto px-4">
 
- <div class="grid lg:grid-cols-[400px_1fr] gap-6 lg:gap-8 items-stretch">
+        <div class="grid lg:grid-cols-[400px_1fr] gap-6 lg:gap-8 items-stretch">
 
           <!-- LEFT SIDE (SIDEBAR) -->
-         <img src="./images/ai-adoption1.png" alt="AI Adoption Image" class="w-full h-auto rounded-2xl shadow-lg animate-on-scroll"
-              style="animation-delay: 0.1s;">
+          <img src="./images/ai-adoption1.png" alt="AI Adoption Image"
+            class="w-full h-auto rounded-2xl shadow-lg animate-on-scroll" style="animation-delay: 0.1s;">
 
           <!-- RIGHT SIDE CONTENT -->
           <div class="bg-white border rounded-2xl p-6 shadow-lg animate-on-scroll">
@@ -450,11 +603,16 @@
             <h2 class="text-2xl font-bold text-fyndsol-primary mb-4 px-2 mt-2 animate-on-scroll"
               style="animation-delay: 0.1s;">AI Adoption</h2>
             <ul class="space-y-4 text-gray-700 text-sm leading-relaxed list-disc pl-6">
-              <li class="animate-on-scroll" style="animation-delay: 0.2s;">At FyndSol , we believe that the time has come for businesses and organizations to imbibe AI into the business processes for optimized and cost effective output. </li>
-              <li class="animate-on-scroll" style="animation-delay: 0.3s;">AI models analyze financial and operational data to generate accurate forecasts, helping businesses make informed and agile decisions</li>
-              <li class="animate-on-scroll" style="animation-delay: 0.4s;">AI-powered automation streamlines repetitive workflows, reduces manual errors, and improves overall operational efficiency for scalable growth.</li>
-              <li class="animate-on-scroll" style="animation-delay: 0.5s;">Given are few use cases for the utilization of AI in specific business processes of an industry.</li>
-        
+              <li class="animate-on-scroll" style="animation-delay: 0.2s;">At FyndSol , we believe that the time has
+                come for businesses and organizations to imbibe AI into the business processes for optimized and cost
+                effective output. </li>
+              <li class="animate-on-scroll" style="animation-delay: 0.3s;">AI models analyze financial and operational
+                data to generate accurate forecasts, helping businesses make informed and agile decisions</li>
+              <li class="animate-on-scroll" style="animation-delay: 0.4s;">AI-powered automation streamlines repetitive
+                workflows, reduces manual errors, and improves overall operational efficiency for scalable growth.</li>
+              <li class="animate-on-scroll" style="animation-delay: 0.5s;">Given are few use cases for the utilization
+                of AI in specific business processes of an industry.</li>
+
             </ul>
           </div>
 
@@ -465,86 +623,9 @@
       </div>
     </section>
 
-    <!-- ================= STYLES ================= -->
-    <style>
-      /* ANIMATION */
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
 
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
 
-      .animate-on-scroll {
-        opacity: 0;
-        animation: fadeInUp 0.8s ease-out forwards;
-        animation-play-state: paused;
-      }
-
-      .animate-on-scroll[style*="animation-delay"] {
-        animation-delay: var(--delay, 0.3s);
-      }
-
-      /* SIDEBAR HOVER & ACTIVE */
-      .bg-white .flex.items-center.gap-4 {
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-      }
-
-      .bg-white .flex.items-center.gap-4:hover {
-        background: #1e88e5;
-        /* hover color */
-        color: white;
-        transform: scale(1.05);
-        box-shadow: 0 8px 20px rgba(30, 136, 229, 0.3);
-      }
-
-      .bg-white .flex.items-center.gap-4:hover p,
-      .bg-white .flex.items-center.gap-4:hover i {
-        color: white;
-      }
-
-      .bg-white .flex.items-center.gap-4 div {
-        transition: background 0.3s ease-in-out;
-      }
-
-      .bg-white .flex.items-center.gap-4:hover div {
-        background: rgba(255, 255, 255, 0.2);
-      }
-
-      /* ACTIVE TAB COLOR */
-      .bg-white .flex.items-center.gap-4.active-sidebar {
-        background: #002A61;
-        /* active color */
-        color: white;
-        box-shadow: 0 8px 20px rgba(0, 42, 97, 0.3);
-      }
-
-      .bg-white .flex.items-center.gap-4.active-sidebar p,
-      .bg-white .flex.items-center.gap-4.active-sidebar i {
-        color: white;
-      }
-
-      .bg-white .flex.items-center.gap-4.active-sidebar div {
-        background: rgba(255, 255, 255, 0.2);
-      }
-
-      /* RESPONSIVE */
-      @media (max-width:1024px) {
-        .bg-white .flex.items-center.gap-4 {
-          transform: none !important;
-        }
-      }
-    </style>
-
-    <!-- ================= SCRIPT ================= -->
     <script>
-      // SCROLL REVEAL
       document.addEventListener('DOMContentLoaded', function () {
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
@@ -558,20 +639,16 @@
         }, { threshold: 0.1 });
         document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
 
-        // TAB FUNCTIONALITY
         const tabs = document.querySelectorAll('.tab-item');
         const contents = document.querySelectorAll('.tab-content');
 
         tabs.forEach(tab => {
           tab.addEventListener('click', () => {
-            // remove active
             tabs.forEach(t => t.classList.remove('active-sidebar'));
             tab.classList.add('active-sidebar');
 
-            // hide all
             contents.forEach(c => c.style.display = 'none');
 
-            // show target
             const target = tab.dataset.target;
             const el = document.getElementById(target);
             if (el) {
@@ -584,102 +661,7 @@
     </script>
 
 
-    <style>
-     
-      /* FONT */
-      .font-sans {
-        font-family: 'montserrat', sans-serif;
-      }
 
-      /* --- SCROLL REVEAL ANIMATIONS --- */
-      .reveal-fade-up,
-      .reveal-from-left,
-      .reveal-from-right {
-        opacity: 0;
-        transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
-        will-change: transform, opacity;
-      }
-
-      .reveal-fade-up {
-        transform: translateY(40px);
-      }
-
-      .reveal-from-left {
-        transform: translateX(-60px);
-      }
-
-      .reveal-from-right {
-        transform: translateX(60px);
-      }
-
-      .is-visible {
-        opacity: 1;
-        transform: translate(0, 0);
-      }
-
-      /* --- ACCORDION --- */
-      .expertise-item {
-        padding: 24px 0;
-        border-bottom: 1px solid #F1F4F9;
-        cursor: pointer;
-      }
-
-      .expertise-title {
-        font-size: 1.05rem;
-        font-weight: 700;
-        color: #002A61;
-        margin: 0;
-      }
-
-      .expertise-body {
-        max-height: 0;
-        overflow: hidden;
-        font-size: 0.9rem;
-        color: #64748b;
-        line-height: 1.6;
-        transition: all 0.5s ease;
-      }
-
-      .expertise-item.active .expertise-title {
-        color: #007BFF;
-      }
-
-      .expertise-item.active .expertise-body {
-        max-height: 100px;
-        margin-top: 10px;
-      }
-
-      /* --- IMAGE SYSTEM --- */
-      .expert-img {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0;
-        transform: scale(1.08);
-        transition: opacity 0.8s ease, transform 1s ease;
-      }
-
-      .expert-img.active {
-        opacity: 1;
-        transform: scale(1);
-        z-index: 10;
-      }
-
-      /* --- RESPONSIVE --- */
-      @media (max-width: 1024px) {
-
-        .reveal-from-left,
-        .reveal-from-right {
-          transform: translateY(30px);
-        }
-
-        .expertise-body {
-          max-height: 250px !important;
-        }
-      }
-    </style>
 
 
     <section class="py-24 bg-white font-sans overflow-x-hidden">
@@ -687,20 +669,21 @@
       <div class="mx-auto px-6" style="max-width:1080px;">
 
         <!-- Heading -->
-         <div class="mb-16 reveal-fade-up">
-    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-fyndsol-primary leading-[1.15] mb-6">
-        Scalable, Future-Ready <br>
-        <span class="inline-block px-4 py-1 mt-2 bg-[#F0F7FF] text-fyndsol-secondary rounded-2xl border border-[#D0E4FF]">
-            AI Adoption 
-        </span>
-    </h2>
-    
-    <p class="text-sm md:text-base text-gray-500 max-w-2xl leading-relaxed border-l-2 border-[#002A61] pl-5">
-       We bridge the gap between traditional operations and intelligent automation, 
-        leveraging custom LLMs to drive measurable growth and sustainable innovation.
-    </p>
-</div>
-       
+        <div class="mb-16 reveal-fade-up">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-fyndsol-primary leading-[1.15] mb-6">
+            Scalable, Future-Ready <br>
+            <span
+              class="inline-block px-4 py-1 mt-2 bg-[#F0F7FF] text-fyndsol-secondary rounded-2xl border border-[#D0E4FF]">
+              AI Adoption
+            </span>
+          </h2>
+
+          <p class="text-sm md:text-base text-gray-500 max-w-2xl leading-relaxed border-l-2 border-[#002A61] pl-5">
+            We bridge the gap between traditional operations and intelligent automation,
+            leveraging custom LLMs to drive measurable growth and sustainable innovation.
+          </p>
+        </div>
+
 
 
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
@@ -710,14 +693,17 @@
 
             <div class="expertise-item active" onclick="switchTab(this,'img1')">
               <h3 class="expertise-title">Customer Service</h3>
-              <div class="expertise-body"> With set of questions being training set , LLM powered AI bot can answer queries of customers on a particular topic. Example: Product Queries.
-                </div>
+              <div class="expertise-body"> With set of questions being training set , LLM powered AI bot can answer
+                queries of customers on a particular topic. Example: Product Queries.
+              </div>
             </div>
 
             <div class="expertise-item" onclick="switchTab(this,'img2')">
               <h3 class="expertise-title">HR Recruitment</h3>
               <div class="expertise-body">
-              Fit of profiles received for a position can be run through with LLMs or ranking algorithms to shortlist profiles. Concept is a profound ranking of profiles holistically, not only keyword index mappings. </div>
+                Fit of profiles received for a position can be run through with LLMs or ranking algorithms to shortlist
+                profiles. Concept is a profound ranking of profiles holistically, not only keyword index mappings.
+              </div>
             </div>
 
             <div class="expertise-item" onclick="switchTab(this,'img3')">
@@ -729,10 +715,11 @@
             <div class="expertise-item" onclick="switchTab(this,'img4')">
               <h3 class="expertise-title">Learning</h3>
               <div class="expertise-body">
-                Personalized education to students who can learn topics or subjects based on their abilities and interests</div>
+                Personalized education to students who can learn topics or subjects based on their abilities and
+                interests</div>
             </div>
 
-          
+
 
           </div>
 
@@ -741,15 +728,11 @@
             <div
               class="relative w-full rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.08)] border border-gray-50"
               id="imageBox">
-              <img src="./images/customer-serv.png"
-                class="expert-img active" id="img1">
-              <img src="./images/Hr.png"
-                class="expert-img" id="img2">
-              <img src="./images/virtual-serv.png"
-                class="expert-img" id="img3">
-              <img src="./images/learning.png"
-                class="expert-img" id="img4">
-              
+              <img src="./images/customer-serv.png" class="expert-img active" id="img1">
+              <img src="./images/Hr.png" class="expert-img" id="img2">
+              <img src="./images/virtual-serv.png" class="expert-img" id="img3">
+              <img src="./images/learning.png" class="expert-img" id="img4">
+
             </div>
           </div>
 
@@ -802,99 +785,97 @@
 
     <!--  -->
 
-     <!-- <h2 class="text-xl md:text-2xl font-bold mb-2" style="color: var(--dark-color);">Our Vision &
+    <!-- <h2 class="text-xl md:text-2xl font-bold mb-2" style="color: var(--dark-color);">Our Vision &
                         Mission</h2>
                     <div class="w-16 h-1 bg-gradient-to-r from-blue-900 to-blue-600 rounded-full mx-auto"></div> -->
 
 
-                    <section class="max-w-6xl mx-auto px-4 py-16">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Approach to AI Implementation</h2>
-            <p class="max-w-2xl mx-auto text-slate-600 leading-relaxed">
-                At FyndSol, we follow a systematic approach to AI implementation. We observe, understand, evaluate, and deliver solutions for propulsion and competence in the market.
-            </p>
-        </div>
-    <img src="./images/Group 85.png" alt=" AI Implementation Approach" class="w-full h-auto rounded-lg  max-w-3xl mx-auto mb-5">
-       
-</section>
+    <section class="max-w-6xl mx-auto px-4 py-16">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Approach to AI Implementation</h2>
+        <p class="max-w-2xl mx-auto text-slate-600 leading-relaxed">
+          At FyndSol, we follow a systematic approach to AI implementation. We observe, understand, evaluate, and
+          deliver solutions for propulsion and competence in the market.
+        </p>
+      </div>
+      <img src="./images/Group 85.png" alt=" AI Implementation Approach"
+        class="w-full h-auto rounded-lg  max-w-3xl mx-auto mb-5">
+
+    </section>
 
 
     <!-- FOOTER -->
 
-   <footer class="bg-[#0a0a0a] text-white pt-16 pb-8 border-t border-white/5">
-            <div class="container mx-auto px-6 max-w-[1080px]">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/10">
+    <footer class="bg-[#0a0a0a] text-white pt-16 pb-8 border-t border-white/5">
+      <div class="container mx-auto px-6 max-w-[1080px]">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/10">
 
-                    <div class="lg:col-span-2">
-                        <h3 class="text-xl font-bold mb-6">Empowering Businesses with FyndSol</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-8 max-w-md">
-                            At FyndSol Consultancy, we blend strategy, execution, and technology to help organizations
-                            transform, scale, and achieve measurable growth.
-                        </p>
-                        <img src="./images/fyndsol_logo1.jpg" class="mb-6  w-32 "
-                            alt="FyndSol Logo">
-                        <div class="text-[11px] text-gray-500 space-y-1">
-                            <p>FyndSol Consulting LLP.</p>
-                            <p>Registered Office City: Mumbai</p>
-                        </div>
+          <div class="lg:col-span-2">
+            <h3 class="text-xl font-bold mb-6">Empowering Businesses with FyndSol</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-8 max-w-md">
+              At FyndSol Consultancy, we blend strategy, execution, and technology to help organizations
+              transform, scale, and achieve measurable growth.
+            </p>
+            <img src="./images/fyndsol_logo1.jpg" class="mb-6  w-32 " alt="FyndSol Logo">
+            <div class="text-[11px] text-gray-500 space-y-1">
+               <p>FyndSol Consulting LLP.</p>
+              <p>Registered Office City: Mumbai</p>
+               <p>GST No: 27AAKFF5176A1ZI</p>
+              
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+            <ul class="space-y-3 text-sm text-gray-400">
+              <li><a href="about.html" class="hover:text-blue-400 transition-colors">About Us</a></li>
+              <li><a href="project-management.html" class="hover:text-blue-400 transition-colors">Services</a></li>
+              <!-- <li><a href="#" class="hover:text-blue-400 transition-colors">Industries</a></li> -->
+              <li><a href="ai-adoption.html" class="hover:text-blue-400 transition-colors">AI Adoption</a>
+              </li>
+              <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact Us</a></li>
+            
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">Get In Touch</h4>
+            <p class="text-sm text-gray-400 mb-6">
+              Ready to transform and scale your business with FyndSol Consultancy?
+            </p>
+            <a href="contact.html"
+              class="inline-flex items-center bg-white text-black text-xs font-bold px-6 py-3 rounded hover:bg-blue-600 hover:text-white transition-all">
+              Let's Connect <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+            <div class="flex gap-5 mt-8 items-center">
+                        <a href="https://www.linkedin.com/company/fyndsol" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                                class="fab fa-linkedin text-xl"></i></a>
+                        <a href="https://x.com/" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                                class="fab fa-twitter text-xl"></i></a>
+                        <a href="https://www.facebook.com/" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                                class="fab fa-facebook text-xl"></i></a>
+                      <a href="mailto:vivek_m@fyndsol.com?cc=sainath_g@fyndsol.com&subject=Inquiry%20from%20FyndSol%20Website" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1">
+    <i class="fas fa-envelope text-xl"></i>
+</a>
                     </div>
-
-                    <div>
-                        <h4 class="text-lg font-bold mb-6">Quick Links</h4>
-                        <ul class="space-y-3 text-sm text-gray-400">
-                            <li><a href="about.html" class="hover:text-blue-400 transition-colors">About Us</a></li>
-                            <li><a href="project-management.html"
-                                    class="hover:text-blue-400 transition-colors">Services</a></li>
-                            <!-- <li><a href="#" class="hover:text-blue-400 transition-colors">Industries</a></li> -->
-                            <li><a href="ai-adoption.html" class="hover:text-blue-400 transition-colors">AI Adoption</a>
-                            </li>
-                            <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact Us</a></li>
-                            <!-- <li><a href="privacy-policy.html" class="hover:text-blue-400 transition-colors">Privacy -->
-                                    <!-- Policy</a></li> -->
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h4 class="text-lg font-bold mb-6">Get In Touch</h4>
-                        <p class="text-sm text-gray-400 mb-6">
-                            Ready to transform and scale your business with FyndSol Consultancy?
-                        </p>
-                        <a href="contact.html"
-                            class="inline-flex items-center bg-white text-black text-xs font-bold px-6 py-3 rounded hover:bg-blue-600 hover:text-white transition-all">
-                            Let's Connect <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                        <div class="flex gap-5 mt-8 items-center">
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fab fa-linkedin text-xl"></i></a>
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fab fa-twitter text-xl"></i></a>
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fab fa-facebook text-xl"></i></a>
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fas fa-envelope text-xl"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pt-8 text-center text-[10px] md:text-xs text-gray-600 uppercase tracking-widest">
-                    &copy; 2025 FyndSol Consulting LLP. All rights reserved.
                 </div>
             </div>
-        </footer>
+
+            <div class="pt-8 text-center text-[10px] md:text-xs text-gray-600 uppercase tracking-widest">
+                &copy; 2025 FyndSol Consulting LLP. All rights reserved. Developed by FyndSol Consulting LLP.
+            </div>
+        </div>
+    </footer>
 
 
-    
+
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('mobile-menu-btn').addEventListener('click', () => {
-                document.getElementById('mobile-menu').classList.toggle('hidden');
-            });
+      document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+          document.getElementById('mobile-menu').classList.toggle('hidden');
         });
+      });
     </script>
 
     <script type="application/ld+json">
@@ -936,4 +917,5 @@
 }
 </script>
 </body>
+
 </html>

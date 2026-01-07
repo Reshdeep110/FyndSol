@@ -1,51 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Contact FyndSol Consulting LLP | Get in Touch with Our Experts</title>
-
+    <title>Contact FyndSol Consulting LLP | Get in Touch with Our Experts</title>
     <meta name="description"
         content="Contact FyndSol Consulting LLP to discuss strategy, transformation, and growth. Reach our Mumbai office to start your consulting journey today.">
-
     <meta name="keywords"
         content="contact fyndsol consulting, consulting firm contact, business consulting mumbai, strategy consulting contact, fyndsol consulting llp">
-
     <meta name="author" content="FyndSol Consulting LLP">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#002A61">
-
     <link rel="canonical" href="https://www.fyndsol.com/contact.html">
-
     <meta property="og:title" content="Contact FyndSol Consulting LLP">
     <meta property="og:description"
         content="Connect with FyndSol Consulting LLP to turn challenges into opportunities and ideas into measurable impact.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.fyndsol.com/contact.html">
     <meta property="og:image" content="https://www.fyndsol.com/images/contact-og.jpg">
-
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contact FyndSol Consulting LLP">
     <meta name="twitter:description"
         content="Get in touch with FyndSol Consulting to discuss transformation, strategy, and scalable growth.">
-
     <link rel="icon" href="./images/fyndsol_logo2.png" type="image/png" sizes="32x32">
     <link rel="icon" href="./images/fyndsol_logo2.png" type="image/png" sizes="16x16">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link rel="preload"
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         as="style" onload="this.onload=null;this.rel='stylesheet'">
-
     <link rel="preload" href="./images/contactus.png" as="image" fetchpriority="high">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-
-<style>
+    <style>
         :root {
             --fyndsol-blue: #2c3e50;
             --fyndsol-primary: #1e88e5;
@@ -68,7 +56,7 @@
             padding-right: 1rem;
         }
 
-          .container-custom1 {
+        .container-custom1 {
             max-width: 1270px;
             margin-left: auto;
             margin-right: auto;
@@ -86,41 +74,106 @@
             position: relative;
         }
 
-        .search-box { border-radius: 4px; }
+        .search-box {
+            border-radius: 4px;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background-color: #002A61;
+        }
+
+        .nav-link:hover {
+            color: #002A61;
+        }
+
+        .nav-active {
+            color: #002A61 !important;
+            font-weight: 700 !important;
+        }
+
+        .is-active .line-1 {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .is-active .line-2 {
+            opacity: 0;
+            transform: translateX(-10px);
+        }
+
+        .is-active .line-3 {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        .overlay-active {
+            opacity: 1 !important;
+            pointer-events: auto !important;
+        }
+
+        .drawer-active {
+            transform: translateX(0) !important;
+        }
+
+        body.overflow-hidden {
+            overflow: hidden;
+        }
+
+        .mobile-active {
+            color: #002A61 !important;
+            font-weight: 800 !important;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out forwards;
+            animation-play-state: paused;
+        }
     </style>
 </head>
+
 <body class="bg-gray-50">
-
-    <!-- HEADER -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-
-<header class="bg-white sticky top-0 z-50 shadow-sm w-full">
-    <div class="border-b border-gray-100">
-        <nav class="container-custom1 flex justify-between items-center py-4 px-4 md:px-6">
-           <a href="index.html" class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
-    <img src="logo1.png"
-         alt="Fyndsol Logo"
-         class="h-10 sm:h-12 md:h-14 w-auto object-contain transition-all duration-300">
-
-    <span class="hidden md:block text-sm text-gray-400 font-semibold border-l pl-2 ml-2 border-gray-300
-                 leading-tight">
-        We Build Trust!
-    </span>
-</a>
-
-
-            <div class="hidden lg:flex items-center gap-8 text-base font-normal text-black-500">
-                <a href="about.html" class="nav-link relative py-1 transition-colors duration-300">About Us</a>
-
-                <div class="relative group py-4">
+    <header class="bg-white sticky top-0 z-50 shadow-sm w-full">
+        <div class="border-b border-gray-100">
+            <nav class="container-custom1 flex justify-between items-center py-4 px-4 md:px-6">
+                <a href="index.html" class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+                    <img src="logo1.png" alt="Fyndsol Logo"
+                        class="h-10 sm:h-12 md:h-14 w-auto object-contain transition-all duration-300">
+                    <span
+                        class="hidden md:block text-sm text-gray-400 font-semibold border-l pl-2 ml-2 border-gray-300 leading-tight">
+                        We Build Trust!
+                    </span>
+                </a>
+                <div class="hidden lg:flex items-center gap-8 text-base font-normal text-black-500">
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <div class="relative group py-4">
                         <div
                             class="services-trigger flex items-center gap-1.5 cursor-pointer hover:text-[#002A61] transition-colors duration-300">
                             <span>Focus Areas</span>
                             <i
                                 class="fas fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
                         </div>
-
                         <div
                             class="absolute top-full left-1/2 -translate-x-1/2 w-72 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
                             <div class="bg-white shadow-xl border border-gray-100 rounded-lg overflow-hidden">
@@ -152,8 +205,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div class="relative group py-4">
                         <div id="services-trigger"
                             class="flex items-center gap-1.5 cursor-pointer hover:text-[#002A61] transition-colors duration-300">
@@ -161,7 +212,6 @@
                             <i
                                 class="fas fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
                         </div>
-
                         <div
                             class="absolute top-full left-1/2 -translate-x-1/2 w-72 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
                             <div class="bg-white shadow-xl border border-gray-100 rounded-lg overflow-hidden">
@@ -194,39 +244,35 @@
                             </div>
                         </div>
                     </div>
-                    
-
-                <!-- <a href="industries.html" class="nav-link relative py-1 transition-colors duration-300">Industries</a> -->
-                <a href="ai-adoption.html" class="nav-link relative py-1 transition-colors duration-300">AI Adoption</a>
-                <a href="contact.html" class="nav-link relative py-1 transition-colors duration-300">Contact Us</a>
-            </div>
-
-            <button id="menu-toggle" class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-[60]" aria-label="Toggle Menu">
-                <span class="line-1 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
-                <span class="line-2 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
-                <span class="line-3 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
-            </button>
-        </nav>
-    </div>
-
-    <div id="mobile-overlay" class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[55]"></div>
-
-     <div id="mobile-drawer" class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-[58] lg:hidden">
-        <div class="flex flex-col h-full p-8 pt-20">
-            <div class="flex flex-col gap-6 text-lg font-semibold text-gray-800">
-                <a href="index.html" class="hover:text-[#002A61] transition">Home</a>
-                <a href="about.html" class="hover:text-[#002A61] transition">About Us</a>
-                
-                 <div>
+                    <a href="ai-adoption.html" class="nav-link">AI Adoption</a>
+                    <a href="contact.html" class="nav-link nav-active">Contact Us</a>
+                </div>
+                <button id="menu-toggle"
+                    class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-[60]"
+                    aria-label="Toggle Menu">
+                    <span class="line-1 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
+                    <span class="line-2 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
+                    <span class="line-3 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
+                </button>
+            </nav>
+        </div>
+        <div id="mobile-overlay"
+            class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[55]">
+        </div>
+        <div id="mobile-drawer"
+            class="fixed top-0 right-0 h-full w-[80%] max-sm bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-[58] lg:hidden">
+            <div class="flex flex-col h-full p-8 pt-20">
+                <div class="flex flex-col gap-6 text-lg font-semibold text-gray-800">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <div>
                         <button id="mobile-focus-toggle"
-                            class="flex items-center justify-between w-full hover:text-[#002A61] transition focus:outline-none">
+                            class="flex items-center justify-between w-full focus:outline-none">
                             <span>Focus Areas</span>
                             <i id="mobile-focus-chevron"
                                 class="fas fa-chevron-right text-sm transition-transform duration-300"></i>
                         </button>
-
-                        <div id="mobile-focus-menu"
-                            class="hidden flex-col mt-4 pl-4 gap-4 border-l-2 border-gray-100 transition-all">
+                        <div id="mobile-focus-menu" class="hidden flex-col mt-4 pl-4 gap-4 border-l-2 border-gray-100">
                             <a href="New-Initiatives.html" class="text-base font-normal text-gray-600">New
                                 Initiatives</a>
                             <a href="tech-consulting.html" class="text-base font-normal text-gray-600">Technology
@@ -235,103 +281,159 @@
                                 Improvement</a>
                             <a href="turnaround.html" class="text-base font-normal text-gray-600">Turnaround</a>
                         </div>
-                    </div>  
-                
-                <div>
-                    <button id="mobile-services-toggle" class="flex items-center justify-between w-full hover:text-[#002A61] transition focus:outline-none">
-                        <span>Services</span>
-                        <i id="mobile-chevron" class="fas fa-chevron-right text-sm transition-transform duration-300"></i>
-                    </button>
-                    <div id="mobile-services-menu" class="hidden flex-col mt-4 pl-4 gap-4 border-l-2 border-gray-100 transition-all">
-                        <a href="project-management.html" class="text-base font-normal text-gray-600">Project Management</a>
-                        <a href="finance-transformation.html" class="text-base font-normal text-gray-600">Finance Transformation</a>
-                        <a href="tech-transformation.html" class="text-base font-normal text-gray-600">Tech Transformation</a>
-                        <a href="process-transformation.html" class="text-base font-normal text-gray-600">Process Transformation</a>
+                    </div>
+                    <div>
+                        <button id="mobile-services-toggle"
+                            class="flex items-center justify-between w-full focus:outline-none">
+                            <span>Services</span>
+                            <i id="mobile-chevron"
+                                class="fas fa-chevron-right text-sm transition-transform duration-300"></i>
+                        </button>
+                        <div id="mobile-services-menu"
+                            class="hidden flex-col mt-4 pl-4 gap-4 border-l-2 border-gray-100">
+                            <a href="project-management.html" class="text-base font-normal text-gray-600">Project
+                                Management</a>
+                            <a href="finance-transformation.html" class="text-base font-normal text-gray-600">Finance
+                                Transformation</a>
+                            <a href="tech-transformation.html" class="text-base font-normal text-gray-600">Tech
+                                Transformation</a>
+                            <a href="process-transformation.html" class="text-base font-normal text-gray-600">Process
+                                Transformation</a>
+                        </div>
+                    </div>
+                    <a href="ai-adoption.html">AI Adoption</a>
+                    <div class="mt-4">
+                        <a href="contact.html"
+                            class="block w-full text-center py-4 bg-[#002A61] text-white rounded-xl font-bold shadow-lg">
+                            Get Started
+                        </a>
+                    </div>
+                    <div class="pt-10 text-center border-t border-gray-100">
+                        <img src="./images/fyndsol_logo2.png" alt="Fyndsol"
+                            class="h-16 mx-auto opacity-50 grayscale mb-15">
+                        <p class="text-xs text-gray-400 font-medium">© 2025 Fyndsol. All Rights Reserved.</p>
                     </div>
                 </div>
-
-                <!-- <a href="industries.html" class="hover:text-[#002A61] transition">Industries</a> -->
-                <a href="ai-adoption.html" class="hover:text-[#002A61] transition">AI Adoption</a>
-                
-                <div class="mt-4">
-                    <a href="contact.html" class="block w-full text-center py-4 bg-[#002A61] text-white rounded-xl font-bold shadow-lg active:scale-95 transition-transform">
-                        Get Started
-                    </a>
-                </div>
-            
-           <div class="pt-20 text-center border-t border-gray-100">
-    <img src="./images/fyndsol_logo2.png" alt="Fyndsol" class="h-16 mx-auto opacity-50 grayscale mb-15">
-    <p class="text-xs text-gray-400 font-medium">© 2025 Fyndsol. All Rights Reserved.</p>
-</div>
-
+            </div>
         </div>
-    </div>
-    </div>
-    
+    </header>
+    <main>
+        <section class="relative bg-cover bg-center pt-16 pb-16"
+            style="background-image: linear-gradient(rgba(0, 42, 97, 0.92), rgba(0, 42, 97, 0.88)), url('./images/contactus.png');">
+            <div class="container mx-auto px-4 md:px-6 text-center text-white h-full flex items-center">
+                <div class="w-full max-w-5xl mx-auto">
+                    <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 animate-on-scroll"
+                        style="animation-delay: 0s;">
+                        Contact Us
+                    </h1>
+                    <p class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-light opacity-95 leading-relaxed max-w-3xl mx-auto mb-10 animate-on-scroll"
+                        style="animation-delay: 0.2s;">
+                        Connect with Fyndsol to turn ideas into impact and challenges into opportunities. </p>
+                </div>
+            </div>
+        </section>
+        <div class="container-custom py-20">
+            <div class="grid md:grid-cols-2 gap-12 bg-white rounded-xl shadow-xl overflow-hidden">
+                <div class="p-10">
+                    <h2 class="text-3xl font-bold text-fyndsol-blue mb-8">Reach Us</h2>
+                    <form action="send-email.php" method="POST" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Full Name</label>
+                            <input type="text" name="name" required
+                                class="w-full p-3 bg-gray-50 border border-gray-200 rounded focus:border-blue-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Email Address</label>
+                            <input type="email" name="email" required
+                                class="w-full p-3 bg-gray-50 border border-gray-200 rounded focus:border-blue-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Message</label>
+                            <textarea name="message" rows="4" required
+                                class="w-full p-3 bg-gray-50 border border-gray-200 rounded focus:border-blue-500 outline-none"></textarea>
+                        </div>
+                        <button type="submit" name="submit"
+                            class="bg-black text-white px-6 py-3 rounded text-sm font-bold hover:bg-gray-800 transition w-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <iframe width="100%" height="100%" style="border:0;"
+                    src="https://maps.google.com/maps?q=B403,%20Shree%20Sai%20Prasad%20Apartments,%20Vasai,%20Palghar,%20Mumbai&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-[#0a0a0a] text-white pt-16 pb-8 border-t border-white/5">
+        <div class="container mx-auto px-6 max-w-[1080px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/10">
+                <div class="lg:col-span-2">
+                    <h3 class="text-xl font-bold mb-6">Empowering Businesses with FyndSol</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8 max-w-md">
+                        At FyndSol Consultancy, we blend strategy, execution, and technology to help organizations
+                        transform, scale, and achieve measurable growth.
+                    </p>
+                    <img src="./images/fyndsol_logo1.jpg" class="mb-6 w-32 " alt="FyndSol Logo">
+                    <div class="text-[11px] text-gray-500 space-y-1">
+                            <p>FyndSol Consulting LLP.</p>
+                        <p>Registered Office City: Mumbai</p>
+                        <p>GST No: 27AAKFF5176A1ZI</p>
+                      
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="about.html" class="hover:text-blue-400">About Us</a></li>
+                        <li><a href="project-management.html" class="hover:text-blue-400">Services</a></li>
+                        <li><a href="ai-adoption.html" class="hover:text-blue-400">AI Adoption</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400 text-white font-bold">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Get In Touch</h4>
+                    <p class="text-sm text-gray-400 mb-6">Ready to transform and scale your business with FyndSol
+                        Consultancy?</p>
+                    <a href="contact.html"
+                        class="inline-flex items-center bg-white text-black text-xs font-bold px-6 py-3 rounded hover:bg-blue-600 hover:text-white transition-all">
+                        Let's Connect <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <div class="flex gap-5 mt-8 items-center">
+                        <a href="https://www.linkedin.com/company/fyndsol"
+                            class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                                class="fab fa-linkedin text-xl"></i></a>
+                        <a href="https://x.com/"
+                            class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                                class="fab fa-twitter text-xl"></i></a>
+                        <a href="https://www.facebook.com/"
+                            class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                                class="fab fa-facebook text-xl"></i></a>
+                        <a href="mailto:vivek_m@fyndsol.com?cc=sainath_g@fyndsol.com&subject=Inquiry%20from%20FyndSol%20Website"
+                            class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-    <style>
-        /* Hamburger Morph Animation */
-        .is-active .line-1 { transform: translateY(7px) rotate(45deg); }
-        .is-active .line-2 { opacity: 0; transform: translateX(-10px); }
-        .is-active .line-3 { transform: translateY(-7px) rotate(-45deg); }
-
-        .overlay-active { opacity: 1 !important; pointer-events: auto !important; }
-        .drawer-active { transform: translateX(0) !important; }
-        body.overflow-hidden { overflow: hidden; }
-
-        /* Normal Link Underline (for non-active) */
-       .nav-link {
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-/* Underline exists but never expands */
-.nav-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0;
-  height: 2px;
-  background-color: #002A61;
-}
-
-/* Hover: color change ONLY (no underline) */
-.nav-link:hover {
-  color: #002A61;
-}
-
-/* Active page style */
-.nav-active {
-  color: #002A61 !important;
-  font-weight: 600 !important;
-}
-
-/* Ensure no underline for active */
-.nav-active::after {
-  display: none !important;
-}
-
-        /* Mobile Active Style */
-        .mobile-active {
-            color: #002A61 !important;
-            font-weight: 800 !important;
-        }
-    </style>
+            <div class="pt-8 text-center text-[10px] md:text-xs text-gray-600 uppercase tracking-widest">
+                &copy; 2025 FyndSol Consulting LLP. All rights reserved. Developed by FyndSol Consulting LLP.
+            </div>
+        </div>
+    </footer>
 
     <script>
-           document.addEventListener('DOMContentLoaded', () => {
-               const menuBtn = document.getElementById('menu-toggle');
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('menu-toggle');
             const drawer = document.getElementById('mobile-drawer');
             const overlay = document.getElementById('mobile-overlay');
-
             const focusToggle = document.getElementById('mobile-focus-toggle');
             const focusMenu = document.getElementById('mobile-focus-menu');
             const focusChevron = document.getElementById('mobile-focus-chevron');
-
             const servicesToggle = document.getElementById('mobile-services-toggle');
             const servicesMenu = document.getElementById('mobile-services-menu');
-            const servicesChevron = document.getElementById('mobile-services-chevron');
+            const servicesChevron = document.getElementById('mobile-chevron');
 
             function toggleMenu() {
                 menuBtn.classList.toggle('is-active');
@@ -346,242 +448,27 @@
             focusToggle.addEventListener('click', () => {
                 focusMenu.classList.toggle('hidden');
                 focusMenu.classList.toggle('flex');
-                focusChevron.classList.toggle('chevron-rotate');
+                focusChevron.classList.toggle('rotate-90');
             });
 
             servicesToggle.addEventListener('click', () => {
                 servicesMenu.classList.toggle('hidden');
                 servicesMenu.classList.toggle('flex');
-                servicesChevron.classList.toggle('chevron-rotate');
+                servicesChevron.classList.toggle('rotate-90');
             });
-        }); 
 
-
-            // 2. Dynamic Active Link Logic
-            // This ensures only the CURRENT page is bold
-            const desktopLinks = document.querySelectorAll('.nav-link');
-            const mobileLinks = document.querySelectorAll('.mobile-link');
-            const dropdownItems = document.querySelectorAll('.dropdown-item');
-            const servicesTrigger = document.getElementById('services-trigger');
-
-            function setActive(links, activeClass) {
-                links.forEach(link => {
-                    const href = link.getAttribute('href');
-                    // Check if current URL ends with the link's href
-                    if (href && currentPath.includes(href) && href !== "index.html") {
-                        link.classList.add(activeClass);
-                    } else if (href === "index.html" && (currentPath === "/" || currentPath.endsWith("index.html"))) {
-                        link.classList.add(activeClass);
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        observer.unobserve(entry.target);
                     }
                 });
-            }
+            }, { threshold: 0.1 });
 
-            setActive(desktopLinks, 'nav-active');
-            setActive(mobileLinks, 'mobile-active');
-
-            // Special logic: If a service sub-page is active, highlight the parent "Services"
-            dropdownItems.forEach(item => {
-                if (currentPath.includes(item.getAttribute('href'))) {
-                    servicesTrigger.classList.add('nav-active');
-                }
-            });
-       
-    </script>
-</header>
-
-    <!-- MAIN CONTENT -->
-    <main>
-           <section class="relative bg-cover bg-center pt-16 pb-16"
-      style="background-image: linear-gradient(rgba(0, 42, 97, 0.92), rgba(0, 42, 97, 0.88)), url('./images/contactus.png');">
-      <div class="container mx-auto px-4 md:px-6 text-center text-white h-full flex items-center">
-        <div class="w-full max-w-5xl mx-auto">
-          <!-- Heading -->
-          <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 animate-on-scroll"
-            style="animation-delay: 0s;">
-            Contact Us
-          </h1>
-          <!-- Subheading -->
-          <p class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-light opacity-95 leading-relaxed max-w-3xl mx-auto mb-10 animate-on-scroll"
-            style="animation-delay: 0.2s;">
-          Connect with Fyndsol to turn ideas into impact and challenges into opportunities. </p>
-
-        </div>
-      </div>
-    </section>
-
-     <!-- ================= ANIMATION STYLES ================= -->
-    <style>
-      /* Fade Up Animation */
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .animate-on-scroll {
-        opacity: 0;
-        animation: fadeInUp 0.8s ease-out forwards;
-        animation-play-state: paused;
-        /* start paused, triggered by JS */
-      }
-
-      /* Allow animation delay from inline styles */
-      .animate-on-scroll[style*="animation-delay"] {
-        animation-delay: var(--delay, 0.3s);
-      }
-    </style>
-
-    <!-- ================= SCROLL TRIGGER SCRIPT ================= -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              // preserve inline animation-delay
-              const delay = entry.target.style.animationDelay;
-              if (delay) {
-                entry.target.style.setProperty('--delay', delay);
-              }
-              // trigger animation
-              entry.target.style.animationPlayState = 'running';
-              observer.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.1 });
-
-        // Observe all animate-on-scroll elements
-        document.querySelectorAll('.animate-on-scroll').forEach(el => {
-          observer.observe(el);
-        });
-      });
-    </script>
-
-
-
-       <div class="container-custom py-20">
-    <div class="grid md:grid-cols-2 gap-12 bg-white rounded-xl shadow-xl overflow-hidden">
-        <div class="p-10">
-            <h2 class="text-3xl font-bold text-fyndsol-blue mb-8">Mumbai Office</h2>
-            
-            <form action="send-email.php" method="POST" class="space-y-4">
-                <div>
-                    <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Full Name</label>
-                    <input type="text" name="name" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded focus:border-blue-500 outline-none">
-                </div>
-                
-                <div>
-                    <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Email Address</label>
-                    <input type="email" name="email" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded focus:border-blue-500 outline-none">
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Message</label>
-                    <textarea name="message" rows="4" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded focus:border-blue-500 outline-none"></textarea>
-                </div>
-
-                <button type="submit" name="submit" class="bg-black text-white px-6 py-3 rounded text-sm font-bold hover:bg-gray-800 transition w-full">
-                    Send Message
-                </button>
-            </form>
-        </div>
-
-        <div class="bg-gray-200 min-h-[400px]">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.923298816922!2d72.8724771758557!3d19.20077884814868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b0e63784197b%3A0xc4767222167198e9!2sThakur%20Village%2C%20Kandivali%20East%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
-                width="100%" 
-                height="100%" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
-        </div>
-    </div>
-</div>
-
-    </main>
-
-    <!-- FOOTER -->
-   <footer class="bg-[#0a0a0a] text-white pt-16 pb-8 border-t border-white/5">
-            <div class="container mx-auto px-6 max-w-[1080px]">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/10">
-
-                    <div class="lg:col-span-2">
-                        <h3 class="text-xl font-bold mb-6">Empowering Businesses with FyndSol</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-8 max-w-md">
-                            At FyndSol Consultancy, we blend strategy, execution, and technology to help organizations
-                            transform, scale, and achieve measurable growth.
-                        </p>
-                        <img src="./images/fyndsol_logo1.jpg" class="mb-6  w-32 "
-                            alt="FyndSol Logo">
-                        <div class="text-[11px] text-gray-500 space-y-1">
-                            <p>FyndSol Consulting LLP.</p>
-                            <p>Registered Office City: Mumbai</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h4 class="text-lg font-bold mb-6">Quick Links</h4>
-                        <ul class="space-y-3 text-sm text-gray-400">
-                            <li><a href="about.html" class="hover:text-blue-400 transition-colors">About Us</a></li>
-                            <li><a href="project-management.html"
-                                    class="hover:text-blue-400 transition-colors">Services</a></li>
-                            <!-- <li><a href="#" class="hover:text-blue-400 transition-colors">Industries</a></li> -->
-                            <li><a href="ai-adoption.html" class="hover:text-blue-400 transition-colors">AI Adoption</a>
-                            </li>
-                            <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact Us</a></li>
-                            <!-- <li><a href="privacy-policy.html" class="hover:text-blue-400 transition-colors">Privacy -->
-                                    <!-- Policy</a></li> -->
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h4 class="text-lg font-bold mb-6">Get In Touch</h4>
-                        <p class="text-sm text-gray-400 mb-6">
-                            Ready to transform and scale your business with FyndSol Consultancy?
-                        </p>
-                        <a href="contact.html"
-                            class="inline-flex items-center bg-white text-black text-xs font-bold px-6 py-3 rounded hover:bg-blue-600 hover:text-white transition-all">
-                            Let's Connect <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                        <div class="flex gap-5 mt-8 items-center">
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fab fa-linkedin text-xl"></i></a>
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fab fa-twitter text-xl"></i></a>
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fab fa-facebook text-xl"></i></a>
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fas fa-envelope text-xl"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pt-8 text-center text-[10px] md:text-xs text-gray-600 uppercase tracking-widest">
-                    &copy; 2025 FyndSol Consulting LLP. All rights reserved.
-                </div>
-            </div>
-        </footer>
-
-
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('mobile-menu-btn').addEventListener('click', () => {
-                document.getElementById('mobile-menu').classList.toggle('hidden');
-            });
+            document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
         });
     </script>
-
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -604,14 +491,11 @@
       "@id": "https://www.fyndsol.com/contact.html",
       "url": "https://www.fyndsol.com/contact.html",
       "name": "Contact FyndSol Consulting LLP",
-      "isPartOf": {
-        "@id": "https://www.fyndsol.com/#organization"
-      }
+      "isPartOf": { "@id": "https://www.fyndsol.com/#organization" }
     }
   ]
 }
 </script>
-
-
 </body>
+
 </html>

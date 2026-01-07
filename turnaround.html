@@ -290,8 +290,7 @@
                     </div>
 
                 <a href="ai-adoption.html" class="mobile-link hover:text-[#002A61] transition">AI Adoption</a>
-                <!-- <a href="industries.html" class="mobile-link hover:text-[#002A61] transition">Industries</a> -->
-           
+              
 
             <div class="mt-4">
                 <a href="contact.html" class="block w-full text-center py-4 bg-[#002A61] text-white rounded-xl font-bold shadow-lg active:scale-95 transition-transform">
@@ -299,7 +298,7 @@
                 </a>
             </div>
         
-         <div class="pt-20 text-center border-t border-gray-100">
+         <div class="pt-10 text-center border-t border-gray-100">
     <img src="./images/fyndsol_logo2.png" alt="Fyndsol" class="h-16 mx-auto opacity-50 grayscale mb-15">
     <p class="text-xs text-gray-400 font-medium">© 2025 Fyndsol. All Rights Reserved.</p>
 </div>
@@ -309,24 +308,21 @@
     </div>
 
     <style>
-        /* Hamburger Animation */
-        .is-active .line-1 { transform: translateY(7px) rotate(45deg); }
+         .is-active .line-1 { transform: translateY(7px) rotate(45deg); }
         .is-active .line-2 { opacity: 0; transform: translateX(-10px); }
         .is-active .line-3 { transform: translateY(-7px) rotate(-45deg); }
 
-        /* Drawer & Overlay Visibility */
         .overlay-active { opacity: 1 !important; pointer-events: auto !important; }
         .drawer-active { transform: translateX(0) !important; }
         body.overflow-hidden { overflow: hidden; }
 
-        /* Desktop Nav Link Underline */
-        /* ACTIVE STATE STYLE */
+       
         .nav-link {
   position: relative;
   transition: color 0.3s ease;
 }
 
-/* Underline exists but never expands */
+
 .nav-link::after {
   content: '';
   position: absolute;
@@ -337,18 +333,18 @@
   background-color: #002A61;
 }
 
-/* Hover: color change ONLY (no underline) */
+
 .nav-link:hover {
   color: #002A61;
 }
 
-/* Active page style */
+
 .nav-active {
   color: #002A61 !important;
   font-weight: 600 !important;
 }
 
-/* Ensure no underline for active */
+
 .nav-active::after {
   display: none !important;
 }
@@ -392,8 +388,7 @@
             });
         
         
-            // 3. Dynamic Active Highlighting (Only highlights the link for the current page)
-            const allLinks = document.querySelectorAll('.nav-link, .mobile-link');
+             const allLinks = document.querySelectorAll('.nav-link, .mobile-link');
             allLinks.forEach(link => {
                 const href = link.getAttribute('href');
                 if (href && currentPath.includes(href) && href !== "index.html") {
@@ -419,7 +414,6 @@
                         Business Turnaround
                     </h1>
 
-                    <!-- Subheading (short – 4 words) -->
                     <p class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-light opacity-95 leading-relaxed max-w-3xl mx-auto mb-10 animate-on-scroll"
                         style="animation-delay: 0.2s;">
                         Revitalizing Operations, Maximizing Value
@@ -430,9 +424,7 @@
 
         </section>
 
-        <!-- ================= ANIMATION STYLES ================= -->
         <style>
-            /* Fade Up Animation */
             @keyframes fadeInUp {
                 from {
                     opacity: 0;
@@ -449,34 +441,30 @@
                 opacity: 0;
                 animation: fadeInUp 0.8s ease-out forwards;
                 animation-play-state: paused;
-                /* start paused, triggered by JS */
+              
             }
 
-            /* Allow animation delay from inline styles */
+          
             .animate-on-scroll[style*="animation-delay"] {
                 animation-delay: var(--delay, 0.3s);
             }
         </style>
 
-        <!-- ================= SCROLL TRIGGER SCRIPT ================= -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
-                            // preserve inline animation-delay
-                            const delay = entry.target.style.animationDelay;
+                             const delay = entry.target.style.animationDelay;
                             if (delay) {
                                 entry.target.style.setProperty('--delay', delay);
                             }
-                            // trigger animation
-                            entry.target.style.animationPlayState = 'running';
+                             entry.target.style.animationPlayState = 'running';
                             observer.unobserve(entry.target);
                         }
                     });
                 }, { threshold: 0.1 });
 
-                // Observe all animate-on-scroll elements
                 document.querySelectorAll('.animate-on-scroll').forEach(el => {
                     observer.observe(el);
                 });
@@ -488,7 +476,6 @@
         <section class="py-16 bg-gray-50">
             <div class="max-w-[1270px] mx-auto px-4">
 
-                <!-- Content Grid -->
                 <div class="grid lg:grid-cols-[300px_1fr] gap-6 lg:gap-8 items-stretch">
 
                     <!-- LEFT SIDE (SIDEBAR) -->
@@ -590,10 +577,8 @@
                 </div>
         </section>
 
-        <!-- ================= STYLES ================= -->
-        <style>
-            /* ANIMATION */
-            @keyframes fadeInUp {
+         <style>
+    @keyframes fadeInUp {
                 from {
                     opacity: 0;
                     transform: translateY(30px);
@@ -615,7 +600,6 @@
                 animation-delay: var(--delay, 0.3s);
             }
 
-            /* SIDEBAR HOVER & ACTIVE */
             .bg-white .flex.items-center.gap-4 {
                 transition: all 0.3s ease-in-out;
                 cursor: pointer;
@@ -623,8 +607,7 @@
 
             .bg-white .flex.items-center.gap-4:hover {
                 background: #1e88e5;
-                /* hover color */
-                color: white;
+                 color: white;
                 transform: scale(1.05);
                 box-shadow: 0 8px 20px rgba(30, 136, 229, 0.3);
             }
@@ -642,10 +625,10 @@
                 background: rgba(255, 255, 255, 0.2);
             }
 
-            /* ACTIVE TAB COLOR */
+           
             .bg-white .flex.items-center.gap-4.active-sidebar {
                 background: #002A61;
-                /* active color */
+              
                 color: white;
                 box-shadow: 0 8px 20px rgba(0, 42, 97, 0.3);
             }
@@ -659,7 +642,7 @@
                 background: rgba(255, 255, 255, 0.2);
             }
 
-            /* RESPONSIVE */
+           
             @media (max-width:1024px) {
                 .bg-white .flex.items-center.gap-4 {
                     transform: none !important;
@@ -667,9 +650,8 @@
             }
         </style>
 
-        <!-- ================= SCRIPT ================= -->
         <script>
-            // SCROLL REVEAL
+           
             document.addEventListener('DOMContentLoaded', function () {
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
@@ -683,20 +665,20 @@
                 }, { threshold: 0.1 });
                 document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
 
-                // TAB FUNCTIONALITY
+                
                 const tabs = document.querySelectorAll('.tab-item');
                 const contents = document.querySelectorAll('.tab-content');
 
                 tabs.forEach(tab => {
                     tab.addEventListener('click', () => {
-                        // remove active
+                       
                         tabs.forEach(t => t.classList.remove('active-sidebar'));
                         tab.classList.add('active-sidebar');
 
-                        // hide all
+                       
                         contents.forEach(c => c.style.display = 'none');
 
-                        // show target
+                       
                         const target = tab.dataset.target;
                         const el = document.getElementById(target);
                         if (el) {
@@ -823,7 +805,6 @@
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             }
 
-            /* Modified: Removed border and adjusted shadow for a cleaner look */
             .timeline-card-clean {
                 background: #fff;
                 border-radius: 1rem;
@@ -831,7 +812,7 @@
                 box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
                 flex-grow: 1;
                 border: none;
-                /* Explicitly removed */
+                
             }
 
             .timeline-card-clean h4 {
@@ -846,7 +827,7 @@
                 line-height: 1.5;
             }
 
-            /* Reveal Animations */
+           
             .reveal-up,
             .reveal-left,
             .reveal-right {
@@ -885,7 +866,6 @@
                     (entries) => {
                         entries.forEach((entry) => {
                             if (entry.isIntersecting) {
-                                // Apply a slight stagger effect based on vertical position
                                 const delay = entry.target.getBoundingClientRect().top * 0.1;
                                 entry.target.style.transitionDelay = `${Math.min(delay, 300)}ms`;
                                 entry.target.classList.add("active");
@@ -899,8 +879,7 @@
                 revealItems.forEach(el => observer.observe(el));
             });
         </script>
-        <!-- ------------------------------------------------------ -->
-
+      
         <!-- our key focus  -->
         <section class="py-20 bg-white overflow-hidden">
             <div class="max-w-[1080px] mx-auto px-6">
@@ -909,10 +888,7 @@
 
                     <h2 class="text-xl md:text-2xl font-bold mb-2 text-center text-fyndsol-primary "> Key Focus Areas
                     </h2>
-                    <!-- <p class="text-lg text-gray-600 leading-relaxed">
-        Whether stabilizing margins, realigning strategy, or preparing to scale, 
-        FyndSol enables organizations to reset, refocus, and return to profitable growth with confidence.
-      </p> -->
+                   
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -1034,6 +1010,8 @@
                         <div class="text-[11px] text-gray-500 space-y-1">
                             <p>FyndSol Consulting LLP.</p>
                             <p>Registered Office City: Mumbai</p>
+                             <p>GST No: 27AAKFF5176A1ZI</p>
+              
                         </div>
                     </div>
 
@@ -1047,8 +1025,7 @@
                             <li><a href="ai-adoption.html" class="hover:text-blue-400 transition-colors">AI Adoption</a>
                             </li>
                             <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact Us</a></li>
-                            <!-- <li><a href="privacy-policy.html" class="hover:text-blue-400 transition-colors">Privacy -->
-                            <!-- Policy</a></li> -->
+                           
                         </ul>
                     </div>
 
@@ -1061,28 +1038,26 @@
                             class="inline-flex items-center bg-white text-black text-xs font-bold px-6 py-3 rounded hover:bg-blue-600 hover:text-white transition-all">
                             Let's Connect <i class="fas fa-arrow-right ml-2"></i>
                         </a>
-                        <div class="flex gap-5 mt-8 items-center">
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fab fa-linkedin text-xl"></i></a>
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fab fa-twitter text-xl"></i></a>
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fab fa-facebook text-xl"></i></a>
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fas fa-envelope text-xl"></i></a>
-                        </div>
+                         <div class="flex gap-5 mt-8 items-center">
+                        <a href="https://www.linkedin.com/company/fyndsol" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                                class="fab fa-linkedin text-xl"></i></a>
+                        <a href="https://x.com/" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                                class="fab fa-twitter text-xl"></i></a>
+                        <a href="https://www.facebook.com/" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                                class="fab fa-facebook text-xl"></i></a>
+                      <a href="mailto:vivek_m@fyndsol.com?cc=sainath_g@fyndsol.com&subject=Inquiry%20from%20FyndSol%20Website" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1">
+    <i class="fas fa-envelope text-xl"></i>
+</a>
                     </div>
                 </div>
-
-                <div class="pt-8 text-center text-[10px] md:text-xs text-gray-600 uppercase tracking-widest">
-                    &copy; 2025 FyndSol Consulting LLP. All rights reserved.
-                </div>
             </div>
-        </footer>
+
+            <div class="pt-8 text-center text-[10px] md:text-xs text-gray-600 uppercase tracking-widest">
+                &copy; 2025 FyndSol Consulting LLP. All rights reserved. Developed by FyndSol Consulting LLP.
+            </div>
+        </div>
+    </footer>
+
 
         <script>
             document.addEventListener('DOMContentLoaded', () => {

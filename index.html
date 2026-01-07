@@ -14,10 +14,8 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#002A61">
 
-    <!-- ================= CANONICAL ================= -->
     <link rel="canonical" href="https://www.fyndsol.com/" />
 
-    <!-- ================= OPEN GRAPH ================= -->
     <meta property="og:title" content="FyndSol Consulting | We Build Trust Through Transformation">
     <meta property="og:description"
         content="Experts in finance, digital, and technology transformation helping organizations scale with confidence.">
@@ -27,25 +25,20 @@
     <meta property="og:site_name" content="FyndSol Consulting">
 
 
-    <!-- ================= TWITTER ================= -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="FyndSol Consulting | Business Transformation Experts">
     <meta name="twitter:description"
         content="Driving measurable impact through strategy, execution, and technology-led consulting.">
     <meta name="twitter:image" content="https://www.fyndsol.com/images/og-banner.jpg">
 
-    <!-- ================= PERFORMANCE ================= -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- ================= FONTS ================= -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 
-    <!-- ================= ICONS ================= -->
     <link rel="icon" href="./images/fyndsol_logo2.png" type="image/png" sizes="32x32">
     <link rel="icon" href="./images/fyndsol_logo2.png" type="image/png" sizes="16x16">
 
-    <!-- ================= STYLES / JS ================= -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="index.js" defer></script>
 
@@ -61,393 +54,595 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #002A61;
-            --secondary-color: #007bff;
-            /* --secondary-color: #0949a9; */
-            --light-color: #F5F7FA;
-            --dark-color: #1A1A1A;
-            --fyndsol-gray: #f4f6f8;
-            --fyndsol-accent: #ff4500;
-            --fyndsol-pink: #cd3c85;
-            --fyndsol-light: #f8fafc;
-            --fyndsol-dark-overlay: #151D2A;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: #333;
-            background-color: #fff;
-            overflow-x: hidden;
-            line-height: 1.6;
-        }
-
-        .container-custom {
-            /* 1280 */
-            max-width: 1087px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-
-        .container-custom1 {
-            /* 1280 */
-            max-width: 1270px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-
-        .nav-link {
-            cursor: pointer;
-        }
-
-        .search-box {
-            border-radius: 4px;
-        }
-
-        .hero-home {
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-        }
-
-        .hero-inner {
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-
-        .mantra-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-left: 4px solid transparent;
-            padding: 2.5rem;
-        }
-
-        .mantra-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            border-left: 4px solid var(--primary-color);
-        }
-
-        .slider-container {
-            position: relative;
-            overflow: hidden;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-
-        }
-
-        .slides-wrapper {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .slide {
-            flex: 0 0 100%;
-            min-width: 100%;
-            padding: 0 1rem;
-        }
-
-        .animate-grow-line {
-            width: 0;
-            animation: growLine 2s ease forwards;
-        }
-
-        @keyframes growLine {
-            from {
-                width: 0;
-            }
-
-            to {
-                width: 160px;
-            }
-        }
-
-        .shadow-md {
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08) !important;
-        }
-    </style>
+    
 </head>
+<style>
+   :root {
+    --primary-color: #002A61;
+    --secondary-color: #007bff;
+    --light-color: #F5F7FA;
+    --dark-color: #1A1A1A;
+    --fyndsol-gray: #f4f6f8;
+    --fyndsol-accent: #ff4500;
+    --fyndsol-pink: #cd3c85;
+    --fyndsol-light: #f8fafc;
+    --fyndsol-dark-overlay: #151D2A;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #fff;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+body.overflow-hidden {
+    overflow: hidden;
+}
+
+.container-custom {
+    max-width: 1087px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-custom1 {
+    max-width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.nav-link {
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #002A61;
+}
+.nav-link:hover,
+.nav-link.active,
+.nav-active,
+.mobile-active,
+.services-trigger.active {
+    color: #002A61 !important;
+}
+
+.nav-link:hover,
+.nav-link.active,
+.services-trigger.active {
+    color: #002A61 !important;
+}
+
+.nav-active {
+    color: #002A61 !important;
+    font-weight: 600 !important;
+}
+
+.nav-active::after {
+    display: none !important;
+}
+
+.mobile-active {
+    color: #002A61 !important;
+    font-weight: 800 !important;
+}
+
+.services-trigger::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #002A61;
+    transition: width 0.3s ease;
+}
+
+.dropdown-item.active span {
+    color: #002A61 !important;
+    font-weight: 600;
+}
+
+.is-active .line-1 {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.is-active .line-2 {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+
+.is-active .line-3 {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.overlay-active {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+.drawer-active {
+    transform: translateX(0) !important;
+}
+
+.chevron-rotate {
+    transform: rotate(90deg);
+}
+
+.hero-home {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-inner {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.search-box {
+    border-radius: 4px;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08) !important;
+}
+
+.mantra-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid transparent;
+    padding: 2.5rem;
+}
+
+.mantra-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--primary-color);
+}
+
+.reveal-up {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+    transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform, opacity;
+}
+
+.reveal-up.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.success-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.success-bg {
+    background: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2069&q=80') no-repeat center center/cover;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.success-overlay {
+    background: linear-gradient(135deg, rgba(0, 26, 67, 0.92) 0%, rgba(0, 42, 97, 0.88) 100%);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+.cards-container {
+    display: flex;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.success-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+.success-card:hover {
+    transform: translateY(-8px) rotateY(5deg);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.industry-tag {
+    background: rgba(0, 42, 97, 0.7);
+    color: #b3d4fc;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid rgba(179, 212, 252, 0.2);
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.card-description {
+    font-size: 14.5px;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.dot-navigation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.dots-wrapper {
+    display: flex;
+    gap: 18px;
+}
+
+.nav-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+    border: none;
+}
+
+.nav-dot.active {
+    background: #4dabf7;
+    transform: scale(1.4);
+    box-shadow: 0 0 20px rgba(77, 171, 247, 0.6);
+}
+
+.fyndsol-hero {
+    color: var(--fyndsol-light);
+}
+
+.fyndsol-overlay {
+    background: linear-gradient(135deg, rgba(21, 29, 42, 0.92) 0%, rgba(0, 42, 97, 0.95) 100%);
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.fyndsol-hero img {
+    filter: grayscale(80%) contrast(100%);
+}
+
+.fyndsol-hero .blur-element {
+    background: rgba(179, 212, 252, 0.1);
+    animation: pulse-bg 8s infinite alternate;
+}
+
+.fyndsol-badge {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.6rem 1.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin: 0 auto 2rem;
+    display: inline-flex;
+}
+
+.fyndsol-hero h2 {
+    color: #ffffff;
+    font-weight: 800;
+    max-width: 900px;
+    margin: 0 auto 1.5rem;
+}
+
+.heading-accent {
+    background: linear-gradient(90deg, #b3d4fc, #e0f2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.heading-underline path {
+    stroke: var(--secondary-color);
+    stroke-width: 4;
+}
+
+.cta-primary {
+    background: #ffffff;
+    color: var(--primary-color);
+    font-weight: 700;
+    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cta-primary:hover {
+    background: var(--fyndsol-light);
+    transform: translateY(-4px);
+}
+
+.cta-secondary {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    font-weight: 600;
+    backdrop-filter: blur(8px);
+}
+
+.cta-secondary:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #ffffff;
+}
+
+@keyframes growLine {
+    from { width: 0; }
+    to { width: 160px; }
+}
+
+@keyframes pulse-bg {
+    0% { transform: scale(1); opacity: 0.7; }
+    100% { transform: scale(1.1); opacity: 0.9; }
+}
+
+.animate-grow-line {
+    width: 0;
+    animation: growLine 2s ease forwards;
+}
+
+</style>
 
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <header class="bg-white sticky top-0 z-50 shadow-lg w-full">
-        <div class="border-b border-gray-100">
-            <nav class="container-custom1 flex justify-between items-center py-4 px-4 md:px-6">
+<header class="bg-white sticky top-0 z-50 shadow-lg w-full">
+    <div class="border-b border-gray-100">
+        <nav class="container-custom1 flex justify-between items-center py-4 px-4 md:px-6">
 
 
-                <a href="index.html" class="flex items-center gap-2">
-                    <img src="/logo1.png" alt="Fyndsol Logo"
-                        class="h-10 sm:h-12 md:h-14 w-auto object-contain transition-all duration-300">
-                    <span
-                        class="hidden md:block text-sm text-gray-400 font-semibold border-l pl-2 ml-2 border-gray-300">
-                        We Build Trust!
-                    </span>
-                </a>
-
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="/logo1.png" alt="Fyndsol Logo"
+                    class="h-10 sm:h-12 md:h-14 w-auto object-contain transition-all duration-300">
+                <span class="hidden md:block text-sm text-gray-400 font-semibold border-l pl-2 ml-2 border-gray-300">
+                    We Build Trust!
+                </span>
+            </a>
 
 
 
 
-                <div class="hidden lg:flex items-center gap-8 text-base font-normal text-black-500">
-                    <a href="about.html" class="nav-link relative py-1 transition-colors duration-300">About Us</a>
 
-                      <div class="relative group py-4">
-                        <div
-                            class="services-trigger flex items-center gap-1.5 cursor-pointer hover:text-[#002A61] transition-colors duration-300">
-                            <span>Focus Areas</span>
-                            <i
-                                class="fas fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
-                        </div>
+            <div class="hidden lg:flex items-center gap-8 text-base font-normal text-black-500">
+                <a href="about.html" class="nav-link relative py-1 transition-colors duration-300">About Us</a>
 
-                        <div
-                            class="absolute top-full left-1/2 -translate-x-1/2 w-72 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
-                            <div class="bg-white shadow-xl border border-gray-100 rounded-lg overflow-hidden">
-                                <div class="py-1">
-                                    <a href="New-Initiatives.html"
-                                        class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                        <span
-                                            class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">New
-                                            Initiatives</span>
-                                    </a>
-                                    <a href="tech-consulting.html"
-                                        class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                        <span
-                                            class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Technology
-                                            Consulting</span>
-                                    </a>
-                                    <a href="process-improvement.html"
-                                        class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                        <span
-                                            class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Process
-                                            Improvement</span>
-                                    </a>
-                                    <a href="turnaround.html"
-                                        class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                        <span
-                                            class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Turnaround</span>
-                                    </a>
-                                </div>
+                <div class="relative group py-4">
+                    <div
+                        class="services-trigger flex items-center gap-1.5 cursor-pointer hover:text-[#002A61] transition-colors duration-300">
+                        <span>Focus Areas</span>
+                        <i
+                            class="fas fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
+                    </div>
+
+                    <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 w-72 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
+                        <div class="bg-white shadow-xl border border-gray-100 rounded-lg overflow-hidden">
+                            <div class="py-1">
+                                <a href="New-Initiatives.html"
+                                    class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
+                                    <span
+                                        class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">New
+                                        Initiatives</span>
+                                </a>
+                                <a href="tech-consulting.html"
+                                    class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
+                                    <span
+                                        class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Technology
+                                        Consulting</span>
+                                </a>
+                                <a href="process-improvement.html"
+                                    class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
+                                    <span
+                                        class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Process
+                                        Improvement</span>
+                                </a>
+                                <a href="turnaround.html"
+                                    class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
+                                    <span
+                                        class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Turnaround</span>
+                                </a>
                             </div>
                         </div>
                     </div>
+                </div>
 
 
-                    <div class="relative group py-4">
-                        <div id="services-trigger"
-                            class="flex items-center gap-1.5 cursor-pointer hover:text-[#002A61] transition-colors duration-300">
-                            <span>Services</span>
-                            <i
-                                class="fas fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
-                        </div>
+                <div class="relative group py-4">
+                    <div id="services-trigger"
+                        class="flex items-center gap-1.5 cursor-pointer hover:text-[#002A61] transition-colors duration-300">
+                        <span>Services</span>
+                        <i
+                            class="fas fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
+                    </div>
 
-                        <div
-                            class="absolute top-full left-1/2 -translate-x-1/2 w-72 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
-                            <div class="bg-white shadow-xl border border-gray-100 rounded-lg overflow-hidden">
-                                <div class="py-2">
-                                    <a href="./project-management.html"
-                                        class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                        <span
-                                            class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Project
-                                            Management</span>
-                                    </a>
-                                    <a href="./finance-transformation.html"
-                                        class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                        <span
-                                            class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Finance
-                                            Transformation</span>
-                                    </a>
-                                    <a href="./tech-transformation.html"
-                                        class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                        <span
-                                            class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Technology
-                                            Transformation</span>
-                                    </a>
-                                    <a href="./process-transformation.html"
-                                        class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
-                                        <span
-                                            class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Process
-                                            Transformation</span>
-                                    </a>
-                                </div>
+                    <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 w-72 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
+                        <div class="bg-white shadow-xl border border-gray-100 rounded-lg overflow-hidden">
+                            <div class="py-2">
+                                <a href="./project-management.html"
+                                    class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
+                                    <span
+                                        class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Project
+                                        Management</span>
+                                </a>
+                                <a href="./finance-transformation.html"
+                                    class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
+                                    <span
+                                        class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Finance
+                                        Transformation</span>
+                                </a>
+                                <a href="./tech-transformation.html"
+                                    class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
+                                    <span
+                                        class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Technology
+                                        Transformation</span>
+                                </a>
+                                <a href="./process-transformation.html"
+                                    class="dropdown-item group/item flex items-center px-5 py-3.5 hover:bg-gray-50 border-b border-gray-50 last:border-b-0 transition-all duration-200">
+                                    <span
+                                        class="block text-base font-medium text-gray-900 group-hover/item:text-[#002A61]">Process
+                                        Transformation</span>
+                                </a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- <a href="industries.html" class="nav-link relative py-1 transition-colors duration-300">Industries</a> -->
-                    <a href="ai-adoption.html" class="nav-link relative py-1 transition-colors duration-300">AI
-                        Adoption</a>
-                    <a href="contact.html" class="nav-link relative py-1 transition-colors duration-300">Contact Us</a>
                 </div>
 
-                <button id="menu-toggle"
-                    class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-[60]"
-                    aria-label="Toggle Menu">
-                    <span class="line-1 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
-                    <span class="line-2 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
-                    <span class="line-3 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
-                </button>
-            </nav>
-        </div>
+                 <a href="ai-adoption.html" class="nav-link relative py-1 transition-colors duration-300">AI
+                    Adoption</a>
+                <a href="contact.html" class="nav-link relative py-1 transition-colors duration-300">Contact Us</a>
+            </div>
 
-        <div id="mobile-overlay"
-            class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[55]">
-        </div>
+            <button id="menu-toggle"
+                class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-[60]"
+                aria-label="Toggle Menu">
+                <span class="line-1 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
+                <span class="line-2 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
+                <span class="line-3 w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
+            </button>
+        </nav>
+    </div>
 
-        <div id="mobile-drawer"
-            class="fixed top-0 right-0 h-full w-[80%] max-w-lg bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-[58] lg:hidden">
-            <div class="flex flex-col h-full p-8 pt-20">
-                <div id="mobile-nav-links" class="flex flex-col gap-6 text-lg font-semibold text-gray-800">
-                    <a href="index.html" class="mobile-link hover:text-[#002A61] transition">Home</a>
-                    <a href="about.html" class="mobile-link hover:text-[#002A61] transition">About Us</a>
+    <div id="mobile-overlay"
+        class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[55]">
+    </div>
 
-                        <!-- key focus -->
-                    <div>
-                        <button id="mobile-focus-toggle"
-                            class="flex items-center justify-between w-full hover:text-[#002A61] transition focus:outline-none">
-                            <span>Focus Areas</span>
-                            <i id="mobile-focus-chevron"
-                                class="fas fa-chevron-right text-sm transition-transform duration-300"></i>
-                        </button>
+    <div id="mobile-drawer"
+        class="fixed top-0 right-0 h-full w-[80%] max-w-lg bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-[58] lg:hidden">
+        <div class="flex flex-col h-full p-8 pt-20">
+            <div id="mobile-nav-links" class="flex flex-col gap-6 text-lg font-semibold text-gray-800">
+                <a href="index.html" class="mobile-link hover:text-[#002A61] transition">Home</a>
+                <a href="about.html" class="mobile-link hover:text-[#002A61] transition">About Us</a>
 
-                        <div id="mobile-focus-menu"
-                            class="hidden flex-col mt-4 pl-4 gap-4 border-l-2 border-gray-100 transition-all">
-                            <a href="New-Initiatives.html" class="text-base font-normal text-gray-600">New
-                                Initiatives</a>
-                            <a href="tech-consulting.html" class="text-base font-normal text-gray-600">Technology
-                                Consulting</a>
-                            <a href="process-improvement.html" class="text-base font-normal text-gray-600">Process
-                                Improvement</a>
-                            <a href="turnaround.html" class="text-base font-normal text-gray-600">Turnaround</a>
-                        </div>
+                <!-- key focus -->
+                <div>
+                    <button id="mobile-focus-toggle"
+                        class="flex items-center justify-between w-full hover:text-[#002A61] transition focus:outline-none">
+                        <span>Focus Areas</span>
+                        <i id="mobile-focus-chevron"
+                            class="fas fa-chevron-right text-sm transition-transform duration-300"></i>
+                    </button>
+
+                    <div id="mobile-focus-menu"
+                        class="hidden flex-col mt-4 pl-4 gap-4 border-l-2 border-gray-100 transition-all">
+                        <a href="New-Initiatives.html" class="text-base font-normal text-gray-600">New
+                            Initiatives</a>
+                        <a href="tech-consulting.html" class="text-base font-normal text-gray-600">Technology
+                            Consulting</a>
+                        <a href="process-improvement.html" class="text-base font-normal text-gray-600">Process
+                            Improvement</a>
+                        <a href="turnaround.html" class="text-base font-normal text-gray-600">Turnaround</a>
                     </div>
-                    <!-- services -->
-                    <div>
-                        <button id="mobile-services-toggle"
-                            class="flex items-center justify-between w-full hover:text-[#002A61] transition focus:outline-none text-lg font-semibold text-gray-800">
-                            <span>Services</span>
-                            <i id="mobile-chevron"
-                                class="fas fa-chevron-right text-lg transition-transform duration-300"></i>
-                        </button>
-                        <div id="mobile-services-menu"
-                            class="hidden flex-col mt-4 pl-4 gap-4 border-l-2 border-gray-100">
-                            <a href="./project-management.html" class="text-base font-normal text-gray-600">Project
-                                Management</a>
-                            <a href="./finance-transformation.html" class="text-base font-normal text-gray-600">Finance
-                                Transformation</a>
-                            <a href="./tech-transformation.html" class="text-base font-normal text-gray-600">Tech
-                                Transformation</a>
-                            <a href="./process-transformation.html" class="text-base font-normal text-gray-600">Process
-                                Transformation</a>
-                        </div>
-                    </div>
-
-                    <a href="ai-adoption.html" class="mobile-link hover:text-[#002A61] transition">AI Adoption</a>
-                    <!-- <a href="industries.html" class="mobile-link hover:text-[#002A61] transition">Industries</a> -->
-
-
-                    <div class="mt-4">
-                        <a href="contact.html"
-                            class="block w-full text-center py-4 bg-[#002A61] text-white rounded-xl font-bold shadow-lg active:scale-95 transition-transform">
-                            Get Started
-                        </a>
-                    </div>
-
-                    <div class="pt-20 text-center border-t border-gray-100">
-                        <img src="./images/fyndsol_logo2.png" alt="Fyndsol"
-                            class="h-16 mx-auto opacity-50 grayscale mb-15">
-                        <p class="text-xs text-gray-400 font-medium">© 2025 Fyndsol. All Rights Reserved.</p>
-                    </div>
-
                 </div>
+                <!-- services -->
+                <div>
+                    <button id="mobile-services-toggle"
+                        class="flex items-center justify-between w-full hover:text-[#002A61] transition focus:outline-none text-lg font-semibold text-gray-800">
+                        <span>Services</span>
+                        <i id="mobile-chevron"
+                            class="fas fa-chevron-right text-lg transition-transform duration-300"></i>
+                    </button>
+                    <div id="mobile-services-menu" class="hidden flex-col mt-4 pl-4 gap-4 border-l-2 border-gray-100">
+                        <a href="./project-management.html" class="text-base font-normal text-gray-600">Project
+                            Management</a>
+                        <a href="./finance-transformation.html" class="text-base font-normal text-gray-600">Finance
+                            Transformation</a>
+                        <a href="./tech-transformation.html" class="text-base font-normal text-gray-600">Tech
+                            Transformation</a>
+                        <a href="./process-transformation.html" class="text-base font-normal text-gray-600">Process
+                            Transformation</a>
+                    </div>
+                </div>
+
+                <a href="ai-adoption.html" class="mobile-link hover:text-[#002A61] transition">AI Adoption</a>
+
+
+                <div class="mt-4">
+                    <a href="contact.html"
+                        class="block w-full text-center py-4 bg-[#002A61] text-white rounded-xl font-bold shadow-lg active:scale-95 transition-transform">
+                        Get Started
+                    </a>
+                </div>
+
+                <div class="pt-10 text-center border-t border-gray-100">
+                    <img src="./images/fyndsol_logo2.png" alt="Fyndsol" class="h-16 mx-auto opacity-50 grayscale mb-15">
+                    <p class="text-xs text-gray-400 font-medium">© 2025 Fyndsol. All Rights Reserved.</p>
+                </div>
+
             </div>
         </div>
+    </div>
 
 
-        <style>
-            .is-active .line-1 {
-                transform: translateY(7px) rotate(45deg);
-            }
+  
 
-            .is-active .line-2 {
-                opacity: 0;
-                transform: translateX(-10px);
-            }
-
-            .is-active .line-3 {
-                transform: translateY(-7px) rotate(-45deg);
-            }
-
-            .overlay-active {
-                opacity: 1 !important;
-                pointer-events: auto !important;
-            }
-
-            .drawer-active {
-                transform: translateX(0) !important;
-            }
-
-            body.overflow-hidden {
-                overflow: hidden;
-            }
-
-            .nav-link {
-                position: relative;
-                transition: color 0.3s ease;
-            }
-
-            /* Underline exists but never expands */
-            .nav-link::after {
-                content: '';
-                position: absolute;
-                left: 0;
-                bottom: -2px;
-                width: 0;
-                height: 2px;
-                background-color: #002A61;
-            }
-
-            /* Hover: color change ONLY (no underline) */
-            .nav-link:hover {
-                color: #002A61;
-            }
-
-            /* Active page style */
-            .nav-active {
-                color: #002A61 !important;
-                font-weight: 600 !important;
-            }
-
-            /* Ensure no underline for active */
-            .nav-active::after {
-                display: none !important;
-            }
-
-            .mobile-active {
-                color: #002A61 !important;
-                font-weight: 800 !important;
-            }
-        </style>
-
-        <script>
-           document.addEventListener('DOMContentLoaded', () => {
-               const menuBtn = document.getElementById('menu-toggle');
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('menu-toggle');
             const drawer = document.getElementById('mobile-drawer');
             const overlay = document.getElementById('mobile-overlay');
 
@@ -480,8 +675,8 @@
                 servicesMenu.classList.toggle('flex');
                 servicesChevron.classList.toggle('chevron-rotate');
             });
-        
-        
+
+
             // 3. Dynamic Active Highlighting (Only highlights the link for the current page)
             const allLinks = document.querySelectorAll('.nav-link, .mobile-link');
             allLinks.forEach(link => {
@@ -493,903 +688,592 @@
                 }
             });
         });
-        </script>
-    </header>
-    <!--  -->
+    </script>
+</header>
+<!--  -->
 
-    <main>
-        <section class="hero-home relative w-full h-[500px] md:h-[550px] overflow-hidden">
-            <video class="absolute inset-0 w-full h-full object-cover object-center" autoplay loop muted playsinline
-                aria-hidden="true">
-                <source src="./images/video.mp4" type="video/mp4">
-            </video>
-            <div class="absolute inset-0 flex items-center px-6 md:px-16 pt-20 md:pt-40 max-w-7xl mx-auto  md:ml-5 ">
-                <div class="text-white max-w-xl relative z-10">
-                    <h1 class="text-3xl md:text-4xl font-bold leading-snug drop-shadow-lg">
-                        We Transform and scale for impact
-                    </h1>
-                    <p class="mt-4 text-lg md:text-base font-medium drop-shadow-lg leading-relaxed">
-                        Turning complexity into clarity and clarity into growth.
-                    </p>
+<main>
+    <section class="hero-home relative w-full h-[500px] md:h-[550px] overflow-hidden">
+        <video class="absolute inset-0 w-full h-full object-cover object-center" autoplay loop muted playsinline
+            aria-hidden="true">
+            <source src="./images/video.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 flex items-center px-6 md:px-16 pt-20 md:pt-40 max-w-7xl mx-auto  md:ml-5 ">
+            <div class="text-white max-w-xl relative z-10">
+                <h1 class="text-3xl md:text-4xl font-bold leading-snug drop-shadow-lg">
+                    We Transform and scale for impact
+                </h1>
+                <p class="mt-4 text-lg md:text-base font-medium drop-shadow-lg leading-relaxed">
+                    Turning complexity into clarity and clarity into growth.
+                </p>
+                <a href="./about.html"
+                    class="mt-8 inline-block bg-black/70 px-6 py-3 rounded-md text-white font-semibold hover:bg-black transition shadow-lg">
+                    Know More →
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const currentPath = window.location.pathname;
+        const currentPage = currentPath.split('/').pop() || 'index.html';
+        const servicesTrigger = document.querySelector('.services-trigger');
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            if (link.getAttribute('href') === currentPage) link.classList.add('active');
+        });
+
+        document.querySelectorAll('.dropdown-item').forEach(item => {
+            if (currentPath.includes(item.getAttribute('href'))) {
+                item.classList.add('active');
+                if (servicesTrigger) servicesTrigger.classList.add('active');
+            }
+        });
+
+
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
+    });
+</script>
+
+
+<section class="relative z-20 mt-[-40px] md:mt-[-100px] mb-12 md:mb-0">
+    <div class="absolute inset-0 w-full h-[325px] z-0 mt-20 md:mt-40">
+        <img src="./images/image 2.png" alt="Growth Chart Graphic" class="w-full h-full object-cover opacity-90">
+    </div>
+
+    <div class="container-custom ">
+        <div class="relative grid grid-cols-1 md:grid-cols-2 gap-0 items-end">
+            <div
+                class="relative bg-white p-6 lg:p-10 rounded-lg shadow-md border-t-8 border-[--primary-color] w-full max-w-xl min-h-[440px]  lg:max-w-none transform md:translate-y-12 z-30">
+                <div class="mb-6 pb-2 relative">
+                    <h2 class="text-2xl md:text-3xl font-bold text-fyndsol-blue relative z-10">FyndSol
+                        Consulting</h2>
+                    <div class="absolute bottom-0 left-0 w-full h-[4px] bg-[#f0f0f0]"></div>
+                    <div class="animate-grow-line absolute bottom-0 left-0 h-[4px] bg-[--fyndsol-pink] z-20">
+                    </div>
+                </div>
+
+                <p class="text-gray-600 text-lg md:text-lg leading-relaxed mb-4">
+                    We are a forward-thinking business and technology consulting firm, empowering organizations
+                    to transform, scale, and thrive in the digital era. At FyndSol, we don't just advise — we
+                    execute for impact.
+                </p>
+                <p class="text-gray-600 text-lg md:text-lg leading-relaxed mb-8">
+                    Our team delivers practical, results-driven solutions to complex business challenges by
+                    combining industry expertise, data-led insights, and innovative digital strategies. We work
+                    alongside our clients to drive measurable outcomes sustainable growth.
+                </p>
+
+                <div class="flex flex-col lg:flex-row gap-4">
                     <a href="./about.html"
-                        class="mt-8 inline-block bg-black/70 px-6 py-3 rounded-md text-white font-semibold hover:bg-black transition shadow-lg">
-                        Know More →
+                        class="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded font-bold hover:bg-gray-50 transition text-center text-lg">
+                        Learn More
+                    </a>
+                    <a href="./contact.html"
+                        class="bg-black text-white px-6 py-3 rounded font-bold hover:bg-blue-900 transition text-center text-lg">
+                        Get Started
                     </a>
                 </div>
             </div>
-        </section>
-    </main>
 
-    <style>
-        /* Navigation Hover Underlines */
-        .nav-link::after,
-        .services-trigger::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: #002A61;
-            transition: width 0.3s ease;
-        }
+            <div
+                class="hidden md:flex absolute right-0 bottom-0 z-20 pointer-events-none translate-y-6 lg:translate-y-0">
+                <div
+                    class="relative bg-gradient-to-br from-[#a40054] via-[#c3006d] to-[#ff4c9a] p-6 rounded-xl shadow-2xl w-64 lg:w-72 h-40 flex items-center justify-center transform hover:scale-105 transition-transform duration-300 border border-[#ffffff22]">
+                    <div
+                        class="absolute bottom-[-18px] right-8 w-0 h-0 border-l-[14px] border-l-transparent border-r-[14px] border-r-transparent border-t-[18px] border-t-[#c3006d]">
+                    </div>
+                    <p
+                        class="relative text-white text-xs lg:text-sm italic text-center font-semibold drop-shadow-md leading-relaxed px-2">
+                        “Empowering businesses with clarity, strategy, and measurable growth — that’s the
+                        FyndSol promise.”
+                    </p>
+                </div>
+            </div>
 
-        /* .nav-link:hover::after, .nav-link.active::after, .services-trigger.active::after {
-        width: 100%;
-    } */
 
-        /* Active Link Colors */
-        .nav-link.active,
-        .services-trigger.active,
-        .nav-link:hover {
-            color: #002A61 !important;
-            /* font-weight: 600; */
-        }
+        </div>
+    </div>
+</section>
 
-        .dropdown-item.active span {
-            color: #002A61 !important;
-            font-weight: 600;
-        }
-    </style>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const currentPath = window.location.pathname;
-            const currentPage = currentPath.split('/').pop() || 'index.html';
-            const servicesTrigger = document.querySelector('.services-trigger');
 
-            // Combined Active State Logic
-            document.querySelectorAll('.nav-link').forEach(link => {
-                if (link.getAttribute('href') === currentPage) link.classList.add('active');
-            });
 
-            document.querySelectorAll('.dropdown-item').forEach(item => {
-                if (currentPath.includes(item.getAttribute('href'))) {
-                    item.classList.add('active');
-                    if (servicesTrigger) servicesTrigger.classList.add('active');
+<!-- our guiding principles -->
+
+
+<section class="py-20 bg-white overflow-hidden" id="guiding-principles">
+    <div class="max-w-[1080px] mx-auto px-6">
+        <div class="mb-16 reveal-up text-center">
+            <h2 class="text-xl mt-6 md:text-2xl font-bold mb-2">Our Guiding Principles</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-blue-900 to-blue-600 rounded-full mx-auto"></div>
+            <p class="text-gray-500 max-w-2xl mt-4 mx-auto text-lg md:text-lg leading-relaxed">
+                We transform businesses through principles that ensure clarity, consistency, and long-term
+                capital growth.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="reveal-up group relative bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500"
+                style="transition-delay: 100ms;">
+                <div class="absolute top-0 left-0 right-0 h-1.5 bg-gray-50 rounded-t-2xl overflow-hidden">
+                    <div class="h-full w-0 group-hover:w-full bg-[#002A61] transition-all duration-700"></div>
+                </div>
+                <div
+                    class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#002A61] transition-all duration-500">
+                    <i class="fas fa-terminal text-xl text-[#007BFF] group-hover:text-white"></i>
+                </div>
+                <h3 class="font-bold text-xl text-[#002A61] mb-3">Execution</h3>
+                <p class="text-gray-500 text-lg md:text-base leading-relaxed">
+                    The bridge between vision and reality. We prioritize disciplined planning and hands-on
+                    leadership to turn strategy into measurable results.
+                </p>
+            </div>
+
+            <div class="reveal-up group relative bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500"
+                style="transition-delay: 200ms;">
+                <div class="absolute top-0 left-0 right-0 h-1.5 bg-gray-50 rounded-t-2xl overflow-hidden">
+                    <div class="h-full w-0 group-hover:w-full bg-[#007BFF] transition-all duration-700"></div>
+                </div>
+                <div
+                    class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#007BFF] transition-all duration-500">
+                    <i class="fas fa-chart-line text-xl text-[#007BFF] group-hover:text-white"></i>
+                </div>
+                <h3 class="font-bold text-xl text-[#002A61] mb-3">Progress</h3>
+                <p class="text-gray-500 text-lg md:text-base leading-relaxed">
+                    Forward momentum is non-negotiable. We ensure continuous growth through data-driven insights
+                    and iterative optimization.
+                </p>
+            </div>
+
+            <div class="reveal-up group relative bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500"
+                style="transition-delay: 300ms;">
+                <div class="absolute top-0 left-0 right-0 h-1.5 bg-gray-50 rounded-t-2xl overflow-hidden">
+                    <div class="h-full w-0 group-hover:w-full bg-[#002A61] transition-all duration-700"></div>
+                </div>
+                <div
+                    class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#002A61] transition-all duration-500">
+                    <i class="fas fa-shield-alt text-xl text-[#007BFF] group-hover:text-white"></i>
+                </div>
+                <h3 class="font-bold text-xl text-[#002A61] mb-3">Patience</h3>
+                <p class="text-gray-500 text-lg md:text-base leading-relaxed">
+                    Sustainable value takes time. We build long-term meaningful partnerships founded on
+                    strategic stability and trust.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 bg-gray-50" id="about-us">
+    <div class="max-w-[1080px] mx-auto px-6">
+        <header class="text-center mb-12 reveal-up">
+            <h2 class="text-xl md:text-2xl font-bold mb-2">About Us</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-blue-900 to-blue-600 rounded-full mx-auto"></div>
+            <p class="text-gray-500 max-w-2xl mt-4 mx-auto text-lg md:text-lg leading-relaxed">
+                We help businesses transform ideas into measurable impact through clarity, innovation, and
+                strategic execution.
+            </p>
+        </header>
+
+        <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+            <article class="md:w-1/2 order-2 md:order-1 reveal-up">
+                <h3 class="text-2xl md:text-3xl font-bold mb-6 leading-snug text-[#41484E]">
+                    Transforming Vision Into Scalable Impact
+                </h3>
+                <p class="text-gray-700 mb-4 leading-relaxed text-[16px] md:text-[17px]">
+                    At <strong>FyndSol Consulting</strong>, we convert challenges into opportunities by helping
+                    businesses grow with purpose, precision, and innovation.
+                </p>
+                <p class="text-gray-700 mb-6 leading-relaxed text-[16px] md:text-[17px]">
+                    We don’t just guide — we collaborate. Our experts work closely with your team to implement
+                    strategies that produce long-term, measurable outcomes.
+                </p>
+                <ul class="space-y-3 mb-8 text-gray-700">
+                    <li class="flex items-center gap-3">
+                        <span class="text-[#007BFF] text-xl font-bold">•</span>
+                        <span>Clear communication and structured execution</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="text-[#007BFF] text-xl font-bold">•</span>
+                        <span>Solutions tailored specifically to business needs</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="text-[#007BFF] text-xl font-bold">•</span>
+                        <span>Transparent processes and measurable improvements</span>
+                    </li>
+                </ul>
+                <a href="./about.html"
+                    class="inline-block border-2 border-[#007BFF] text-[#007BFF] px-7 py-3 rounded-lg font-semibold hover:bg-[#007BFF] hover:text-white transition-all duration-300">
+                    Learn More About Us
+                </a>
+            </article>
+
+            <figure class="md:w-1/2 order-1 md:order-2 reveal-up">
+                <img src="./images/image 5.png" alt="Team collaborating"
+                    class="rounded-xl shadow-lg object-cover w-full">
+            </figure>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="py-20 bg-gray-50" id="services">
+    <div class="max-w-[1080px] mx-auto px-6">
+        <header class="text-center mb-12 reveal-up">
+            <h2 class="text-xl md:text-2xl font-bold mb-2">Key Focus Areas</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-blue-900 to-blue-600 rounded-full mx-auto"></div>
+            <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg md:text-lg leading-relaxed">
+                Tailored consulting solutions designed to strengthen your business and accelerate growth.
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+                class="reveal-up bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 mb-4">
+                <div class="h-32 overflow-hidden">
+                    <img src="./images/startup.png"
+                        class="w-full h-full object-cover hover:scale-110 transition-duration-700">
+                </div>
+                <div class="p-5">
+                    <h3 class="text-md font-semibold text-gray-900 mb-2">New Initiatives</h3>
+                    <p class="text-[16px] md:text-[17px] text-gray-500 mb-4">Guiding early-stage ventures toward
+                        scalable growth.</p>
+                    <a href="./New-Initiatives.html" class="text-lg font-bold text-blue-600 ">READ MORE →</a>
+                </div>
+            </div>
+
+            <div class="reveal-up bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 mb-4"
+                style="transition-delay: 100ms;">
+                <div class="h-32 overflow-hidden">
+                    <img src="./images/tech consulting1.png"
+                        class="w-full h-full object-cover hover:scale-110 transition-duration-700">
+                </div>
+                <div class="p-5">
+                    <h3 class="text-md font-semibold text-gray-900 mb-2">Tech Consulting</h3>
+                    <p class="text-[16px] md:text-[17px] text-gray-500 mb-4">Modernizing infrastructure and accelerating
+                        digital
+                        transformation.</p>
+                    <a href="./tech-consulting.html" class="text-lg font-bold text-blue-600 ">READ MORE →</a>
+                </div>
+            </div>
+
+            <div class="reveal-up bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 mb-4"
+                style="transition-delay: 200ms;">
+                <div class="h-32 overflow-hidden">
+                    <img src="./images/process improvement.png"
+                        class="w-full h-full object-cover hover:scale-110 transition-duration-700">
+                </div>
+                <div class="p-5">
+                    <h3 class="text-md font-semibold text-gray-900 mb-2">Process Improvement</h3>
+                    <p class="text-[16px] md:text-[17px] text-gray-500 mb-4">Streamlining operations to reduce
+                        inefficiencies and
+                        remove bottlenecks.</p>
+                    <a href="./process-improvement.html" class="text-lg font-bold text-blue-600 ">READ MORE →</a>
+                </div>
+            </div>
+
+            <div class="reveal-up bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 mb-4"
+                style="transition-delay: 300ms;">
+                <div class="h-32 overflow-hidden">
+                    <img src="./images/turnaround.png"
+                        class="w-full h-full object-cover hover:scale-110 transition-duration-700">
+                </div>
+                <div class="p-5">
+                    <h3 class="text-md font-semibold text-gray-900 mb-2">Turnaround</h3>
+                    <p class="text-[16px] md:text-[17px] text-gray-500 mb-4">Elevating finance from support function to
+                        strategic
+                        decision engine.</p>
+                    <a href="./turnaround.html" class="text-lg font-bold text-blue-600   ">READ MORE →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+
                 }
             });
+        }, observerOptions);
 
-            // Mobile Menu Toggle
-            const btn = document.getElementById('mobile-menu-btn');
-            const menu = document.getElementById('mobile-menu');
-            btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
+        document.querySelectorAll(".reveal-up").forEach((item) => observer.observe(item));
+    });
+</script>
+
+
+
+<!-- SUCCESS STORY -->
+
+<section class="success-section relative text-white py-16 md:py-20">
+    <div class="success-bg"></div>
+    <div class="success-overlay"></div>
+
+    <div class="container mx-auto relative z-10 px-4 md:px-6 max-w-[1080px]">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                Success Stories
+            </h2>
+            <p class="text-lg md:text-xl opacity-90 leading-relaxed">
+                Discover how industry leaders are achieving measurable results through strategic transformation
+                and innovative solutions.
+            </p>
+        </div>
+
+        <div class="success-carousel relative overflow-hidden">
+            <div id="successCards" class="cards-container flex transition-transform duration-500 ease-out">
+                <div class="success-card" data-card-index="0">
+                    <div class="card-header">
+                        <span class="industry-tag">Arch & Const</span>
+                    </div>
+                    <h3 class="card-title">Conservation Mainstream</h3>
+                    <p class="card-description">
+                        The engagement built a process-driven foundation across planning, bidding, and project control,
+                        replacing ad-hoc decisions with structured execution. This improved cost control and margins,
+                        enabling sustainable scaling, larger projects, and multifold revenue growth.
+                    </p>
+                </div>
+                <div class="success-card" data-card-index="1">
+                    <div class="card-header">
+                        <span class="industry-tag">Med-Tech</span>
+                    </div>
+                    <h3 class="card-title">Medical Consumables Manufacturer</h3>
+                    <p class="card-description">
+                        The engagement enabled organization-wide transformation through process optimization, change
+                        management, and robust IT and MIS systems. Data-driven decision-making replaced heuristic
+                        practices, improving visibility, control, and alignment, with measurable and ongoing performance
+                        improvements.
+                    </p>
+                </div>
+                <div class="success-card" data-card-index="2">
+                    <div class="card-header">
+                        <span class="industry-tag">Garment</span>
+                    </div>
+                    <h3 class="card-title">Textile Manufacturer</h3>
+                    <p class="card-description">
+
+The engagement enabled a turnaround through stronger financial planning, cost optimization, and robust MIS. Data-driven insights replaced intuition-led decisions, improving control, margin visibility, and driving a shift from losses to sustained profitability.
+
+</p>
+                </div>
+                <div class="success-card" data-card-index="3">
+                    <div class="card-header">
+                        <span class="industry-tag">Infrastructure</span>
+                    </div>
+                    <h3 class="card-title">Construction</h3>
+                    <p class="card-description">
+                     
+The engagement developed a rigorous, project-level financial model for budgeting and forecasting, integrating costs, timelines, cash flows, and returns. This resulted in a bank-ready business report with clear feasibility, funding needs, and ROI to support lender and investment decisions.
+
+                    </p>
+                </div>
+                <div class="success-card" data-card-index="4">
+                    <div class="card-header">
+                        <span class="industry-tag">Distribution</span>
+                    </div>
+                    <h3 class="card-title"> Fasteners Trading</h3>
+                    <p class="card-description">
+                      
+The engagement improved inventory classification and cash-flow management, unlocking capital from slow-moving stock and improving working capital efficiency. In parallel, IT modernization enhanced system reliability, scalability, and overall operational efficiency.                   </p>
+                </div>
+                <div class="success-card" data-card-index="5">
+                    <div class="card-header">
+                        <span class="industry-tag">Operations</span>
+                    </div>
+                    <h3 class="card-title"> Manufacturing</h3>
+                    <p class="card-description">
+                      
+The engagement strengthened MIS, financial reporting, projections, and cost transparency, improving visibility into performance and margins. This enabled data-driven decision-making, stronger cost control, and more effective strategic planning across operations.                   </p>
+                </div>
+            </div>
+
+            <div class="carousel-controls flex justify-center items-center mt-10 space-x-8">
+                <button class="carousel-arrow left-arrow" onclick="changeCard(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="dot-navigation-container">
+                    <div class="dots-wrapper">
+                        <button class="nav-dot active" data-index="0" onclick="goToCard(0)"></button>
+                        <button class="nav-dot" data-index="1" onclick="goToCard(1)"></button>
+                        <button class="nav-dot" data-index="2" onclick="goToCard(2)"></button>
+                        <button class="nav-dot" data-index="3" onclick="goToCard(3)"></button>
+                        <button class="nav-dot" data-index="4" onclick="goToCard(4)"></button>
+                        <button class="nav-dot" data-index="5" onclick="goToCard(5)"></button>
+                    </div>
+                </div>
+                <button class="carousel-arrow right-arrow" onclick="changeCard(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    let currentCardIndex = 0;
+    let autoPlayInterval;
+    const totalCards = 6;
+    const gap = 30;
+
+    function updateLayout() {
+        const carousel = document.querySelector('.success-carousel');
+        const container = document.getElementById('successCards');
+        const cards = document.querySelectorAll('.success-card');
+
+        let cardsPerView;
+        if (window.innerWidth >= 1024) cardsPerView = 3;
+        else if (window.innerWidth >= 768) cardsPerView = 2;
+        else cardsPerView = 1;
+
+        const containerWidth = carousel.offsetWidth;
+        const cardWidth = (containerWidth - (gap * (cardsPerView - 1))) / cardsPerView;
+
+        cards.forEach(card => {
+            card.style.width = cardWidth + 'px';
         });
-    </script>
 
-
-    <section class="relative z-20 mt-[-40px] md:mt-[-100px] mb-12 md:mb-0">
-        <div class="absolute inset-0 w-full h-[325px] z-0 mt-20 md:mt-40">
-            <img src="./images/image 2.png" alt="Growth Chart Graphic" class="w-full h-full object-cover opacity-90">
-        </div>
-
-        <div class="container-custom ">
-            <div class="relative grid grid-cols-1 md:grid-cols-2 gap-0 items-end">
-                <div
-                    class="relative bg-white p-6 lg:p-10 rounded-lg shadow-md border-t-8 border-[--primary-color] w-full max-w-xl min-h-[440px]  lg:max-w-none transform md:translate-y-12 z-30">
-                    <div class="mb-6 pb-2 relative">
-                        <h2 class="text-2xl md:text-3xl font-bold text-fyndsol-blue relative z-10">FyndSol
-                            Consulting</h2>
-                        <div class="absolute bottom-0 left-0 w-full h-[4px] bg-[#f0f0f0]"></div>
-                        <div class="animate-grow-line absolute bottom-0 left-0 h-[4px] bg-[--fyndsol-pink] z-20">
-                        </div>
-                    </div>
-
-                    <p class="text-gray-600 text-lg md:text-lg leading-relaxed mb-4">
-                        We are a forward-thinking business and technology consulting firm, empowering organizations
-                        to transform, scale, and thrive in the digital era. At FyndSol, we don't just advise — we
-                        execute for impact.
-                    </p>
-                    <p class="text-gray-600 text-lg md:text-lg leading-relaxed mb-8">
-                        Our team delivers practical, results-driven solutions to complex business challenges by
-                        combining industry expertise, data-led insights, and innovative digital strategies. We work
-                        alongside our clients to drive measurable outcomes sustainable growth.
-                    </p>
-
-                    <div class="flex flex-col lg:flex-row gap-4">
-                        <a href="./about.html"
-                            class="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded font-bold hover:bg-gray-50 transition text-center text-lg">
-                            Learn More
-                        </a>
-                        <a href="./contact.html"
-                            class="bg-black text-white px-6 py-3 rounded font-bold hover:bg-blue-900 transition text-center text-lg">
-                            Get Started
-                        </a>
-                    </div>
-                </div>
-
-                <div
-                    class="hidden md:flex absolute right-0 bottom-0 z-20 pointer-events-none translate-y-6 lg:translate-y-0">
-                    <div
-                        class="relative bg-gradient-to-br from-[#a40054] via-[#c3006d] to-[#ff4c9a] p-6 rounded-xl shadow-2xl w-64 lg:w-72 h-40 flex items-center justify-center transform hover:scale-105 transition-transform duration-300 border border-[#ffffff22]">
-                        <div
-                            class="absolute bottom-[-18px] right-8 w-0 h-0 border-l-[14px] border-l-transparent border-r-[14px] border-r-transparent border-t-[18px] border-t-[#c3006d]">
-                        </div>
-                        <p
-                            class="relative text-white text-xs lg:text-sm italic text-center font-semibold drop-shadow-md leading-relaxed px-2">
-                            “Empowering businesses with clarity, strategy, and measurable growth — that’s the
-                            FyndSol promise.”
-                        </p>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Full-width blue/green gradient bar -->
-    <!-- <div class="h-20 w-full bg-gradient-to-r from-[#00A9E0] to-[#00CCBC] mt-[-32px] md:mt-[-50px] relative z-0">
-        </div> -->
-
-
-    <!-- our guiding principles -->
-
-    <style>
-        .reveal-up {
-            opacity: 0;
-            transform: translateY(30px) scale(0.98);
-            transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
-            will-change: transform, opacity;
+        if (currentCardIndex > totalCards - cardsPerView) {
+            currentCardIndex = totalCards - cardsPerView;
         }
 
-        .reveal-up.active {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-        }
+        const moveX = -(currentCardIndex * (cardWidth + gap));
+        container.style.transform = `translateX(${moveX}px)`;
 
-        .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-        }
+        updateDots(cardsPerView);
+    }
 
-        .scrollbar-hide {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
+    function updateDots(cardsPerView) {
+        const dots = document.querySelectorAll('.nav-dot');
+        dots.forEach((dot, i) => {
+            dot.classList.remove('active');
+            if (i === currentCardIndex) dot.classList.add('active');
+        });
+    }
 
-    <section class="py-20 bg-white overflow-hidden" id="guiding-principles">
-        <div class="max-w-[1080px] mx-auto px-6">
-            <div class="mb-16 reveal-up text-center">
-                <h2 class="text-xl mt-6 md:text-2xl font-bold mb-2">Our Guiding Principles</h2>
-                <div class="w-16 h-1 bg-gradient-to-r from-blue-900 to-blue-600 rounded-full mx-auto"></div>
-                <p class="text-gray-500 max-w-2xl mt-4 mx-auto text-lg md:text-lg leading-relaxed">
-                    We transform businesses through principles that ensure clarity, consistency, and long-term
-                    capital growth.
-                </p>
-            </div>
+    function changeCard(dir) {
+        let cardsPerView = window.innerWidth >= 1024 ? 3 : (window.innerWidth >= 768 ? 2 : 1);
+        currentCardIndex += dir;
+        if (currentCardIndex < 0) currentCardIndex = 0;
+        if (currentCardIndex > totalCards - cardsPerView) currentCardIndex = totalCards - cardsPerView;
+        updateLayout();
+        resetTimer();
+    }
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="reveal-up group relative bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500"
-                    style="transition-delay: 100ms;">
-                    <div class="absolute top-0 left-0 right-0 h-1.5 bg-gray-50 rounded-t-2xl overflow-hidden">
-                        <div class="h-full w-0 group-hover:w-full bg-[#002A61] transition-all duration-700"></div>
-                    </div>
-                    <div
-                        class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#002A61] transition-all duration-500">
-                        <i class="fas fa-terminal text-xl text-[#007BFF] group-hover:text-white"></i>
-                    </div>
-                    <h3 class="font-bold text-xl text-[#002A61] mb-3">Execution</h3>
-                    <p class="text-gray-500 text-lg md:text-base leading-relaxed">
-                        The bridge between vision and reality. We prioritize disciplined planning and hands-on
-                        leadership to turn strategy into measurable results.
-                    </p>
-                </div>
+    function goToCard(index) {
+        currentCardIndex = index;
+        updateLayout();
+        resetTimer();
+    }
 
-                <div class="reveal-up group relative bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500"
-                    style="transition-delay: 200ms;">
-                    <div class="absolute top-0 left-0 right-0 h-1.5 bg-gray-50 rounded-t-2xl overflow-hidden">
-                        <div class="h-full w-0 group-hover:w-full bg-[#007BFF] transition-all duration-700"></div>
-                    </div>
-                    <div
-                        class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#007BFF] transition-all duration-500">
-                        <i class="fas fa-chart-line text-xl text-[#007BFF] group-hover:text-white"></i>
-                    </div>
-                    <h3 class="font-bold text-xl text-[#002A61] mb-3">Progress</h3>
-                    <p class="text-gray-500 text-lg md:text-base leading-relaxed">
-                        Forward momentum is non-negotiable. We ensure continuous growth through data-driven insights
-                        and iterative optimization.
-                    </p>
-                </div>
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(() => {
+            let cardsPerView = window.innerWidth >= 1024 ? 3 : (window.innerWidth >= 768 ? 2 : 1);
+            currentCardIndex++;
+            if (currentCardIndex > totalCards - cardsPerView) currentCardIndex = 0;
+            updateLayout();
+        }, 4000);
+    }
 
-                <div class="reveal-up group relative bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500"
-                    style="transition-delay: 300ms;">
-                    <div class="absolute top-0 left-0 right-0 h-1.5 bg-gray-50 rounded-t-2xl overflow-hidden">
-                        <div class="h-full w-0 group-hover:w-full bg-[#002A61] transition-all duration-700"></div>
-                    </div>
-                    <div
-                        class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-[#002A61] transition-all duration-500">
-                        <i class="fas fa-shield-alt text-xl text-[#007BFF] group-hover:text-white"></i>
-                    </div>
-                    <h3 class="font-bold text-xl text-[#002A61] mb-3">Patience</h3>
-                    <p class="text-gray-500 text-lg md:text-base leading-relaxed">
-                        Sustainable value takes time. We build long-term meaningful partnerships founded on
-                        strategic stability and trust.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+    function resetTimer() {
+        clearInterval(autoPlayInterval);
+        startAutoPlay();
+    }
 
-    <section class="py-20 bg-gray-50" id="about-us">
-        <div class="max-w-[1080px] mx-auto px-6">
-            <header class="text-center mb-12 reveal-up">
-                <h2 class="text-xl md:text-2xl font-bold mb-2">About Us</h2>
-                <div class="w-16 h-1 bg-gradient-to-r from-blue-900 to-blue-600 rounded-full mx-auto"></div>
-                <p class="text-gray-500 max-w-2xl mt-4 mx-auto text-lg md:text-lg leading-relaxed">
-                    We help businesses transform ideas into measurable impact through clarity, innovation, and
-                    strategic execution.
-                </p>
-            </header>
+    window.addEventListener('resize', updateLayout);
+    window.addEventListener('DOMContentLoaded', () => {
+        updateLayout();
+        startAutoPlay();
 
-            <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16">
-                <article class="md:w-1/2 order-2 md:order-1 reveal-up">
-                    <h3 class="text-2xl md:text-3xl font-bold mb-6 leading-snug text-[#41484E]">
-                        Transforming Vision Into Scalable Impact
-                    </h3>
-                    <p class="text-gray-700 mb-4 leading-relaxed text-[16px] md:text-[17px]">
-                        At <strong>FyndSol Consulting</strong>, we convert challenges into opportunities by helping
-                        businesses grow with purpose, precision, and innovation.
-                    </p>
-                    <p class="text-gray-700 mb-6 leading-relaxed text-[16px] md:text-[17px]">
-                        We don’t just guide — we collaborate. Our experts work closely with your team to implement
-                        strategies that produce long-term, measurable outcomes.
-                    </p>
-                    <ul class="space-y-3 mb-8 text-gray-700">
-                        <li class="flex items-center gap-3">
-                            <span class="text-[#007BFF] text-xl font-bold">•</span>
-                            <span>Clear communication and structured execution</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="text-[#007BFF] text-xl font-bold">•</span>
-                            <span>Solutions tailored specifically to business needs</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="text-[#007BFF] text-xl font-bold">•</span>
-                            <span>Transparent processes and measurable improvements</span>
-                        </li>
-                    </ul>
-                    <a href="./about.html"
-                        class="inline-block border-2 border-[#007BFF] text-[#007BFF] px-7 py-3 rounded-lg font-semibold hover:bg-[#007BFF] hover:text-white transition-all duration-300">
-                        Learn More About Us
-                    </a>
-                </article>
+        const cards = document.querySelectorAll('.success-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
+            card.addEventListener('mouseleave', startAutoPlay);
+        });
+    });
+</script>
 
-                <figure class="md:w-1/2 order-1 md:order-2 reveal-up">
-                    <img src="./images/image 5.png" alt="Team collaborating"
-                        class="rounded-xl shadow-lg object-cover w-full">
-                </figure>
-            </div>
-        </div>
-    </section>
 
+
+
+
+
+<!-- CTA -->
+<section
+    class="fyndsol-hero relative py-10 md:py-32 lg:py-40 overflow-hidden text-center min-h-[80vh] flex items-center">
    
 
-    <section class="py-20 bg-gray-50" id="services">
-        <div class="max-w-[1080px] mx-auto px-6">
-            <header class="text-center mb-12 reveal-up">
-                <h2 class="text-xl md:text-2xl font-bold mb-2">Key Focus Areas</h2>
-                <div class="w-16 h-1 bg-gradient-to-r from-blue-900 to-blue-600 rounded-full mx-auto"></div>
-                <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg md:text-lg leading-relaxed">
-                    Tailored consulting solutions designed to strengthen your business and accelerate growth.
-                </p>
-            </header>
+    <div class="absolute inset-0 z-0">
+        <div class="fyndsol-overlay"></div>
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2070&q=80"
+            alt="Modern business workspace" class="w-full h-full object-cover">
+    </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div
-                    class="reveal-up bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 mb-4">
-                    <div class="h-32 overflow-hidden">
-                        <img src="./images/startup.png"
-                            class="w-full h-full object-cover hover:scale-110 transition-duration-700">
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-md font-semibold text-gray-900 mb-2">New Initiatives</h3>
-                        <p class="text-[16px] md:text-[17px] text-gray-500 mb-4">Guiding early-stage ventures toward scalable growth.</p>
-                        <a href="./New-Initiatives.html" class="text-lg font-bold text-blue-600 ">READ MORE →</a>
-                    </div>
-                </div>
-
-                <div class="reveal-up bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 mb-4"
-                    style="transition-delay: 100ms;">
-                    <div class="h-32 overflow-hidden">
-                        <img src="./images/tech consulting1.png"
-                            class="w-full h-full object-cover hover:scale-110 transition-duration-700">
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-md font-semibold text-gray-900 mb-2">Tech Consulting</h3>
-                        <p class="text-[16px] md:text-[17px] text-gray-500 mb-4">Modernizing infrastructure and accelerating digital
-                            transformation.</p>
-                        <a href="./tech-consulting.html" class="text-lg font-bold text-blue-600 ">READ MORE →</a>
-                    </div>
-                </div>
-
-                <div class="reveal-up bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 mb-4"
-                    style="transition-delay: 200ms;">
-                    <div class="h-32 overflow-hidden">
-                        <img src="./images/process improvement.png"
-                            class="w-full h-full object-cover hover:scale-110 transition-duration-700">
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-md font-semibold text-gray-900 mb-2">Process Improvement</h3>
-                        <p class="text-[16px] md:text-[17px] text-gray-500 mb-4">Streamlining operations to reduce inefficiencies and
-                            remove bottlenecks.</p>
-                        <a href="./process-improvement.html" class="text-lg font-bold text-blue-600 ">READ MORE →</a>
-                    </div>
-                </div>
-
-                <div class="reveal-up bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 mb-4"
-                    style="transition-delay: 300ms;">
-                    <div class="h-32 overflow-hidden">
-                        <img src="./images/turnaround.png"
-                            class="w-full h-full object-cover hover:scale-110 transition-duration-700">
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-md font-semibold text-gray-900 mb-2">Turnaround</h3>
-                        <p class="text-[16px] md:text-[17px] text-gray-500 mb-4">Elevating finance from support function to strategic
-                            decision engine.</p>
-                        <a href="./turnaround.html" class="text-lg font-bold text-blue-600   ">READ MORE →</a>
-                    </div>
-                </div>
-            </div>
+    <div class="absolute inset-0 z-10 pointer-events-none">
+        <div
+            class="absolute top-1/4 left-[5%] w-64 md:w-96 h-64 md:h-96 blur-3xl rounded-full fyndsol-hero blur-element">
         </div>
-    </section>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: "0px 0px -50px 0px"
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("active");
-
-                    }
-                });
-            }, observerOptions);
-
-            document.querySelectorAll(".reveal-up").forEach((item) => observer.observe(item));
-        });
-    </script>
-
-    <!-- ------------------------------------------------------------------------------------------------------------------------ -->
-
-
-    <!-- SUCCESS STORY -->
-
-    <section class="success-section relative text-white py-16 md:py-20">
-        <div class="success-bg"></div>
-        <div class="success-overlay"></div>
-
-        <div class="container mx-auto relative z-10 px-4 md:px-6 max-w-[1080px]">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                    Success Stories
-                </h2>
-                <p class="text-lg md:text-xl opacity-90 leading-relaxed">
-                    Discover how industry leaders are achieving measurable results through strategic transformation
-                    and innovative solutions.
-                </p>
-            </div>
-
-            <div class="success-carousel relative overflow-hidden">
-                <div id="successCards" class="cards-container flex transition-transform duration-500 ease-out">
-                    <div class="success-card" data-card-index="0">
-                        <div class="card-header">
-                            <span class="industry-tag">Arch & Const</span>
-                        </div>
-                        <h3 class="card-title">Conservation Mainstream</h3>
-                        <p class="card-description">
-                            Sustainable design reduced environmental impact by 40% while maintaining project
-                            timelines and budgets.
-                        </p>
-
-                    </div>
-
-                    <div class="success-card" data-card-index="1">
-                        <div class="card-header">
-                            <span class="industry-tag">Med-Tech</span>
-                        </div>
-                        <h3 class="card-title">Medical Consumables Manufacturer</h3>
-                        <p class="card-description">
-                            Sterile automation and quality systems boosted efficiency 45%, cut contamination 90%,
-                            and ensured full FDA compliance.
-                        </p>
-
-                    </div>
-
-                    <div class="success-card" data-card-index="2">
-                        <div class="card-header">
-                            <span class="industry-tag">Garment</span>
-                        </div>
-                        <h3 class="card-title">Textile Manufacturer</h3>
-                        <p class="card-description">
-                            Streamlined fabric sourcing and inventory management cut material procurement time by
-                            30% and reduced overstock by 40% across seasonal collections.
-                        </p>
-
-                    </div>
-
-                    <div class="success-card" data-card-index="3">
-                        <div class="card-header">
-                            <span class="industry-tag">Technology</span>
-                        </div>
-                        <h3 class="card-title">Retail Digital Solutions</h3>
-                        <p class="card-description">
-                            CRM integration and sales automation delivered 35% increase in customer satisfaction and
-                            25% boost in sales conversions.
-                        </p>
-
-                    </div>
-
-                    <div class="success-card" data-card-index="4">
-                        <div class="card-header">
-                            <span class="industry-tag">Software</span>
-                        </div>
-                        <h3 class="card-title">Agile Workflow Engine</h3>
-                        <p class="card-description">
-                            Digital transformation and agile implementation achieved 45% reduction in project
-                            delivery time and improved team collaboration.
-                        </p>
-
-                    </div>
-
-                    <div class="success-card" data-card-index="5">
-                        <div class="card-header">
-                            <span class="industry-tag">Finance</span>
-                        </div>
-                        <h3 class="card-title">Banking Security Upgrade</h3>
-                        <p class="card-description">
-                            Custom workflow solution enhanced tracking of pre- and post-sales activities while
-                            securing sensitive data across multiple regions.
-                        </p>
-
-                    </div>
-                </div>
-
-                <div class="carousel-controls flex justify-center items-center mt-10 space-x-8">
-                    <button class="carousel-arrow left-arrow" onclick="changeCard(-1)">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-
-                    <div class="dot-navigation-container">
-                        <div class="dots-wrapper">
-                            <button class="nav-dot active" data-index="0" onclick="goToCard(0)"></button>
-                            <button class="nav-dot" data-index="1" onclick="goToCard(1)"></button>
-                            <button class="nav-dot" data-index="2" onclick="goToCard(2)"></button>
-                            <button class="nav-dot" data-index="3" onclick="goToCard(3)"></button>
-                            <button class="nav-dot" data-index="4" onclick="goToCard(4)"></button>
-                            <button class="nav-dot" data-index="5" onclick="goToCard(5)"></button>
-                        </div>
-                    </div>
-
-                    <button class="carousel-arrow right-arrow" onclick="changeCard(1)">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-
-
+        <div
+            class="absolute bottom-1/4 right-[5%] w-1/3 md:w-1/2 h-1/3 md:h-1/2 blur-3xl rounded-full fyndsol-hero blur-element delay-300">
         </div>
-    </section>
+    </div>
 
-    <style>
-        .success-section {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .success-bg {
-            background: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2069&q=80') no-repeat center center/cover;
-            position: absolute;
-            inset: 0;
-            z-index: 1;
-        }
-
-        .success-overlay {
-            background: linear-gradient(135deg, rgba(0, 26, 67, 0.92) 0%, rgba(0, 40, 97, 0.88) 100%);
-            position: absolute;
-            inset: 0;
-            z-index: 2;
-        }
-
-        .cards-container {
-            display: flex;
-            gap: 30px;
-            padding: 20px 0;
-        }
-
-        .success-card {
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            padding: 25px;
-            border-radius: 16px;
-            backdrop-filter: blur(12px);
-            display: flex;
-            flex-direction: column;
-            flex-shrink: 0;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .success-card:hover {
-            transform: translateY(-8px);
-            background: rgba(255, 255, 255, 0.12);
-            border-color: rgba(255, 255, 255, 0.25);
-        }
-
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 18px;
-        }
-
-        .industry-tag {
-            background: rgba(0, 40, 97, 0.7);
-            color: #b3d4fc;
-            padding: 5px 14px;
-            border-radius: 20px;
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-            border: 1px solid rgba(179, 212, 252, 0.2);
-        }
-
-        /* .date {
-                font-size: 12px;
-                opacity: 0.85;
-                color: #b0c4de;
-            } */
-
-        .card-title {
-            font-size: 20px;
-            font-weight: 600;
-            color: #ffffff;
-            margin-bottom: 16px;
-        }
-
-        .card-description {
-            font-size: 14.5px;
-            color: #e0e0e0;
-            line-height: 1.6;
-            margin-bottom: 25px;
-            flex-grow: 1;
-        }
-
-
-        .dot-navigation-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px 20px;
-            border-radius: 50px;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-
-        .dots-wrapper {
-            display: flex;
-            gap: 18px;
-        }
-
-        .nav-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.25);
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            outline: none;
-            border: none;
-        }
-
-        .nav-dot.active {
-            background: #4dabf7;
-            transform: scale(1.4);
-            box-shadow: 0 0 20px rgba(77, 171, 247, 0.6);
-        }
-
-        .view-all-btn {
-            background: rgba(255, 255, 255, 0.08);
-            color: white;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .view-all-btn:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-        }
-
-        /* Fix for 1080px and Responsiveness */
-        @media (max-width: 768px) {
-            .carousel-controls {
-                flex-direction: row;
-            }
-
-            .success-card {
-                padding: 20px;
-            }
-        }
-    </style>
-
-    <script>
-        let currentCardIndex = 0;
-        let autoPlayInterval;
-        const totalCards = 6;
-        const gap = 30;
-
-        function updateLayout() {
-            const carousel = document.querySelector('.success-carousel');
-            const container = document.getElementById('successCards');
-            const cards = document.querySelectorAll('.success-card');
-
-            let cardsPerView;
-            if (window.innerWidth >= 1024) cardsPerView = 3;
-            else if (window.innerWidth >= 768) cardsPerView = 2;
-            else cardsPerView = 1;
-
-            // Calculate card width based on the 1080px (or smaller) container
-            const containerWidth = carousel.offsetWidth;
-            const cardWidth = (containerWidth - (gap * (cardsPerView - 1))) / cardsPerView;
-
-            cards.forEach(card => {
-                card.style.width = cardWidth + 'px';
-            });
-
-            // Ensure index doesn't overshoot
-            if (currentCardIndex > totalCards - cardsPerView) {
-                currentCardIndex = totalCards - cardsPerView;
-            }
-
-            const moveX = -(currentCardIndex * (cardWidth + gap));
-            container.style.transform = `translateX(${moveX}px)`;
-
-            updateDots(cardsPerView);
-        }
-
-        function updateDots(cardsPerView) {
-            const dots = document.querySelectorAll('.nav-dot');
-            dots.forEach((dot, i) => {
-                dot.classList.remove('active');
-                // Logic: Highlight the dot if its card is the first one visible
-                if (i === currentCardIndex) dot.classList.add('active');
-            });
-        }
-
-        function changeCard(dir) {
-            let cardsPerView = window.innerWidth >= 1024 ? 3 : (window.innerWidth >= 768 ? 2 : 1);
-            currentCardIndex += dir;
-            if (currentCardIndex < 0) currentCardIndex = 0;
-            if (currentCardIndex > totalCards - cardsPerView) currentCardIndex = totalCards - cardsPerView;
-            updateLayout();
-            resetTimer();
-        }
-
-        function goToCard(index) {
-            currentCardIndex = index;
-            updateLayout();
-            resetTimer();
-        }
-
-        function startAutoPlay() {
-            autoPlayInterval = setInterval(() => {
-                let cardsPerView = window.innerWidth >= 1024 ? 3 : (window.innerWidth >= 768 ? 2 : 1);
-                currentCardIndex++;
-                if (currentCardIndex > totalCards - cardsPerView) currentCardIndex = 0;
-                updateLayout();
-            }, 4000);
-        }
-
-        function resetTimer() {
-            clearInterval(autoPlayInterval);
-            startAutoPlay();
-        }
-
-        window.addEventListener('resize', updateLayout);
-        window.addEventListener('DOMContentLoaded', () => {
-            updateLayout();
-            startAutoPlay();
-        });
-    </script>
-
-
-    <!-- ------------------------------------------------------------------------------------------------------------------------ -->
-
-    <!-- CTA -->
-    <section
-        class="fyndsol-hero relative py-10 md:py-32 lg:py-40 overflow-hidden text-center min-h-[80vh] flex items-center">
-        <style>
-            .fyndsol-hero {
-                color: var(--fyndsol-light);
-            }
-
-            .fyndsol-overlay {
-                background: linear-gradient(135deg, rgba(21, 29, 42, 0.92) 0%, rgba(0, 42, 97, 0.95) 100%);
-                position: absolute;
-                inset: 0;
-                z-index: 1;
-            }
-
-            .fyndsol-hero img {
-                filter: grayscale(80%) contrast(100%);
-            }
-
-            .fyndsol-hero .blur-element {
-                background: rgba(179, 212, 252, 0.1);
-                animation: pulse-bg 8s infinite alternate;
-            }
-
-            @keyframes pulse-bg {
-                0% {
-                    transform: scale(1);
-                    opacity: 0.7;
-                }
-
-                100% {
-                    transform: scale(1.1);
-                    opacity: 0.9;
-                }
-            }
-
-            .fyndsol-badge {
-                background: rgba(255, 255, 255, 0.1);
-                backdrop-filter: blur(10px);
-                border: 1px solid rgba(255, 255, 255, 0.2);
-                padding: 0.6rem 1.5rem;
-                border-radius: 9999px;
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-                margin: 0 auto 2rem;
-                display: inline-flex;
-            }
-
-            .fyndsol-hero h2 {
-                color: #ffffff;
-                font-weight: 800;
-                max-width: 900px;
-                margin: 0 auto 1.5rem;
-            }
-
-            .heading-accent {
-                background: linear-gradient(90deg, #b3d4fc, #e0f2fe);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-weight: 900;
-            }
-
-            .heading-underline path {
-                stroke: var(--secondary-color);
-                stroke-width: 4;
-            }
-
-            .cta-primary {
-                background: #ffffff;
-                color: var(--primary-color);
-                font-weight: 700;
-                box-shadow: 0 10px 30px rgba(0, 123, 255, 0.3);
-                transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            }
-
-            .cta-primary:hover {
-                background: var(--fyndsol-light);
-                transform: translateY(-4px);
-            }
-
-            .cta-secondary {
-                background: transparent;
-                border: 2px solid rgba(255, 255, 255, 0.5);
-                color: #ffffff;
-                font-weight: 600;
-                backdrop-filter: blur(8px);
-            }
-
-            .cta-secondary:hover {
-                background: rgba(255, 255, 255, 0.15);
-                border-color: #ffffff;
-            }
-
-            .trust-indicator-logo {
-                background: rgba(255, 255, 255, 0.15);
-                border-radius: 8px;
-                height: 40px;
-                width: 120px;
-                flex-shrink: 0;
-            }
-
-            .trust-label {
-                border-top: 1px solid rgba(255, 255, 255, 0.2);
-            }
-        </style>
-
-        <div class="absolute inset-0 z-0">
-            <div class="fyndsol-overlay"></div>
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2070&q=80"
-                alt="Modern business workspace" class="w-full h-full object-cover">
+    <div class="container mx-auto px-4   relative z-20">
+        <div class="fyndsol-badge items-center gap-2">
+            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+            <span class="text-lg md:text-lg tracking-widest font-bold">LET'S BUILD TOGETHER</span>
         </div>
 
-        <div class="absolute inset-0 z-10 pointer-events-none">
-            <div
-                class="absolute top-1/4 left-[5%] w-64 md:w-96 h-64 md:h-96 blur-3xl rounded-full fyndsol-hero blur-element">
-            </div>
-            <div
-                class="absolute bottom-1/4 right-[5%] w-1/3 md:w-1/2 h-1/3 md:h-1/2 blur-3xl rounded-full fyndsol-hero blur-element delay-300">
-            </div>
+        <h2 class="text-3xl md:text-5xl lg:text-7xl mb-6 leading-tight">
+            Ready to <span class="relative inline-block">
+                <span class="heading-accent">transform</span>
+                <svg class="heading-underline absolute -bottom-1 md:-bottom-2 left-0 w-full h-3" viewBox="0 0 200 20"
+                    preserveAspectRatio="none">
+                    <path d="M0,15 C50,0 150,0 200,15" fill="none" />
+                </svg>
+            </span> your business?
+        </h2>
+
+        <p class="text-base md:text-xl mb-10 max-w-2xl mx-auto opacity-90 font-light px-4">
+            Partner with FyndSol Consultancy for innovative, data-driven solutions that drive measurable growth
+            and digital excellence across your organization.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="contact.html"
+                class="cta-primary w-full sm:w-auto px-8 py-4 rounded-xl inline-flex items-center justify-center">
+                <span>Start Your Transformation</span>
+                <svg class="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+          
         </div>
 
-        <div class="container mx-auto px-4   relative z-20">
-            <div class="fyndsol-badge items-center gap-2">
-                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                <span class="text-lg md:text-lg tracking-widest font-bold">LET'S BUILD TOGETHER</span>
-            </div>
 
-            <h2 class="text-3xl md:text-5xl lg:text-7xl mb-6 leading-tight">
-                Ready to <span class="relative inline-block">
-                    <span class="heading-accent">transform</span>
-                    <svg class="heading-underline absolute -bottom-1 md:-bottom-2 left-0 w-full h-3"
-                        viewBox="0 0 200 20" preserveAspectRatio="none">
-                        <path d="M0,15 C50,0 150,0 200,15" fill="none" />
-                    </svg>
-                </span> your business?
-            </h2>
+    </div>
+</section>
 
-            <p class="text-base md:text-xl mb-10 max-w-2xl mx-auto opacity-90 font-light px-4">
-                Partner with FyndSol Consultancy for innovative, data-driven solutions that drive measurable growth
-                and digital excellence across your organization.
-            </p>
-
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="contact.html"
-                    class="cta-primary w-full sm:w-auto px-8 py-4 rounded-xl inline-flex items-center justify-center">
-                    <span>Start Your Transformation</span>
-                    <svg class="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                </a>
-                <!-- <a href="#"
-                        class="cta-secondary w-full sm:w-auto px-8 py-4 rounded-xl inline-flex items-center justify-center">
-                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <span>View Success Stories</span>
-                    </a> -->
-            </div>
-
-
-        </div>
-    </section>
-
-    <!-- ================= SCHEMA ======================== -->
-    <script type="application/ld+json">
+<!-- SCHEMA  -->
+<script type="application/ld+json">
 
 {
   "@context": "https://schema.org",
@@ -1406,62 +1290,63 @@
   
 </script>
 
-    <footer class="bg-[#0a0a0a] text-white pt-16 pb-8 border-t border-white/5">
+ <footer class="bg-[#0a0a0a] text-white pt-16 pb-8 border-t border-white/5">
         <div class="container mx-auto px-6 max-w-[1080px]">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/10">
 
                 <div class="lg:col-span-2">
                     <h3 class="text-xl font-bold mb-6">Empowering Businesses with FyndSol</h3>
-                    <p class="text-gray-400 text-lg leading-relaxed mb-8 max-w-md">
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8 max-w-md">
                         At FyndSol Consultancy, we blend strategy, execution, and technology to help organizations
                         transform, scale, and achieve measurable growth.
                     </p>
                     <img src="./images/fyndsol_logo1.jpg" class="mb-6  w-32 " alt="FyndSol Logo">
                     <div class="text-[11px] text-gray-500 space-y-1">
+                        
                         <p>FyndSol Consulting LLP.</p>
                         <p>Registered Office City: Mumbai</p>
+                          <p>GST No: 27AAKFF5176A1ZI</p>
                     </div>
                 </div>
 
                 <div>
                     <h4 class="text-lg font-bold mb-6">Quick Links</h4>
-                    <ul class="space-y-3 text-lg text-gray-400">
+                    <ul class="space-y-3 text-sm text-gray-400">
                         <li><a href="about.html" class="hover:text-blue-400 transition-colors">About Us</a></li>
                         <li><a href="project-management.html" class="hover:text-blue-400 transition-colors">Services</a>
                         </li>
-                        <!-- <li><a href="#" class="hover:text-blue-400 transition-colors">Industries</a></li> -->
                         <li><a href="ai-adoption.html" class="hover:text-blue-400 transition-colors">AI Adoption</a>
                         </li>
                         <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact Us</a></li>
-                        <!-- <li><a href="privacy-policy.html" class="hover:text-blue-400 transition-colors">Privacy -->
-                        <!-- Policy</a></li> -->
+                       
                     </ul>
                 </div>
 
                 <div>
                     <h4 class="text-lg font-bold mb-6">Get In Touch</h4>
-                    <p class="text-lg text-gray-400 mb-6">
+                    <p class="text-sm text-gray-400 mb-6">
                         Ready to transform and scale your business with FyndSol Consultancy?
                     </p>
                     <a href="contact.html"
-                        class="inline-flex items-center bg-white text-black text-lg font-bold px-6 py-3 rounded hover:bg-blue-600 hover:text-white transition-all">
+                        class="inline-flex items-center bg-white text-black text-xs font-bold px-6 py-3 rounded hover:bg-blue-600 hover:text-white transition-all">
                         Let's Connect <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                     <div class="flex gap-5 mt-8 items-center">
-                        <a href="#" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                        <a href="https://www.linkedin.com/company/fyndsol" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
                                 class="fab fa-linkedin text-xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                        <a href="https://x.com/" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
                                 class="fab fa-twitter text-xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                        <a href="https://www.facebook.com/" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
                                 class="fab fa-facebook text-xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                class="fas fa-envelope text-xl"></i></a>
+                      <a href="mailto:vivek_m@fyndsol.com?cc=sainath_g@fyndsol.com&subject=Inquiry%20from%20FyndSol%20Website" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1">
+    <i class="fas fa-envelope text-xl"></i>
+</a>
                     </div>
                 </div>
             </div>
 
             <div class="pt-8 text-center text-[10px] md:text-xs text-gray-600 uppercase tracking-widest">
-                &copy; 2025 FyndSol Consulting LLP. All rights reserved.
+                &copy; 2025 FyndSol Consulting LLP. All rights reserved. Developed by FyndSol Consulting LLP.
             </div>
         </div>
     </footer>

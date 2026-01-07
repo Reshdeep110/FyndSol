@@ -28,78 +28,219 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <style>
-        :root {
-            --fyndsol-secondary: #0949a9;
-            --fyndsol-primary: #002A61;
-            --fyndsol-accent: #ff4500;
-        }
+       :root {
+--fyndsol-secondary:#0949a9;
+--fyndsol-primary:#002A61;
+--fyndsol-accent:#ff4500
+}
 
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: #333;
-            background-color: #fff;
-            overflow-x: hidden;
-            line-height: 1.6;
-        }
+body {
+font-family:'Montserrat',sans-serif;
+color:#333;
+background:#fff;
+overflow-x:hidden;
+line-height:1.6
+}
 
-        .container-custom {
-            max-width: 1087px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
+.container-custom {
+max-width:1087px;
+margin:auto;
+padding:0 1rem
+}
 
-        .container-custom1 {
-            max-width: 1270px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
+.container-custom1 {
+max-width:1270px;
+margin:auto;
+padding:0 1rem
+}
 
-        .hero-inner {
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
+.hero-inner {
+background-size:cover;
+background-position:center;
+height:400px;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative
+}
 
-        .search-box { border-radius: 4px; }
+.search-box {border-radius:4px}
 
-        .sidebar-item {
-            display: flex;
-            align-items: center;
-            padding: 12px 16px;
-            background: white;
-            border: 1px solid #eee;
-            margin-bottom: 8px;
-            border-radius: 4px;
-            transition: all 0.2s;
-            cursor: pointer;
-            font-weight: 600;
-            font-size: 0.9rem;
-            color: #555;
-        }
-        .sidebar-item:hover, .sidebar-item.active {
-            background: var(--fyndsol-primary);
-            color: white;
-            border-color: var(--fyndsol-primary);
-            box-shadow: 0 4px 6px rgba(30, 136, 229, 0.3);
-        }
-        .sidebar-item:hover .sidebar-icon, .sidebar-item.active .sidebar-icon {
-            background: rgba(255,255,255,0.2);
-            color: white;
-        }
+.sidebar-item {
+display:flex;
+align-items:center;
+padding:12px 16px;
+background:#fff;
+border:1px solid #eee;
+margin-bottom:8px;
+border-radius:4px;
+transition:.2s;
+cursor:pointer;
+font-weight:600;
+font-size:.9rem;
+color:#555
+}
 
-        .text-fyndsol-primary { color: var(--fyndsol-primary); }
+.sidebar-item:hover,
+.sidebar-item.active {
+background:var(--fyndsol-primary);
+color:#fff;
+border-color:var(--fyndsol-primary);
+box-shadow:0 4px 6px rgba(30,136,229,.3)
+}
 
-        .text-fyndsol-secondary {
-            color: var(--fyndsol-secondary);
-        }
+.sidebar-item:hover .sidebar-icon,
+.sidebar-item.active .sidebar-icon {
+background:rgba(255,255,255,.2);
+color:#fff
+}
+
+.text-fyndsol-primary {color:var(--fyndsol-primary)}
+.text-fyndsol-secondary {color:var(--fyndsol-secondary)}
+
+.is-active .line-1 {transform:translateY(7px) rotate(45deg)}
+.is-active .line-2 {opacity:0;transform:translateX(-10px)}
+.is-active .line-3 {transform:translateY(-7px) rotate(-45deg)}
+
+.overlay-active {opacity:1!important;pointer-events:auto!important}
+.drawer-active {transform:translateX(0)!important}
+body.overflow-hidden {overflow:hidden}
+
+.nav-link {position:relative;transition:color .3s}
+.nav-link::after {
+content:'';
+position:absolute;
+left:0;
+bottom:-2px;
+width:0;
+height:2px;
+background:#002A61
+}
+.nav-link:hover {color:#002A61}
+.nav-active {color:#002A61!important;font-weight:600!important}
+.nav-active::after {display:none!important}
+.mobile-active {color:#002A61!important;font-weight:800!important}
+
+@keyframes fadeInUp {
+from {opacity:0;transform:translateY(30px)}
+to {opacity:1;transform:translateY(0)}
+}
+
+.animate-on-scroll {
+opacity:0;
+animation:fadeInUp .8s ease-out forwards;
+animation-play-state:paused
+}
+
+.animate-on-scroll[style*="animation-delay"] {
+animation-delay:var(--delay,.3s)
+}
+
+@media (max-width:768px){
+.sticky {position:relative!important;top:auto!important}
+.bg-white.p-6 {padding:1.25rem}
+.tab-item {padding:.9rem!important}
+.tab-item:hover {transform:none!important}
+.tab-item p {font-size:.95rem;line-height:1.3}
+}
+
+.bg-white .flex.items-center.gap-4 {
+transition:.3s;
+cursor:pointer
+}
+
+.bg-white .flex.items-center.gap-4:hover {
+background:#1e88e5;
+color:#fff;
+transform:scale(1.05);
+box-shadow:0 8px 20px rgba(30,136,229,.3)
+}
+
+.bg-white .flex.items-center.gap-4:hover p,
+.bg-white .flex.items-center.gap-4:hover i {color:#fff}
+
+.bg-white .flex.items-center.gap-4 div {
+transition:background .3s
+}
+
+.bg-white .flex.items-center.gap-4:hover div {
+background:rgba(255,255,255,.2)
+}
+
+.bg-white .flex.items-center.gap-4.active-sidebar {
+background:#002A61;
+color:#fff;
+box-shadow:0 8px 20px rgba(0,42,97,.3)
+}
+
+.bg-white .flex.items-center.gap-4.active-sidebar p,
+.bg-white .flex.items-center.gap-4.active-sidebar i {color:#fff}
+
+.bg-white .flex.items-center.gap-4.active-sidebar div {
+background:rgba(255,255,255,.2)
+}
+
+@media (max-width:1024px){
+.bg-white .flex.items-center.gap-4 {transform:none!important}
+}
+
+.timeline-dot {
+width:40px;
+height:40px;
+border-radius:50%;
+color:#fff;
+font-weight:700;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:.9rem;
+z-index:10
+}
+
+.timeline-card {
+background:#fff;
+border-radius:.75rem;
+padding:1.25rem;
+box-shadow:0 4px 20px rgba(0,0,0,.05);
+border:1px solid #f0f0f0;
+transition:transform .3s
+}
+
+.timeline-card:hover {transform:translateY(-2px)}
+.timeline-card h4 {font-size:1rem;font-weight:700;color:#002A61}
+.timeline-card p {margin-top:.4rem;color:#666;line-height:1.4}
+
+.reveal-up,
+.reveal-left,
+.reveal-right {
+opacity:0;
+will-change:transform,opacity;
+transition:opacity .9s ease-out,transform .9s cubic-bezier(.22,1,.36,1)
+}
+
+.reveal-up {transform:translateY(24px)}
+.reveal-left {transform:translateX(-24px)}
+.reveal-right {transform:translateX(24px)}
+.active {opacity:1;transform:translate(0)}
+
+@keyframes scrollLogos {
+0%{transform:translateX(0)}
+100%{transform:translateX(-50%)}
+}
+
+#capability-track {
+display:flex;
+width:max-content;
+animation:scrollLogos 25s linear infinite
+}
+
+.group:hover #capability-track {
+animation-play-state:paused
+}
+
+#capability-track img {
+transition:transform .3s
+}
     </style>
 </head>
 <body class="bg-gray-50">
@@ -205,8 +346,7 @@
                      
 
                      
-                <!-- <a href="industries.html" class="nav-link relative py-1 transition-colors duration-300">Industries</a>   -->
-                <a href="ai-adoption.html" class="nav-link relative py-1 transition-colors duration-300">AI Adoption</a>
+               <a href="ai-adoption.html" class="nav-link relative py-1 transition-colors duration-300">AI Adoption</a>
                 <a href="contact.html" class="nav-link relative py-1 transition-colors duration-300">Contact Us</a>
             </div>
 
@@ -272,7 +412,7 @@
                 </a>
             </div>
 
-            <div class="pt-20 text-center border-t border-gray-100">
+            <div class="pt-10 text-center border-t border-gray-100">
     <img src="./images/fyndsol_logo2.png" alt="Fyndsol" class="h-16 mx-auto opacity-50 grayscale mb-15">
     <p class="text-xs text-gray-400 font-medium">© 2025 Fyndsol. All Rights Reserved.</p>
 </div>
@@ -281,53 +421,7 @@
     </div>
     </div>
 
-    <style>
-        /* Hamburger Animation */
-        .is-active .line-1 { transform: translateY(7px) rotate(45deg); }
-        .is-active .line-2 { opacity: 0; transform: translateX(-10px); }
-        .is-active .line-3 { transform: translateY(-7px) rotate(-45deg); }
-
-        /* Drawer & Overlay Visibility */
-        .overlay-active { opacity: 1 !important; pointer-events: auto !important; }
-        .drawer-active { transform: translateX(0) !important; }
-        body.overflow-hidden { overflow: hidden; }
-
-        /* Desktop Nav Link Underline */
-        /* ACTIVE STATE STYLE */
-        .nav-link {
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-/* Underline exists but never expands */
-.nav-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0;
-  height: 2px;
-  background-color: #002A61;
-}
-
-/* Hover: color change ONLY (no underline) */
-.nav-link:hover {
-  color: #002A61;
-}
-
-/* Active page style */
-.nav-active {
-  color: #002A61 !important;
-  font-weight: 600 !important;
-}
-
-/* Ensure no underline for active */
-.nav-active::after {
-  display: none !important;
-}
-   .mobile-active { color: #002A61 !important; font-weight: 800 !important; }
-    </style>
-
+   
     <script>
          document.addEventListener('DOMContentLoaded', () => {
                const menuBtn = document.getElementById('menu-toggle');
@@ -338,9 +432,11 @@
             const focusMenu = document.getElementById('mobile-focus-menu');
             const focusChevron = document.getElementById('mobile-focus-chevron');
 
-            const servicesToggle = document.getElementById('mobile-services-toggle');
+            const servicesToggle = document.getElementById('mobile-services-btn');
             const servicesMenu = document.getElementById('mobile-services-menu');
-            const servicesChevron = document.getElementById('mobile-services-chevron');
+            const servicesChevron = document.getElementById('mobile-chevron');
+            
+
 
             function toggleMenu() {
                 menuBtn.classList.toggle('is-active');
@@ -386,12 +482,10 @@
     style="background-image: linear-gradient(rgba(0, 42, 97, 0.92), rgba(0, 42, 97, 0.88)), url('./images/tech\ consulting.png');">
     <div class="container mx-auto px-4 md:px-6 text-center text-white h-full flex items-center">
         <div class="w-full max-w-5xl mx-auto">
-            <!-- Heading -->
             <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 animate-on-scroll"
                 style="animation-delay: 0s;">
                Technology Consulting
             </h1>
-            <!-- Subheading  in short 4words -->
             <p class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-light opacity-95 leading-relaxed max-w-3xl mx-auto mb-10 animate-on-scroll"
                 style="animation-delay: 0.2s;">
                  
@@ -402,52 +496,24 @@ Empowering Organizations to Transform Ideas into Scalable Digital Solutions
     </div>
 </section>
 
-<!-- ================= ANIMATION STYLES ================= -->
-<style>
-    /* Fade Up Animation */
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
 
-    .animate-on-scroll {
-        opacity: 0;
-        animation: fadeInUp 0.8s ease-out forwards;
-        animation-play-state: paused; /* start paused, triggered by JS */
-    }
 
-    /* Allow animation delay from inline styles */
-    .animate-on-scroll[style*="animation-delay"] {
-        animation-delay: var(--delay, 0.3s);
-    }
-</style>
-
-<!-- ================= SCROLL TRIGGER SCRIPT ================= -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    // preserve inline animation-delay
                     const delay = entry.target.style.animationDelay;
                     if (delay) {
                         entry.target.style.setProperty('--delay', delay);
                     }
-                    // trigger animation
-                    entry.target.style.animationPlayState = 'running';
+                     entry.target.style.animationPlayState = 'running';
                     observer.unobserve(entry.target);
                 }
             });
         }, { threshold: 0.1 });
 
-        // Observe all animate-on-scroll elements
-        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+         document.querySelectorAll('.animate-on-scroll').forEach(el => {
             observer.observe(el);
         });
     });
@@ -457,11 +523,9 @@ Empowering Organizations to Transform Ideas into Scalable Digital Solutions
   <section class="py-16 bg-gray-50">
             <div class="max-w-[1270px] mx-auto px-4">
 
-                <!-- Content Grid -->
-                <div class="grid lg:grid-cols-[300px_1fr] gap-6 lg:gap-8 items-stretch">
+                 <div class="grid lg:grid-cols-[300px_1fr] gap-6 lg:gap-8 items-stretch">
 
-                    <!-- LEFT SIDE (SIDEBAR) -->
-                   <div class="bg-white border rounded-2xl p-6 shadow-lg sticky top-28 animate-on-scroll"
+                    <div class="bg-white border rounded-2xl p-6 shadow-lg sticky top-28 animate-on-scroll"
   style="animation-delay: 0s;">
   <div class="space-y-4">
 
@@ -502,39 +566,7 @@ Empowering Organizations to Transform Ideas into Scalable Digital Solutions
 
   </div>
 </div>
-
-<style>
-    @media (max-width: 768px) {
-  .sticky {
-    position: relative !important;
-    top: auto !important;
-  }
-
-  .bg-white.p-6 {
-    padding: 1.25rem;
-  }
-
-  .tab-item {
-    padding: 0.9rem !important;
-  }
-
-  .tab-item:hover {
-    transform: none !important;
-  }
-
-  .tab-item p {
-    font-size: 0.95rem;
-    line-height: 1.3;
-  }
-}
-
-</style>
-
-
-
-                    <!-- RIGHT SIDE CONTENT -->
                     <div class="bg-white border rounded-2xl p-6 shadow-lg animate-on-scroll">
-                        <!-- Tab Contents -->
                         <h2 class="text-2xl font-bold text-fyndsol-primary mb-5 px-2 mt-2 animate-on-scroll"
                             style="animation-delay: 0.1s;">Technology consulting</h2>
                          <ul class="space-y-4 text-gray-700 text-sm leading-relaxed list-disc pl-6">
@@ -551,86 +583,7 @@ Empowering Organizations to Transform Ideas into Scalable Digital Solutions
                 </div>
         </section>
 
-        <!-- ================= STYLES ================= -->
-        <style>
-            /* ANIMATION */
-            @keyframes fadeInUp {
-                from {
-                    opacity: 0;
-                    transform: translateY(30px);
-                }
-
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-
-            .animate-on-scroll {
-                opacity: 0;
-                animation: fadeInUp 0.8s ease-out forwards;
-                animation-play-state: paused;
-            }
-
-            .animate-on-scroll[style*="animation-delay"] {
-                animation-delay: var(--delay, 0.3s);
-            }
-
-            /* SIDEBAR HOVER & ACTIVE */
-            .bg-white .flex.items-center.gap-4 {
-                transition: all 0.3s ease-in-out;
-                cursor: pointer;
-            }
-
-            .bg-white .flex.items-center.gap-4:hover {
-                background: #1e88e5;
-                /* hover color */
-                color: white;
-                transform: scale(1.05);
-                box-shadow: 0 8px 20px rgba(30, 136, 229, 0.3);
-            }
-
-            .bg-white .flex.items-center.gap-4:hover p,
-            .bg-white .flex.items-center.gap-4:hover i {
-                color: white;
-            }
-
-            .bg-white .flex.items-center.gap-4 div {
-                transition: background 0.3s ease-in-out;
-            }
-
-            .bg-white .flex.items-center.gap-4:hover div {
-                background: rgba(255, 255, 255, 0.2);
-            }
-
-            /* ACTIVE TAB COLOR */
-            .bg-white .flex.items-center.gap-4.active-sidebar {
-                background: #002A61;
-                /* active color */
-                color: white;
-                box-shadow: 0 8px 20px rgba(0, 42, 97, 0.3);
-            }
-
-            .bg-white .flex.items-center.gap-4.active-sidebar p,
-            .bg-white .flex.items-center.gap-4.active-sidebar i {
-                color: white;
-            }
-
-            .bg-white .flex.items-center.gap-4.active-sidebar div {
-                background: rgba(255, 255, 255, 0.2);
-            }
-
-            /* RESPONSIVE */
-            @media (max-width:1024px) {
-                .bg-white .flex.items-center.gap-4 {
-                    transform: none !important;
-                }
-            }
-        </style>
-
-        <!-- ================= SCRIPT ================= -->
         <script>
-            // SCROLL REVEAL
             document.addEventListener('DOMContentLoaded', function () {
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
@@ -644,20 +597,16 @@ Empowering Organizations to Transform Ideas into Scalable Digital Solutions
                 }, { threshold: 0.1 });
                 document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
 
-                // TAB FUNCTIONALITY
                 const tabs = document.querySelectorAll('.tab-item');
                 const contents = document.querySelectorAll('.tab-content');
 
                 tabs.forEach(tab => {
                     tab.addEventListener('click', () => {
-                        // remove active
-                        tabs.forEach(t => t.classList.remove('active-sidebar'));
+                         tabs.forEach(t => t.classList.remove('active-sidebar'));
                         tab.classList.add('active-sidebar');
 
-                        // hide all
                         contents.forEach(c => c.style.display = 'none');
 
-                        // show target
                         const target = tab.dataset.target;
                         const el = document.getElementById(target);
                         if (el) {
@@ -760,31 +709,6 @@ Empowering Organizations to Transform Ideas into Scalable Digital Solutions
   </div>
 </section>
 
-<style>
-  .timeline-dot {
-    width: 40px; height: 40px; border-radius: 50%; color: #fff;
-    font-weight: 700; display: flex; align-items: center; justify-content: center;
-    font-size: 0.9rem; z-index: 10;
-  }
-  .timeline-card {
-    background: #fff; border-radius: 0.75rem; padding: 1.25rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;
-    transition: transform 0.3s ease;
-  }
-  .timeline-card:hover { transform: translateY(-2px); }
-  .timeline-card h4 { font-size: 1rem; font-weight: 700; color: #002A61; }
-  .timeline-card p { margin-top: 0.4rem; color: #666; line-height: 1.4; }
-
-  /* Smooth reveal classes */
-  .reveal-up, .reveal-left, .reveal-right {
-    opacity: 0; will-change: transform, opacity;
-    transition: opacity 0.9s ease-out, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
-  }
-  .reveal-up { transform: translateY(24px); }
-  .reveal-left { transform: translateX(-24px); }
-  .reveal-right { transform: translateX(24px); }
-  .active { opacity: 1; transform: translate(0); }
-</style>
 
 <script>
   const revealItems = document.querySelectorAll(".reveal-up, .reveal-left, .reveal-right");
@@ -881,42 +805,6 @@ Empowering Organizations to Transform Ideas into Scalable Digital Solutions
     </div>
 </section>
 
-<style>
-    /* Infinite Scroll Logic */
-    @keyframes scrollLogos {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
-    }
-    
-    #capability-track {
-        display: flex;
-        width: max-content;
-        animation: scrollLogos 25s linear infinite;
-    }
-
-    /* Pause on hover */
-    .group:hover #capability-track {
-        animation-play-state: paused;
-    }
-
-    /* Uniform image constraints */
-    #capability-track img {
-        filter: none;
-        transition: transform 0.3s ease;
-    }
-
-    /* Fade-in Animation utility if not already in your global CSS */
-    .animate-on-scroll {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 0.6s ease-out;
-    }
-
-    .animate-on-scroll.active {
-        opacity: 1;
-        transform: translateY(0);
-    }
-</style>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -982,19 +870,7 @@ Empowering Organizations to Transform Ideas into Scalable Digital Solutions
     </div>
 </section>
 
-<style>
-    /* Ensure the animation class works if not globally defined */
-    .animate-on-scroll {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .animate-on-scroll.active {
-        opacity: 1;
-        transform: translateY(0);
-    }
-</style>
+
 
  <!-- FOOTER -->
   <footer class="bg-[#0a0a0a] text-white pt-16 pb-8 border-t border-white/5">
@@ -1012,6 +888,8 @@ Empowering Organizations to Transform Ideas into Scalable Digital Solutions
                         <div class="text-[11px] text-gray-500 space-y-1">
                             <p>FyndSol Consulting LLP.</p>
                             <p>Registered Office City: Mumbai</p>
+                             <p>GST No: 27AAKFF5176A1ZI</p>
+              
                         </div>
                     </div>
 
@@ -1025,8 +903,7 @@ Empowering Organizations to Transform Ideas into Scalable Digital Solutions
                             <li><a href="ai-adoption.html" class="hover:text-blue-400 transition-colors">AI Adoption</a>
                             </li>
                             <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact Us</a></li>
-                            <!-- <li><a href="privacy-policy.html" class="hover:text-blue-400 transition-colors">Privacy -->
-                                    <!-- Policy</a></li> -->
+                         
                         </ul>
                     </div>
 
@@ -1040,27 +917,25 @@ Empowering Organizations to Transform Ideas into Scalable Digital Solutions
                             Let's Connect <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                         <div class="flex gap-5 mt-8 items-center">
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fab fa-linkedin text-xl"></i></a>
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fab fa-twitter text-xl"></i></a>
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fab fa-facebook text-xl"></i></a>
-                            <a href="#"
-                                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                                    class="fas fa-envelope text-xl"></i></a>
-                        </div>
+                        <a href="https://www.linkedin.com/company/fyndsol" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                                class="fab fa-linkedin text-xl"></i></a>
+                        <a href="https://x.com/" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                                class="fab fa-twitter text-xl"></i></a>
+                        <a href="https://www.facebook.com/" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                                class="fab fa-facebook text-xl"></i></a>
+                      <a href="mailto:vivek_m@fyndsol.com?cc=sainath_g@fyndsol.com&subject=Inquiry%20from%20FyndSol%20Website" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1">
+    <i class="fas fa-envelope text-xl"></i>
+</a>
                     </div>
                 </div>
-
-                <div class="pt-8 text-center text-[10px] md:text-xs text-gray-600 uppercase tracking-widest">
-                    &copy; 2025 FyndSol Consulting LLP. All rights reserved.
-                </div>
             </div>
-        </footer>
+
+            <div class="pt-8 text-center text-[10px] md:text-xs text-gray-600 uppercase tracking-widest">
+                &copy; 3 FyndSol Consulting LLP. All rights reserved. Developed by FyndSol Consulting LLP.
+            </div>
+        </div>
+    </footer>
+
 
 
 
