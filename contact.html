@@ -33,6 +33,48 @@ content="contact fyndsol consulting llp, business consulting mumbai, management 
     <link rel="preload" href="./images/contactus.png" as="image" fetchpriority="high">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.fyndsol.com/#organization",
+      "name": "FyndSol Consulting LLP",
+      "url": "https://www.fyndsol.com",
+      "logo": "https://www.fyndsol.com/images/fyndsol_logo2.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mumbai",
+        "addressRegion": "MH",
+        "addressCountry": "IN"
+      }
+    },
+    {
+      "@type": "ContactPage",
+      "@id": "https://www.fyndsol.com/contact",
+      "url": "https://www.fyndsol.com/contact",
+      "name": "Contact FyndSol Consulting LLP",
+      "isPartOf": { "@id": "https://www.fyndsol.com/#organization" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.example.com/#organization",
+      "name": "New Organization Name",
+      "url": "https://www.example.com",
+      "logo": "https://www.example.com/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "City Name",
+        "addressRegion": "State/Region",
+        "addressCountry": "Country Code"
+      }
+    }
+  ]
+}
+</script>
+
     <style>
         :root {
             --fyndsol-blue: #2c3e50;
@@ -381,8 +423,7 @@ content="contact fyndsol consulting llp, business consulting mumbai, management 
                 <div class="lg:col-span-2">
                     <h3 class="text-xl font-bold mb-6">Empowering Businesses with FyndSol</h3>
                     <p class="text-gray-400 text-sm leading-relaxed mb-8 max-w-md">
-                        At FyndSol Consultancy, we blend strategy, execution, and technology to help organizations
-                        transform, scale, and achieve measurable growth.
+                      At FyndSol Consulting LLP, we combine strategy, technology, and execution to help organizations transform, scale, and achieve measurable business growth.
                     </p>
                     <img src="./images/fyndsol_logo1.jpg" class="mb-6 w-32 " alt="FyndSol Logo">
                     <div class="text-[11px] text-gray-500 space-y-1">
@@ -479,46 +520,7 @@ content="contact fyndsol consulting llp, business consulting mumbai, management 
             document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
         });
     </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://www.fyndsol.com/#organization",
-      "name": "FyndSol Consulting LLP",
-      "url": "https://www.fyndsol.com",
-      "logo": "https://www.fyndsol.com/images/fyndsol_logo2.png",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Mumbai",
-        "addressRegion": "MH",
-        "addressCountry": "IN"
-      }
-    },
-    {
-      "@type": "ContactPage",
-      "@id": "https://www.fyndsol.com/contact",
-      "url": "https://www.fyndsol.com/contact",
-      "name": "Contact FyndSol Consulting LLP",
-      "isPartOf": { "@id": "https://www.fyndsol.com/#organization" }
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://www.example.com/#organization",
-      "name": "New Organization Name",
-      "url": "https://www.example.com",
-      "logo": "https://www.example.com/logo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "City Name",
-        "addressRegion": "State/Region",
-        "addressCountry": "Country Code"
-      }
-    }
-  ]
-}
-</script>
+   
 
 </body>
 
