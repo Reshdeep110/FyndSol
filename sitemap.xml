@@ -3,97 +3,93 @@
 
   <url>
     <loc>https://www.fyndsol.com/</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
 
   <url>
-    <loc>https://www.fyndsol.com/about.html</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://www.fyndsol.com/about</loc>
+    <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <url>
-    <loc>https://www.fyndsol.com/services.html</loc>
-    <lastmod>2026-01-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  
 
   <url>
-    <loc>https://www.fyndsol.com/contact.html</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://www.fyndsol.com/contact</loc>
+    <lastmod>2026-01-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
  
   <url>
-    <loc>https://www.fyndsol.com/New-Initiatives.html</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://www.fyndsol.com/New-Initiatives</loc>
+    <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.fyndsol.com/tech-consulting.html</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://www.fyndsol.com/technology-consulting</loc>
+    <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://www.fyndsol.com/process-improvement.html</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://www.fyndsol.com/process-improvement</loc>
+    <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.fyndsol.com/turnaround.html</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://www.fyndsol.com/turnaround</loc>
+    <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   
   <url>
-    <loc>https://www.fyndsol.com/project-management.html</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://www.fyndsol.com/project-management</loc>
+    <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://www.fyndsol.com/finance-transformation.html</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://www.fyndsol.com/finance-transformation</loc>
+    <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://www.fyndsol.com/tech-transformation.html</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://www.fyndsol.com/tech-transformation</loc>
+    <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.fyndsol.com/process-transformation.html</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://www.fyndsol.com/process-transformation</loc>
+    <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
  
   <url>
-    <loc>https://www.fyndsol.com/ai-adoption.html</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://www.fyndsol.com/ai-adoption</loc>
+    <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
 
 </urlset>

@@ -13,13 +13,13 @@
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#002A61">
 
-  <link rel="canonical" href="https://www.fyndsol.com/new-initiatives.html">
+  <link rel="canonical" href="https://www.fyndsol.com/new-initiatives">
 
   <meta property="og:title" content="New Initiatives Consulting | FyndSol Consulting">
   <meta property="og:description"
     content="Empowering startups and entrepreneurs to turn ideas into thriving businesses with strategic guidance, process optimization, and virtual CTO support.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.fyndsol.com/new-initiatives.html">
+  <meta property="og:url" content="https://www.fyndsol.com/new-initiatives">
   <meta property="og:image" content="https://www.fyndsol.com/images/new_initiative_og.jpg">
 
   <meta name="twitter:card" content="summary_large_image">
@@ -33,42 +33,89 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
     rel="stylesheet">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QKPFBVH1KC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QKPFBVH1KC');
+</script>
+
+
 
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "New Initiatives Consulting",
-  "provider": {
-    "@type": "Organization",
-    "name": "FyndSol Consulting LLP",
-    "url": "https://www.fyndsol.com"
-  },
-  "description": "FyndSol Consulting helps startups and entrepreneurs transform ideas into scalable businesses through technology, process guidance, and strategic engagement.",
-  "areaServed": {
-    "@type": "Country",
-    "name": "India"
-  }
-},
-
-{
-  "name": "New Initiatives Strategy & Transformation",
-  "description": "Comprehensive consulting for entrepreneurs including technology leadership, market entry, and operational scaling.",
-  "mainEntityOfPage": "https://www.fyndsol.com/new-initiatives.html",
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Startup Services",
-    "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Technology Consulting" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Process Improvement" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Turnaround" } }
-    ]
-  }
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.fyndsol.com/new-initiative#service",
+      "name": "New Initiative Consulting",
+      "description": "FyndSol Consulting LLP helps startups and entrepreneurs transform ideas into scalable businesses through technology leadership, process improvement, and strategic execution.",
+      "provider": {
+        "@type": "Organization",
+        "name": "FyndSol Consulting LLP",
+        "url": "https://www.fyndsol.com",
+        "logo": "https://www.fyndsol.com/images/fyndsol_logo2.png"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "serviceType": [
+        "Startup Consulting",
+        "New Initiative Strategy",
+        "Virtual CTO Services",
+        "Process Improvement",
+        "Business Growth Consulting"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.fyndsol.com/new-initiative#offerings",
+      "name": "New Initiative Strategy & Transformation",
+      "mainEntityOfPage": "https://www.fyndsol.com/new-initiative",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Startup & New Initiative Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Technology Consulting"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Process Improvement Consulting"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Turnaround & Scaling Advisory"
+            }
+          }
+        ]
+      }
+    }
+  ]
 }
 </script>
-  </script>
+
 
   <style>
     :root {
@@ -361,7 +408,7 @@
 
 <body class="bg-gray-50">
 
-  
+
   <header class="bg-white sticky top-0 z-50 shadow-sm w-full">
     <div class="border-b border-gray-100">
       <nav class="container-custom1 flex justify-between items-center py-4 px-4 md:px-6">
@@ -567,6 +614,7 @@
         });
 
 
+        const currentPath = window.location.pathname;
         const allLinks = document.querySelectorAll('.nav-link, .mobile-link');
         allLinks.forEach(link => {
           const href = link.getAttribute('href');
@@ -691,10 +739,11 @@
                 manages them, ensuring execution never falls behind vision.</li>
               <li class="animate-on-scroll" style="animation-delay: 0.6s;">Because every founder deserves a partner
                 who’s been there before.</li>
-                 <li class="animate-on-scroll" style="animation-delay: 0.7s;">Innovation-Led Consulting, AI Adoption, and Scalable Enterprise Solutions.
-         </li>
-         
-                   </ul>
+              <li class="animate-on-scroll" style="animation-delay: 0.7s;">Innovation-Led Consulting, AI Adoption, and
+                Scalable Enterprise Solutions.
+              </li>
+
+            </ul>
           </div>
 
         </div>
@@ -881,95 +930,77 @@
 
       revealItems.forEach(el => observer.observe(el));
     </script>
+  </main>
 
 
+  <!-- FOOTER -->
+  <footer class="bg-[#0a0a0a] text-white pt-16 pb-8 border-t border-white/5">
+    <div class="container mx-auto px-6 max-w-[1080px]">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/10">
 
+        <div class="lg:col-span-2">
+          <h3 class="text-xl font-bold mb-6">Empowering Businesses with FyndSol</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-8 max-w-md">
+            At FyndSol Consulting LLP, we combine strategy, technology, and execution to help organizations transform,
+            scale, and achieve measurable business growth.
 
+          </p>
+          <img src="./images/fyndsol_logo1.jpg" class="mb-6  w-32 " alt="FyndSol Consulting LLP Logo">
+          <div class="text-[11px] text-gray-500 space-y-1">
+            <p>FyndSol Consulting LLP.</p>
+            <p>Registered Office City: Mumbai</p>
+            <p>GST No: 27AAKFF5176A1ZI</p>
 
-
-
-
-
-
-
-
-
-
-
-    <!-- FOOTER -->
-    <footer class="bg-[#0a0a0a] text-white pt-16 pb-8 border-t border-white/5">
-      <div class="container mx-auto px-6 max-w-[1080px]">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/10">
-
-          <div class="lg:col-span-2">
-            <h3 class="text-xl font-bold mb-6">Empowering Businesses with FyndSol</h3>
-            <p class="text-gray-400 text-sm leading-relaxed mb-8 max-w-md">
-              At FyndSol Consulting LLP, we combine strategy, technology, and execution to help organizations transform, scale, and achieve measurable business growth.
-                  
-            </p>
-            <img src="./images/fyndsol_logo1.jpg" class="mb-6  w-32 " alt="FyndSol Consulting LLP Logo">
-            <div class="text-[11px] text-gray-500 space-y-1">
-              <p>FyndSol Consulting LLP.</p>
-              <p>Registered Office City: Mumbai</p>
-              <p>GST No: 27AAKFF5176A1ZI</p>
-
-            </div>
-          </div>
-
-          <div>
-            <h4 class="text-lg font-bold mb-6">Quick Links</h4>
-            <ul class="space-y-3 text-sm text-gray-400">
-              <li><a href="about.html" class="hover:text-blue-400 transition-colors">About Us</a></li>
-              <li><a href="project-management.html" class="hover:text-blue-400 transition-colors">Services</a></li>
-              <li><a href="ai-adoption.html" class="hover:text-blue-400 transition-colors">AI Adoption</a>
-              </li>
-              <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact Us</a></li>
-
-            </ul>
-          </div>
-
-          <div>
-            <h4 class="text-lg font-bold mb-6">Get In Touch</h4>
-            <p class="text-sm text-gray-400 mb-6">
-              Ready to transform and scale your business with FyndSol Consultancy?
-            </p>
-            <a href="contact.html"
-              class="inline-flex items-center bg-white text-black text-xs font-bold px-6 py-3 rounded hover:bg-blue-600 hover:text-white transition-all">
-              Let's Connect <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-            <div class="flex gap-5 mt-8 items-center">
-              <a href="https://www.linkedin.com/company/fyndsol"
-                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                  class="fab fa-linkedin text-xl"></i></a>
-              <a href="https://x.com/"
-                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                  class="fab fa-twitter text-xl"></i></a>
-              <a href="https://www.facebook.com/"
-                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
-                  class="fab fa-facebook text-xl"></i></a>
-              <a href="mailto:vivek_m@fyndsol.com?cc=sainath_g@fyndsol.com&subject=Inquiry%20from%20FyndSol%20Website"
-                class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1">
-                <i class="fas fa-envelope text-xl"></i>
-              </a>
-            </div>
           </div>
         </div>
 
-        <div class="pt-8 text-center text-[10px] md:text-xs text-gray-600 uppercase tracking-widest">
-          &copy; 2025 FyndSol Consulting LLP. All rights reserved. Developed by FyndSol Consulting LLP.
+        <div>
+          <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="about.html" class="hover:text-blue-400 transition-colors">About Us</a></li>
+            <li><a href="project-management.html" class="hover:text-blue-400 transition-colors">Services</a></li>
+            <li><a href="ai-adoption.html" class="hover:text-blue-400 transition-colors">AI Adoption</a>
+            </li>
+            <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact Us</a></li>
+
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-bold mb-6">Get In Touch</h4>
+          <p class="text-sm text-gray-400 mb-6">
+            Ready to transform and scale your business with FyndSol Consultancy?
+          </p>
+          <a href="contact.html"
+            class="inline-flex items-center bg-white text-black text-xs font-bold px-6 py-3 rounded hover:bg-blue-600 hover:text-white transition-all">
+            Let's Connect <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+          <div class="flex gap-5 mt-8 items-center">
+            <a href="https://www.linkedin.com/company/fyndsol"
+              class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                class="fab fa-linkedin text-xl"></i></a>
+            <a href="https://x.com/" class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                class="fab fa-twitter text-xl"></i></a>
+            <a href="https://www.facebook.com/"
+              class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1"><i
+                class="fab fa-facebook text-xl"></i></a>
+            <a href="mailto:vivek@fyndsol.com?subject=Inquiry%20from%20FyndSol%20Website"
+              class="text-gray-400 hover:text-white transition-transform hover:-translate-y-1">
+              <i class="fas fa-envelope text-xl"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <div class="pt-8 text-center text-[10px] md:text-xs text-gray-600 uppercase tracking-widest">
+        &copy; 2025 FyndSol Consulting LLP. All rights reserved. Developed by FyndSol Consulting LLP.
+      </div>
+    </div>
+  </footer>
 
 
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
-          document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-      });
-    </script>
+
 
 
 </body>
